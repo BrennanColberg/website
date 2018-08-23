@@ -1,0 +1,42 @@
+div, header, footer {
+	border: 1px dashed black;
+}
+
+header {
+	text-align: center;
+	color: blue;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer div > * {
+	padding: 0px 10px;
+	margin: auto auto;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	height: 80vh;
+}
+
+#left {
+	width: 70%;
+}
+
+#right {
+	width: 20%;
+}
+

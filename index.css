@@ -11,8 +11,16 @@ section {
 }
 
 header {
+	display: flex;
+	justify-content: center;
 	text-align: center;
-	color: blue;
+}
+
+header h1 {
+	font-family: sans-serif;
+	font-size: 25pt;
+	padding: 10px;
+	color: burlywood;
 }
 
 footer {
@@ -49,24 +57,36 @@ footer div > * {
 	width: 35%;
 }
 
-#projects article {
+.feed article {
 	width: 80%;
 	padding: 10px;
 	margin: 20px auto;
 }
 
-#projects section.link {
+.feed section.link {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-#projects p,
-#projects h3 {
+.feed p,
+.feed h2,
+.feed h3,
+.feed h4 {
 	margin: 0px;
 	padding: 5px;
 }
 
-#projects h3 {
+.feed h3 {
 	text-align: center;
+}
+
+#introduction {
+	font-family: sans-serif;
+	
+	padding: 10px;
+}
+
+#blog {
+	
 }

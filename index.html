@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 		<title>Brennan Colberg</title>
 		<link href="index.css" rel="stylesheet" />
+		
+		<!-- ajax code from CSE154, hosted on personal repository -->
+		<script src="https://brennancolberg.github.io/abbr/js/ajax.js"></script>
+		<!-- JS which automatically populates the blog and article portions -->
+		<script src="index.js"></script>
 	</head>
 
 	<body>
 		
 		<!-- body header (with my name!) -->
 		<header>
-			<h1>Brennan Colberg</h1>
+			<h1>[brennan colberg]</h1>
 		</header>
 		
 		<div id="content">
@@ -38,34 +43,7 @@
 			<!-- right-side (with projects) -->
 			<div id="right">
 				<div id="projects" class="feed">
-					<article>
-						<section class="title">
-							<h3>Carbon</h3>
-						</section>
-						<section class="link">
-							<p><a href="https://carbon.brennancolberg.com">Website</a></p>
-							<p><a href="https://github.com/BrennanColberg/carbon">Code</a></p>
-						</section>
-						<section class="description">
-							<p>
-								this is a thing I did for a teacher to get her to love me because she had an activity and I <em>upgraded</em> it to a wacky digital thingimajig
-							</p>
-						</section>
-					</article>
-					<article>
-						<section class="title">
-							<h3>Axis &amp; Allies</h3>
-						</section>
-						<section class="link">
-							<p><a href="https://brennancolberg.github.io/axis-allies">Website</a></p>
-							<p><a href="https://github.com/BrennanColberg/axis-allies">Code</a></p>
-						</section>
-						<section class="description">
-							<p>
-								Have you ever been playing a nice game of "Axis  &amp; Allies"&trade; yet cannot remember whose turn it is or lack sufficiently badass music? Worry no longer! This website cycles through the countries in proper order, showing their flags and playing their anthems (all as in WWII)!
-							</p>
-						</section>
-					</article>
+					<!-- index.js creates things here from projects.json -->
 				</div>
 			</div>
 

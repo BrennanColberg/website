@@ -17,8 +17,8 @@ header {
 }
 
 header h1 {
-	font-family: sans-serif;
-	font-size: 25pt;
+	font-family: monospace;
+	font-size: 40pt;
 	padding: 10px;
 	color: burlywood;
 }
@@ -46,15 +46,19 @@ footer div > * {
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
-	height: 80vh;
+	height: 75vh;
 }
 
 #left {
 	width: 65%;
+	height: inherit;
+	overflow: scroll;
 }
 
 #right {
 	width: 35%;
+	height: inherit;
+	overflow: scroll;
 }
 
 .feed article {
@@ -81,12 +85,13 @@ footer div > * {
 	text-align: center;
 }
 
+/*article {
+	border: 4px groove #198435;
+
+	box-shadow: 5px 5px 20px #777777;
+}*/
+
 #introduction {
 	font-family: sans-serif;
-	
 	padding: 10px;
-}
-
-#blog {
-	
 }

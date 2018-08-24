@@ -1,39 +1,47 @@
+/* scaffolding borders */
 div, header, footer {
 	border: 1px dashed black;
 }
-
 article {
 	border: 2px solid green;
 }
-
 section {
 	border: 1px dashed red;
 }
 
+/* header */
 header {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 }
+nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
-
-
+/* footer */
 footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 5px;
 }
-
 footer div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-
 footer div > * {
 	padding: 0px 10px;
 	margin: auto auto;
+}
+
+#introduction {
+	font-family: sans-serif;
+	padding: 10px;
 }
 
 #content {
@@ -44,20 +52,9 @@ footer div > * {
 	height: 75vh;
 }
 
-#left {
-	width: 65%;
+#content .feed {
 	height: inherit;
 	overflow: scroll;
-}
-
-#right {
-	width: 35%;
-	height: inherit;
-	overflow: scroll;
-}
-
-#introduction {
-	
 }
 
 .feed article {
@@ -72,25 +69,25 @@ footer div > * {
 	justify-content: space-around;
 }
 
-.feed p,
-.feed h2,
-.feed h3,
-.feed h4 {
+.feed article p,
+.feed article h2,
+.feed article h3,
+.feed article h4 {
 	margin: 0px;
 	padding: 5px;
 }
 
-.feed h3 {
+#projects h3 {
 	text-align: center;
 }
 
-/*article {
-	border: 4px groove #198435;
-
-	box-shadow: 5px 5px 20px #777777;
-}*/
-
-#introduction {
-	font-family: sans-serif;
-	padding: 10px;
+.feed > p,
+.feed > p a {
+	margin: 15px;
+	order: 0;
+	text-align: center;
+	text-decoration: underline;
+	color: black;
+	font-size: 20pt;
+	
 }

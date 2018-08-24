@@ -117,10 +117,24 @@
 				for (let i = 0; i < data.length; i++) {
 					let p = ce("p");
 					let a = ce("a");
-					a.textContent = data[i]["title"];
+					a.textContent = data[i]["text"];
 					a.href = data[i]["href"];
 					p.appendChild(a);
 					$("menu").appendChild(p);
+				}
+			});
+		}
+		
+		if ($("contact")) {
+			ajaxGET("contact.json", function(json) {
+				let data = JSON.parse(json);
+				for (let i = 0; i < data.length; i++) {
+					let p = ce("p");
+					let a = ce("a");
+					a.textContent = data[i]["text"];
+					a.href = data[i]["href"];
+					p.appendChild(a);
+					$("contact").appendChild(p);
 				}
 			});
 		}

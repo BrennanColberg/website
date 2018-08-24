@@ -139,6 +139,12 @@
 			});
 		}
 		
+		if ($("introduction")) {
+			ajaxGET("introduction.html", function(html) {
+				$("introduction").innerHTML = html;
+			});
+		}
+		
 	});
 	
 })();

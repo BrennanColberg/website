@@ -75,6 +75,9 @@ footer div > * {
 	padding: 0px 10px;
 	margin: auto auto;
 }
+footer a {
+	padding: 10px 0px;
+}
 
 #introduction {
 	font-family: sans-serif;
@@ -84,7 +87,6 @@ footer div > * {
 #content {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
 	justify-content: space-around;
 	height: 75vh;
 }
@@ -95,7 +97,6 @@ footer div > * {
 }
 
 .feed article {
-	width: 80%;
 	padding: 10px;
 	margin: 20px auto;
 	display: flex;

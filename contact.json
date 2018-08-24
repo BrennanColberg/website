@@ -1,18 +1,18 @@
 [
 	{
 		"text": "GitHub",
-		"link": "https://github.com/BrennanColberg/"
+		"href": "https://github.com/BrennanColberg/"
 	},
 	{
 		"text": "Messenger",
-		"link": "https://m.me/BrennanColberg"
+		"href": "https://m.me/BrennanColberg"
 	},
 	{
 		"text": "Email",
-		"link": "mailto:bcolberg@cs.uw.edu"
+		"href": "mailto:bcolberg@cs.uw.edu"
 	},
 	{
 		"text": "Instagram",
-		"link": "https://instagram.com/BrennanColberg/"
+		"href": "https://instagram.com/BrennanColberg/"
 	}
 ]

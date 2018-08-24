@@ -35,6 +35,7 @@
 							let a = ce("a");
 							a.textContent = datum["links"][l].text;
 							a.href = datum["links"][l].href;
+							a.target = "_blank";
 							p.appendChild(a);
 							linkSection.appendChild(p);
 						}
@@ -133,6 +134,7 @@
 					let a = ce("a");
 					a.textContent = data[i]["text"];
 					a.href = data[i]["href"];
+					a.target = "_blank";
 					p.appendChild(a);
 					$("contact").appendChild(p);
 				}

@@ -59,7 +59,6 @@
 		
 		if ($("blog")) {
 			ajaxGET("blog.json", function(json) {
-				console.log("going");
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
 
@@ -108,6 +107,20 @@
 
 					$("blog").appendChild(post);
 
+				}
+			});
+		}
+		
+		if ($("menu")) {
+			ajaxGET("menu.json", function(json) {
+				let data = JSON.parse(json);
+				for (let i = 0; i < data.length; i++) {
+					let p = ce("p");
+					let a = ce("a");
+					a.textContent = data[i]["title"];
+					a.href = data[i]["href"];
+					p.appendChild(a);
+					$("menu").appendChild(p);
 				}
 			});
 		}

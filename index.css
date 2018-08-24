@@ -3,7 +3,7 @@
 }*/
 
 a {
-	text-decoration: underline;
+	color: darkslategray;
 }
 a:hover {
 	font-weight: bold;
@@ -52,6 +52,10 @@ nav p {
 }
 nav a {
 	color: black;
+	text-decoration: underline;
+}
+nav a:hover {
+	font-weight: bold;
 }
 
 /* footer */
@@ -94,6 +98,9 @@ footer div > * {
 	width: 80%;
 	padding: 10px;
 	margin: 20px auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .feed section.link {
@@ -101,6 +108,11 @@ footer div > * {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	text-align: center;
+}
+
+.feed article a:hover {
+	text-decoration: none;
+	font-weight: normal;
 }
 
 .feed article p,

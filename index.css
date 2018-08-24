@@ -16,12 +16,7 @@ header {
 	text-align: center;
 }
 
-header h1 {
-	font-family: monospace;
-	font-size: 40pt;
-	padding: 10px;
-	color: burlywood;
-}
+
 
 footer {
 	display: flex;
@@ -59,6 +54,10 @@ footer div > * {
 	width: 35%;
 	height: inherit;
 	overflow: scroll;
+}
+
+#introduction {
+	
 }
 
 .feed article {

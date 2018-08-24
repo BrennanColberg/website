@@ -20,7 +20,7 @@
 					if (datum["title"]) {
 						let titleSection = ce("section");
 						titleSection.className = "title";
-						let title = ce("h3");
+						let title = ce("h2");
 						title.textContent = datum["title"];
 						titleSection.appendChild(title);
 						project.appendChild(titleSection);

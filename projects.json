@@ -4,11 +4,11 @@
 		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Well, I did, and here's the result!",
 		"links": [
 			{
-				"text": "Live Website",
+				"text": "[website]",
 				"href": "https://carbon.brennancolberg.com/"
 			},
 			{
-				"text": "Source Code",
+				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/carbon"
 			}
 		]
@@ -18,11 +18,11 @@
 		"description": "Have you ever been playing a nice game of \"Axis & Allies\"™ yet cannot remember whose turn it is or lack sufficiently badass music? Worry no longer! This website cycles through the countries in proper order, showing their flags and playing their anthems (all as in WWII)!",
 		"links": [
 			{
-				"text": "Live Website",
+				"text": "[website]",
 				"href": "https://brennancolberg.github.io/axis-allies/"
 			},
 			{
-				"text": "Source Code",
+				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/axis-allies/"
 			}
 		]
@@ -32,11 +32,11 @@
 		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
 		"links": [
 			{
-				"text": "Live Website",
+				"text": "[website]",
 				"href": "https://fmbq.brennancolberg.com/"
 			},
 			{
-				"text": "Source Code",
+				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/fmbq/"
 			}
 		]
@@ -46,7 +46,7 @@
 		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
 		"links": [
 			{
-				"text": "Final Source Code",
+				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/BFramework-C.5.12/"
 			}
 		]

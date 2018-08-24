@@ -9,7 +9,7 @@ a:hover {
 	font-weight: bold;
 }
 
-/* scaffolding borders */
+/* scaffolding borders *//*
 div, header, footer {
 	border: 1px dashed black;
 }
@@ -18,7 +18,7 @@ article {
 }
 section {
 	border: 1px dashed red;
-}
+}*/
 
 /* header */
 header {
@@ -94,14 +94,34 @@ footer a {
 .feed {
 	height: inherit;
 	overflow: scroll;
+	margin: 0px 1vw;
 }
 
 .feed article {
-	padding: 10px;
-	margin: 20px auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+
+	padding: 10px;
+	margin: 25px 3vw;
+	border: 3px solid; /* color defined independently below */
+	border-radius: 10px;
+	box-shadow: 3px 5px 25px #333333;
+}
+
+#projects article {
+	border-color: red;
+}
+#blog article {
+	border-color: blue;
+}
+#blog .paragraphs,
+#projects .description{
+	border: inherit;
+	border-radius: inherit;
+	border-width: 1.5px;
+	box-shadow: 1px 3px 20px #777777;
+	padding: 3px 4px;
 }
 
 .feed section.link {
@@ -116,15 +136,34 @@ footer a {
 	font-weight: normal;
 }
 
-.feed article p,
-.feed article h2,
-.feed article h3,
-.feed article h4 {
+article p,
+article h2,
+article h4 {
 	margin: 0px;
 	padding: 5px;
 }
 
-#projects h3 {
+article h2,
+article h4 {
+	font-family: Merriweather;
+}
+
+article p {
+	font-family: Lato, sans-serif;
+}
+
+article a {
+	text-decoration: none;
+	font-family: Roboto Mono;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+section {
+	margin: 5px 3px;
+}
+
+#projects h2 {
 	text-align: center;
 }
 

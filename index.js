@@ -44,12 +44,12 @@
 
 					// description
 					if (datum["description"]) {
-						let descriptionSection = ce("section");
-						descriptionSection.className = "description";
-						let description = ce("p");
-						description.textContent = datum["description"];
-						descriptionSection.appendChild(description);
-						project.appendChild(descriptionSection);
+						let textSection = ce("section");
+						textSection.className = "text";
+						let text = ce("p");
+						text.textContent = datum["description"];
+						textSection.appendChild(text);
+						project.appendChild(textSection);
 					}
 
 					div.appendChild(project);
@@ -85,14 +85,14 @@
 
 					// links
 					if (datum["paragraphs"]) {
-						let paragraphSection = ce("section");
-						paragraphSection.className = "paragraphs";
+						let textSection = ce("section");
+						textSection.className = "text";
 						for (let l = 0; l < datum["paragraphs"].length; l++) {
 							let p = ce("p");
 							p.textContent = datum["paragraphs"][l];
-							paragraphSection.appendChild(p);
+							textSection.appendChild(p);
 						}
-						post.appendChild(paragraphSection);
+						post.appendChild(textSection);
 					}
 
 					// description
@@ -101,7 +101,7 @@
 						linkSection.className = "link";
 						let link = ce("a");
 						link.href = datum["link"];
-						link.textContent = "[... read more ...]";
+						link.textContent = "[read more]";
 						linkSection.appendChild(link);
 						post.appendChild(linkSection);
 					}

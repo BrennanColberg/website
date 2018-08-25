@@ -24,14 +24,14 @@ section {
 header {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center;
 	
 	text-align: center;
 	padding: 15px;
 }
 header h1 {
 	font-size: 40pt;
-	margin: 10px auto;
+	margin: 10px 40px;
 }
 nav {
 	display: flex;
@@ -40,7 +40,7 @@ nav {
 	
 	border: 2px dashed gray;
 	border-radius: 10px;
-	margin: auto;
+	margin: auto 0px;
 }
 nav p {
 	padding: 2px 4px;
@@ -115,8 +115,8 @@ footer a {
 #blog article {
 	border-color: blue;
 }
-#blog .paragraphs,
-#projects .description{
+
+article .text {
 	border: inherit;
 	border-radius: inherit;
 	border-width: 1.5px;
@@ -129,6 +129,7 @@ footer a {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	text-align: center;
+	margin: auto 0px;
 }
 
 .feed article a:hover {

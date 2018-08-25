@@ -108,12 +108,17 @@ footer a {
 	border-radius: 10px;
 	box-shadow: 3px 5px 25px #333333;
 }
+.feed section {
+	margin: 5px 3px;
+}
 
 #projects article {
 	border-color: red;
+	background-color: rgba(255, 0, 0, 0.1);
 }
 #blog article {
 	border-color: blue;
+	background-color: rgba(0, 0, 255, 0.1);
 }
 
 article .text {
@@ -122,6 +127,8 @@ article .text {
 	border-width: 1.5px;
 	box-shadow: 1px 3px 20px #777777;
 	padding: 3px 4px;
+	background-color: white;
+	opacity: 10%;
 }
 
 .feed section.link {
@@ -158,10 +165,6 @@ article a {
 	font-family: Roboto Mono;
 	font-weight: bold;
 	font-size: 12pt;
-}
-
-section {
-	margin: 5px 3px;
 }
 
 #projects h2 {

@@ -30,6 +30,7 @@ header {
 	padding: 15px;
 }
 header h1 {
+	font-family: "Space Mono", monospace;
 	font-size: 40pt;
 	margin: 10px 40px;
 }
@@ -162,7 +163,7 @@ article p {
 
 article a {
 	text-decoration: none;
-	font-family: Roboto Mono;
+	font-family: "Roboto Mono";
 	font-weight: bold;
 	font-size: 12pt;
 }

@@ -147,6 +147,16 @@
 			});
 		}
 		
+		if ($("attribution")) {
+			$("attribution").onclick = attributionPopup;
+		}
+		
 	});
+	
+	function attributionPopup() {
+		ajaxGET("attribution.txt", function(txt) {
+			alert(txt);
+		});
+	}
 	
 })();

@@ -25,6 +25,7 @@ header {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	align-content: flex-start;
 	
 	text-align: center;
 	padding: 15px;
@@ -33,6 +34,11 @@ header h1 {
 	font-family: "Space Mono", monospace;
 	font-size: 40pt;
 	margin: 10px 40px;
+}
+header img {
+	width: 10%;
+	height: 10%;
+	padding: 3vw;
 }
 nav {
 	display: flex;
@@ -72,12 +78,17 @@ footer div {
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
-footer div > * {
+footer * {
 	padding: 0px 10px;
 	margin: auto auto;
 }
 footer a {
 	padding: 10px 0px;
+}
+#attribution {
+	font-family: inherit;
+	font-size: inherit;
+	height: 
 }
 
 #introduction {
@@ -89,7 +100,7 @@ footer a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 75vh;
+	height: 65vh;
 }
 
 .feed {

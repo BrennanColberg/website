@@ -9,6 +9,12 @@ a:hover {
 	font-weight: bold;
 }
 
+body {
+	background-image: url("images/background.png");
+	background-size: auto;
+	background-color: white;
+}
+
 /* scaffolding borders *//*
 div, header, footer {
 	border: 1px dashed black;
@@ -85,10 +91,13 @@ footer * {
 footer a {
 	padding: 10px 0px;
 }
-#attribution {
+footer button {
 	font-family: inherit;
 	font-size: inherit;
 	height: 
+}
+footer img {
+	height: 25px;
 }
 
 #introduction {

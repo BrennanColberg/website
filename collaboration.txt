@@ -1,0 +1,3 @@
+ • I did not recieve any technical help for this project.
+ • I recieved graphical design feedback from peer Lia and my friend Roshani.
+ • I gave technical help to many people, including Lia, Annalice, Susie, and Suchi (in the form of writing tips [email linking code] on a whiteboard and answering flexbox CSS questions).

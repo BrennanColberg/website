@@ -151,12 +151,22 @@
 			$("attribution").onclick = attributionPopup;
 		}
 		
+		if ($("collaboration")) {
+			$("collaboration").onclick = collaborationPopup;
+		}
+		
 	});
 	
 	function attributionPopup() {
-		ajaxGET("attribution.txt", function(txt) {
-			alert(txt);
-		});
+		ajaxGET("attribution.txt", alertText);
+	}
+	
+	function collaborationPopup() {
+		ajaxGET("collaboration.txt", alertText);
+	}
+	
+	function alertText(txt) {
+		alert(txt);
 	}
 	
 })();

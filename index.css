@@ -1,10 +1,14 @@
-/*html {
-	overflow: hidden;
-}*/
+/*
+Name: Brennan Colberg
+Date: 08.28.18
+Section: CSE 190e
+This is the index.css page for my portfolio of web development work. It is used by all pages in my portfolio to give the site a consistent look and feel. 
+*/
 
 a {
 	color: darkslategray;
 }
+
 a:hover {
 	font-weight: bold;
 }
@@ -15,18 +19,6 @@ body {
 	background-color: white;
 }
 
-/* scaffolding borders *//*
-div, header, footer {
-	border: 1px dashed black;
-}
-article {
-	border: 2px solid green;
-}
-section {
-	border: 1px dashed red;
-}*/
-
-/* header */
 header {
 	display: flex;
 	flex-flow: row wrap;
@@ -36,25 +28,28 @@ header {
 	text-align: center;
 	padding: 15px;
 }
+
 header h1 {
 	font-family: "Space Mono", monospace;
 	font-size: 40pt;
 	margin: 10px 40px;
 }
+
 header img {
 	width: 10%;
 	height: 10%;
 	padding: 3vw;
 }
+
 nav {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	
 	border: 2px dashed gray;
 	border-radius: 10px;
 	margin: auto 0px;
 }
+
 nav p {
 	padding: 2px 4px;
 	margin: 12px 12px;
@@ -63,39 +58,44 @@ nav p {
 	border: 1pt dashed black;
 	border-radius: 5px;
 }
+
 nav a {
 	color: black;
 	text-decoration: underline;
 }
+
 nav a:hover {
 	font-weight: bold;
 }
 
-/* footer */
 footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	
 	padding: 5px;
 }
+
 footer div {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+
 footer * {
 	padding: 0px 10px;
 	margin: auto auto;
 }
+
 footer a {
 	padding: 10px 0px;
 }
+
 footer button {
 	font-family: inherit;
 	font-size: inherit;
 	height: 
 }
+
 footer img {
 	height: 25px;
 }
@@ -107,11 +107,13 @@ footer img {
 	padding-top: 0px;
 	padding: 20px;
 }
+
 #introduction > * {
 	font-family: sans-serif;
 	padding: 10px;
 	width: 100%;
 }
+
 #introduction img {
 	height: inherit;
 	width: auto;
@@ -135,13 +137,13 @@ footer img {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-
 	padding: 10px;
 	margin: 25px 3vw;
 	border: 3px solid; /* color defined independently below */
 	border-radius: 10px;
 	box-shadow: 3px 5px 25px #333333;
 }
+
 .feed section {
 	margin: 5px 3px;
 }
@@ -150,6 +152,7 @@ footer img {
 	border-color: red;
 	background-color: rgba(255, 0, 0, 0.1);
 }
+
 #blog article {
 	border-color: blue;
 	background-color: rgba(0, 0, 255, 0.1);

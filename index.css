@@ -103,7 +103,7 @@ footer img {
 #introduction {
 	display: flex;
 	flex-flow: row nowrap;
-	height: 100px;
+	height: 150px;
 	padding-top: 0px;
 	padding: 20px;
 }
@@ -118,6 +118,13 @@ footer img {
 	height: inherit;
 	width: auto;
 	border-radius: 25px;
+}
+#introduction ul {
+	display: flex;
+	list-style: none;
+}
+#introduction li {
+	padding: 0px 15px;
 }
 
 #content {

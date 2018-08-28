@@ -1,15 +1,16 @@
 [
 	{
-		"title": "My really horrible no good quite miserable día",
-		"subtitle": "like really, I almost died, which is not fun",
+		"title": "placeholder blog post #1",
+		"subtitle": "I'll put actual content here sometime",
 		"paragraphs": [
-			"Here is the story, in detail. ",
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum lorem lorem, sit amet lacinia lacus aliquet eget. Suspendisse potenti. Vivamus commodo ante non ultrices scelerisque. Suspendisse potenti. Vivamus eget eros erat. Duis molestie molestie dui, id sagittis justo condimentum in. Maecenas eleifend, ante nec pretium vestibulum, dui justo interdum velit, sit amet mattis libero elit eu dui. Cras vestibulum felis vitae pulvinar venenatis. Vestibulum porttitor lacinia tortor, vel vulputate nisi facilisis non. Phasellus in pellentesque sapien. Nunc efficitur eleifend metus, id auctor odio eleifend a. Nam in orci convallis, condimentum nisl nec, molestie augue. Fusce tincidunt scelerisque enim a sodales.",
 			"Proin interdum velit quis magna fermentum, id imperdiet lorem ultricies. Cras luctus iaculis sapien vitae tristique. Sed efficitur interdum blandit. Nulla tincidunt molestie tellus. Mauris auctor vehicula neque non bibendum. Nunc at arcu at nunc vehicula ultricies vel at arcu. Mauris eget tristique arcu. Integer sagittis leo augue, at fermentum ligula commodo in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Aliquam in finibus lacus, ut posuere lorem."
 		],
 		"link": "blog.html"
 	},
 	{
+		"title": "placeholder blog post #2",
+		"subtitle": "I'll replace this one too",
 		"paragraphs": [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non commodo felis, lacinia placerat ligula. Nulla vitae tortor ut est tempor congue. Donec tincidunt varius convallis. Phasellus laoreet diam vitae condimentum commodo. Vivamus ac dolor ligula. Curabitur venenatis consequat ante at vestibulum. Morbi lobortis, lectus sit amet accumsan lacinia, ante risus auctor dui, sollicitudin convallis sapien velit eget odio.",
 			"In in facilisis sem. Nulla porta tortor pulvinar, dignissim felis ac, venenatis nisl. Nam commodo turpis ac iaculis porta. Etiam tincidunt sem et est porttitor, nec rhoncus odio facilisis. Duis molestie quis felis id porta. Aenean lacinia mollis urna, a eleifend diam molestie ut. Morbi non diam sed neque luctus bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget magna purus. Duis nec aliquam tortor. Integer convallis lectus ut ligula accumsan placerat. Morbi vitae dignissim est. Aliquam at gravida lorem. Suspendisse quis nisl lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit."

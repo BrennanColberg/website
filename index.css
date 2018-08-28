@@ -101,8 +101,20 @@ footer img {
 }
 
 #introduction {
+	display: flex;
+	flex-flow: row nowrap;
+	height: 100px;
+	padding: 20px;
+}
+#introduction > * {
 	font-family: sans-serif;
 	padding: 10px;
+	width: 100%;
+}
+#introduction img {
+	height: inherit;
+	width: auto;
+	border-radius: 25px;
 }
 
 #content {

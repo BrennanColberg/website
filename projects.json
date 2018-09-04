@@ -1,5 +1,19 @@
 [
 	{
+		"title": "Sentence Generator",
+		"description": "Exploring natural language processing for a presentation, I made a grammar parser which can randomly generate sentences in various languages. I plan to use it to create a math problem generator.",
+		"links": [
+			{
+				"text": "[website]",
+				"href": "https://students.washington.edu/bcolberg/grammar/"
+			},
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/grammar/"
+			}
+		]
+	},
+	{
 		"title": "Carbon Cycle Simulator",
 		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Well, I did, and here's the result!",
 		"links": [

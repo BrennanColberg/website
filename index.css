@@ -7,7 +7,6 @@ a:hover {
 }
 
 body {
-	background-image: url("images/background.png");
 	background-size: auto;
 	background-color: white;
 }
@@ -17,7 +16,6 @@ header {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: flex-start;
-	
 	text-align: center;
 	padding: 15px;
 }

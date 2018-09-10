@@ -1,12 +1,3 @@
-
-/*
-Name: Brennan Colberg
-Date: 08.28.18
-Section: CSE 190e
-This is the index.js page for my portfolio of web development work. It procedurally generates HTML DOM elements to fill in content on my webpage from JSON files consistently. Use of this allows me to dynamically and modularly update my website's content across many HTML pages.
-*/
-
-
 "use strict";
 (function() {
 	

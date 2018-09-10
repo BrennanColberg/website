@@ -1,10 +1,3 @@
-/*
-Name: Brennan Colberg
-Date: 08.28.18
-Section: CSE 190e
-This is the index.css page for my portfolio of web development work. It is used by all pages in my portfolio to give the site a consistent look and feel. 
-*/
-
 a {
 	color: darkslategray;
 }
@@ -93,7 +86,6 @@ footer a {
 footer button {
 	font-family: inherit;
 	font-size: inherit;
-	height: 
 }
 
 footer img {
@@ -172,7 +164,7 @@ article .text {
 	box-shadow: 1px 3px 20px #777777;
 	padding: 3px 4px;
 	background-color: white;
-	opacity: 10%;
+	opacity: 0.75;
 }
 
 .feed section.link {

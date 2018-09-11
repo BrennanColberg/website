@@ -42,6 +42,16 @@
 		]
 	},
 	{
+		"title": "Binary Quiz (App Lab)",
+		"description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Made with code.org's \"App Lab\".",
+		"links": [
+			{
+				"text": "[use it]",
+				"link": "https://studio.code.org/projects/applab/qIUEXKwKGgHDxjoZzQzEQo8JtBmT3YWbUAoQD1p8dU4"
+			}
+		]
+	},
+	{
 		"title": "FMBQ Jump Lights",
 		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
 		"links": [

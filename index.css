@@ -1,3 +1,7 @@
+:data {
+	--project-background-opacity: 1;
+}
+
 a {
 	color: darkslategray;
 }
@@ -9,6 +13,19 @@ a:hover {
 body {
 	background-size: auto;
 	background-color: white;
+}
+
+.bordered.java {
+	border-color: rgb(175, 113, 37);
+	background-color: rgba(175, 113, 37, 0.15);
+}
+.bordered.javascript {
+	border-color: rgb(240, 223, 101);
+	background-color: rgba(240, 223, 101, 0.15);
+}
+.bordered.php {
+	border-color: rgb(80, 94, 147);
+	background-color: rgba(80, 94, 147, 0.15);
 }
 
 header {
@@ -63,51 +80,38 @@ footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	padding: 5px;
+	margin: 5px;
 }
 
-footer div {
+#contact {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+#contact p {
+	margin: auto 10px;
+}
 
-footer * {
-	padding: 0px 10px;
-	margin: auto auto;
+footer > * {
+	margin: 5px 10px;
 }
 
 footer a {
 	padding: 10px 0px;
 }
 
-footer button {
-	font-family: inherit;
-	font-size: inherit;
-}
-
-footer img {
-	height: 25px;
-}
-
 #introduction {
-	display: flex;
-	flex-flow: row nowrap;
-	height: 150px;
-	padding-top: 0px;
-	padding: 20px;
-}
-
-#introduction > * {
+	margin: 20px;
+	text-align: justify;
 	font-family: sans-serif;
-	padding: 10px;
-	width: 100%;
 }
 
 #introduction img {
-	height: inherit;
-	width: auto;
+	float: right;
+	margin: 10px;
+	height: 150px;
 	border-radius: 25px;
+	width: auto;
 }
 #introduction ul {
 	display: flex;
@@ -117,48 +121,54 @@ footer img {
 	padding: 0px 15px;
 }
 
-#content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	height: 65vh;
+body > h2,
+body > h2 a {
+	margin: 15px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: normal;
+	color: black;
+	font-size: 20pt; 	
 }
 
-.feed {
-	height: inherit;
-	overflow: scroll;
-	margin: 0px 1vw;
-}
-
-.feed article {
+article {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
 	padding: 10px;
-	margin: 25px 3vw;
-	border: 3px solid; /* color defined independently below */
+	margin: 15px;
+	border: 5px solid; /* color defined independently below */
 	border-radius: 10px;
 	box-shadow: 3px 5px 25px #333333;
 }
 
-.feed section {
+article section {
 	margin: 5px 3px;
 }
 
-#projects article {
-	border-color: red;
-	background-color: rgba(255, 0, 0, 0.1);
+#projects {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 2;
+	height: 480px;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
-#blog article {
-	border-color: blue;
-	background-color: rgba(0, 0, 255, 0.1);
+#projects article {
+	width: 200px;
+}
+
+#projects h2 {
+	text-align: center;
 }
 
 article .text {
 	border: inherit;
 	border-radius: inherit;
-	border-width: 1.5px;
+	border-width: 3px;
 	box-shadow: 1px 3px 20px #777777;
 	padding: 3px 4px;
 	background-color: white;
@@ -199,19 +209,4 @@ article a {
 	font-family: "Roboto Mono";
 	font-weight: bold;
 	font-size: 12pt;
-}
-
-#projects h2 {
-	text-align: center;
-}
-
-.feed > p,
-.feed > p a {
-	margin: 15px;
-	order: 0;
-	text-align: center;
-	text-decoration: underline;
-	color: black;
-	font-size: 20pt;
-	
 }

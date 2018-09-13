@@ -10,73 +10,80 @@
 		if ($("projects")) {
 			ajaxGET("projects.json", function(json) {
 				let div = $("projects");
-				let data = JSON.parse(json);
-				for (let i = 0; i < data.length; i++) {
+				let projects = JSON.parse(json);
+				for (let i = 0; i < projects.length; i++) {
+					
 
-					let datum = data[i];
-					let project = ce("article");
+					let project = projects[i];
+					let article = ce("article");
 
 					// title
-					if (datum["title"]) {
+					if (project["title"]) {
 						let titleSection = ce("section");
 						titleSection.className = "title";
 						let title = ce("h2");
-						title.textContent = datum["title"];
+						title.textContent = project["title"];
 						titleSection.appendChild(title);
-						project.appendChild(titleSection);
+						article.appendChild(titleSection);
 					}
 
 					// links
-					if (datum["links"]) {
+					if (project["links"]) {
 						let linkSection = ce("section");
 						linkSection.className = "link";
-						for (let l = 0; l < datum["links"].length; l++) {
+						for (let l = 0; l < project["links"].length; l++) {
 							let p = ce("p");
 							let a = ce("a");
-							a.textContent = datum["links"][l].text;
-							a.href = datum["links"][l].href;
+							a.textContent = project["links"][l].text;
+							a.href = project["links"][l].href;
 							a.target = "_blank";
 							p.appendChild(a);
 							linkSection.appendChild(p);
 						}
-						project.appendChild(linkSection);
+						article.appendChild(linkSection);
 					}
 
 					// description
-					if (datum["description"]) {
+					if (project["description"]) {
 						let textSection = ce("section");
 						textSection.className = "text";
 						let text = ce("p");
-						text.textContent = datum["description"];
+						text.textContent = project["description"];
 						textSection.appendChild(text);
-						project.appendChild(textSection);
+						article.appendChild(textSection);
+					}
+					
+					if (project["language"]) {
+						article.classList.add("bordered");
+						article.classList.add(project["language"]);
 					}
 
-					div.appendChild(project);
+					div.appendChild(article);
 
 				}
 			});
 		}
+		
 		
 		if ($("blog")) {
 			ajaxGET("blog.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
 
-					let datum = data[i];
+					let project = data[i];
 					let post = ce("article");
 
 					// title
 					let titleSection = ce("section");
 					titleSection.className = "title";
-					if (datum["title"]) {
+					if (project["title"]) {
 						let title = ce("h2");
-						title.textContent = datum["title"];
+						title.textContent = project["title"];
 						titleSection.appendChild(title);
 					}
-					if (datum["subtitle"]) {
+					if (project["subtitle"]) {
 						let subtitle = ce("h4");
-						subtitle.textContent = datum["subtitle"];
+						subtitle.textContent = project["subtitle"];
 						titleSection.appendChild(subtitle);
 					}
 					if (titleSection.childElementCount > 0) {
@@ -84,23 +91,23 @@
 					}
 
 					// links
-					if (datum["paragraphs"]) {
+					if (project["paragraphs"]) {
 						let textSection = ce("section");
 						textSection.className = "text";
-						for (let l = 0; l < datum["paragraphs"].length; l++) {
+						for (let l = 0; l < project["paragraphs"].length; l++) {
 							let p = ce("p");
-							p.textContent = datum["paragraphs"][l];
+							p.textContent = project["paragraphs"][l];
 							textSection.appendChild(p);
 						}
 						post.appendChild(textSection);
 					}
 
 					// description
-					if (datum["link"]) {
+					if (project["link"]) {
 						let linkSection = ce("section");
 						linkSection.className = "link";
 						let link = ce("a");
-						link.href = datum["link"];
+						link.href = project["link"];
 						link.textContent = "[read more]";
 						linkSection.appendChild(link);
 						post.appendChild(linkSection);

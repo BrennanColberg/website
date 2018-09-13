@@ -1,7 +1,19 @@
 [
 	{
-		"title": "Sentence Generator",
+		"title": "BFramework",
+		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
+		"language": "java",
+		"links": [
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/BFramework-C.5.12/"
+			}
+		]
+	},
+	{
+		"title": "Backus-Naur Sentence Generator",
 		"description": "Exploring natural language processing for a presentation, I made a grammar parser which can randomly generate sentences in various languages. I plan to use it to create a math problem generator.",
+		"language": "php",
 		"links": [
 			{
 				"text": "[use it]",
@@ -15,7 +27,8 @@
 	},
 	{
 		"title": "Carbon Cycle Simulator",
-		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Well, I did, and here's the result!",
+		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Working with the instructor, I then created this website!",
+		"language": "javascript",
 		"links": [
 			{
 				"text": "[use it]",
@@ -29,7 +42,8 @@
 	},
 	{
 		"title": "Axis & Allies Dashboard",
-		"description": "Have you ever been playing a nice game of \"Axis & Allies\"™ yet cannot remember whose turn it is or lack sufficiently badass music? Worry no longer! This website cycles through the countries in proper order, showing their flags and playing their anthems (all as in WWII)!",
+		"description": "Have you ever been playing a nice game of \"Axis & Allies\"™ yet cannot remember whose turn it is or lack sufficiently invigorating music? Worry no longer! This website cycles through the countries in proper order, showing their flags and playing their anthems (all as in WWII)!",
+		"language": "javascript",
 		"links": [
 			{
 				"text": "[use it]",
@@ -44,6 +58,7 @@
 	{
 		"title": "Binary Quiz (App Lab)",
 		"description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Made with code.org's \"App Lab\".",
+		"language": "javascript",
 		"links": [
 			{
 				"text": "[use it]",
@@ -54,6 +69,7 @@
 	{
 		"title": "FMBQ Jump Lights",
 		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
+		"language": "javascript",
 		"links": [
 			{
 				"text": "[use it]",
@@ -62,16 +78,6 @@
 			{
 				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/fmbq/"
-			}
-		]
-	},
-	{
-		"title": "BFramework C",
-		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
-		"links": [
-			{
-				"text": "[code]",
-				"href": "https://github.com/BrennanColberg/BFramework-C.5.12/"
 			}
 		]
 	}

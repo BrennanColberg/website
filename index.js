@@ -1,23 +1,44 @@
+/**	This JavaScript file loads all content into the HTML pages on which it is
+ *	linked; it queries various JSON files stored in this same directory and
+ *	interprets them in order to populate various categories of data.
+ *
+ *	Why do it like this, you may ask?
+ *		I do it in order to easily update information and content; with this
+ *		method, I need only change one file to have its content (be it a list
+ *		of projects, blog posts, contact info, or a menu) distributed throughout
+ *		my entire website in updated form. It takes a small delay, but the
+ *		development convenience far outweighs this.
+ */
+
 "use strict";
 (function() {
 	
+	// shortcuts to manipulate DOM elements more easily
 	function $(id) { return document.getElementById(id); }
 	function ce(tag) { return document.createElement(tag); }
 	
 	window.addEventListener("load", function() {
 		
-		// ajax code gotten from CSE 154, hosted on personal repository
+		// populates "projects" DOM element with various <article> elements,
+		// each of which has a title, some links, and a description of the
+		// projects. Also gives it a class related to the language each project
+		// was programmed in, which changes its color in the CSS!
 		if ($("projects")) {
+			// only queries for file if there's an object to put it in
 			ajaxGET("projects.json", function(json) {
 				let div = $("projects");
 				let projects = JSON.parse(json);
 				for (let i = 0; i < projects.length; i++) {
-					
-
 					let project = projects[i];
+					// creates new DOM element
 					let article = ce("article");
-
-					// title
+					// conditionally adds a colored border if a language is
+					// set, to show the language
+					if (project["language"]) {
+						article.classList.add("bordered");
+						article.classList.add(project["language"]);
+					}
+					// parses and adds title in <h2> form
 					if (project["title"]) {
 						let titleSection = ce("section");
 						titleSection.className = "title";
@@ -26,8 +47,7 @@
 						titleSection.appendChild(title);
 						article.appendChild(titleSection);
 					}
-
-					// links
+					// adds links within a specific <section>
 					if (project["links"]) {
 						let linkSection = ce("section");
 						linkSection.className = "link";
@@ -42,8 +62,7 @@
 						}
 						article.appendChild(linkSection);
 					}
-
-					// description
+					// adds description within a <p> element
 					if (project["description"]) {
 						let textSection = ce("section");
 						textSection.className = "text";
@@ -52,128 +71,101 @@
 						textSection.appendChild(text);
 						article.appendChild(textSection);
 					}
-					
-					if (project["language"]) {
-						article.classList.add("bordered");
-						article.classList.add(project["language"]);
-					}
-
+					// adds new complete <article> to DOM
 					div.appendChild(article);
-
 				}
 			});
 		}
 		
-		
+		// populates "blog" DOM element with various <article> elements, in a
+		// manner extremely similar to the "projects" section. No coloring.
 		if ($("blog")) {
 			ajaxGET("blog.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
-
-					let project = data[i];
-					let post = ce("article");
-
-					// title
+					let post = data[i];
+					// creates <article> element
+					let article = ce("article");
+					// loads title (<h2>) and subtitle (<h4>)
 					let titleSection = ce("section");
 					titleSection.className = "title";
-					if (project["title"]) {
+					if (post["title"]) {
 						let title = ce("h2");
-						title.textContent = project["title"];
+						title.textContent = post["title"];
 						titleSection.appendChild(title);
 					}
-					if (project["subtitle"]) {
+					if (post["subtitle"]) {
 						let subtitle = ce("h4");
-						subtitle.textContent = project["subtitle"];
+						subtitle.textContent = post["subtitle"];
 						titleSection.appendChild(subtitle);
 					}
 					if (titleSection.childElementCount > 0) {
-						post.appendChild(titleSection);
+						// only adds if there's either a title or subtitle
+						article.appendChild(titleSection);
 					}
-
-					// links
-					if (project["paragraphs"]) {
+					// adds each paragraph as a <p>, all to one <section>
+					if (post["paragraphs"]) {
 						let textSection = ce("section");
 						textSection.className = "text";
-						for (let l = 0; l < project["paragraphs"].length; l++) {
+						for (let l = 0; l < post["paragraphs"].length; l++) {
 							let p = ce("p");
-							p.textContent = project["paragraphs"][l];
+							p.textContent = post["paragraphs"][l];
 							textSection.appendChild(p);
 						}
-						post.appendChild(textSection);
+						article.appendChild(textSection);
 					}
-
-					// description
-					if (project["link"]) {
+					// adds a link to continue reading
+					// this will eventually lead to its own page!
+					if (post["link"]) {
 						let linkSection = ce("section");
 						linkSection.className = "link";
 						let link = ce("a");
-						link.href = project["link"];
+						link.href = post["link"];
 						link.textContent = "[read more]";
 						linkSection.appendChild(link);
-						post.appendChild(linkSection);
+						article.appendChild(linkSection);
 					}
-
-					$("blog").appendChild(post);
-
+					// adds composed <article> to DOM element
+					$("blog").appendChild(article);
 				}
 			});
 		}
 		
+		// populates "menu" DOM element with a constant site-wide navigation
 		if ($("menu")) {
 			ajaxGET("menu.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
+					// creates an <a> within a <p> for each menu item
 					let p = ce("p");
 					let a = ce("a");
 					a.textContent = data[i]["text"];
 					a.href = data[i]["href"];
 					p.appendChild(a);
+					// adds each menu item directly to the parent DOM
 					$("menu").appendChild(p);
 				}
 			});
 		}
 		
+		// populates footer with links to social media and contact information
 		if ($("contact")) {
 			ajaxGET("contact.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
+					// <a> within <p> for each individual option
 					let p = ce("p");
 					let a = ce("a");
 					a.textContent = data[i]["text"];
 					a.href = data[i]["href"];
-					a.target = "_blank";
+					a.target = "_blank"; // opens each link in new tab!
 					p.appendChild(a);
+					// adds each option to parent DOM individually
 					$("contact").appendChild(p);
 				}
 			});
 		}
 		
-		if ($("introduction")) {
-			ajaxGET("introduction.html", function(html) {
-				$("introduction").innerHTML = html;
-			});
-		}
-		
-		if ($("attribution")) {
-			$("attribution").onclick = attributionPopup;
-		}
-		
-		if ($("collaboration")) {
-			$("collaboration").onclick = collaborationPopup;
-		}
-		
 	});
-	
-	function attributionPopup() {
-		ajaxGET("attribution.txt", alertText);
-	}
-	
-	function collaborationPopup() {
-		ajaxGET("collaboration.txt", alertText);
-	}
-	
-	function alertText(txt) {
-		alert(txt);
-	}
 	
 })();

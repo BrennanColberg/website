@@ -80,31 +80,24 @@ footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	padding: 5px;
+	margin: 5px;
 }
 
-footer div {
+#contact {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+#contact p {
+	margin: auto 10px;
+}
 
-footer * {
-	padding: 0px 10px;
-	margin: auto auto;
+footer > * {
+	margin: 5px 10px;
 }
 
 footer a {
 	padding: 10px 0px;
-}
-
-footer button {
-	font-family: inherit;
-	font-size: inherit;
-}
-
-footer img {
-	height: 25px;
 }
 
 #introduction {
@@ -159,7 +152,7 @@ article section {
 	align-content: flex-start;
 	justify-content: flex-start;
 	flex-shrink: 2;
-	height: 100vh;
+	height: 480px;
 	overflow-x: scroll;
 	overflow-y: hidden;
 }

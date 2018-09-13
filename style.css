@@ -106,21 +106,6 @@ footer a {
 	font-family: sans-serif;
 }
 
-#introduction img {
-	float: right;
-	margin: 10px;
-	height: 150px;
-	border-radius: 25px;
-	width: auto;
-}
-#introduction ul {
-	display: flex;
-	list-style: none;
-}
-#introduction li {
-	padding: 0px 15px;
-}
-
 body > h2,
 body > h2 a {
 	margin: 15px;

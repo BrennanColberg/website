@@ -1,10 +1,10 @@
 [
 	{
 		"text": "Home",
-		"href": "index.html"
+		"href": "../home/"
 	},
 	{
 		"text": "Projects",
-		"href": "projects.html"
+		"href": "../projects/"
 	}
 ]

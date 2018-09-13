@@ -25,7 +25,7 @@
 		// was programmed in, which changes its color in the CSS!
 		if ($("projects")) {
 			// only queries for file if there's an object to put it in
-			ajaxGET("projects.json", function(json) {
+			ajaxGET("../projects/projects.json", function(json) {
 				let div = $("projects");
 				let projects = JSON.parse(json);
 				for (let i = 0; i < projects.length; i++) {
@@ -80,7 +80,7 @@
 		// populates "blog" DOM element with various <article> elements, in a
 		// manner extremely similar to the "projects" section. No coloring.
 		if ($("blog")) {
-			ajaxGET("blog.json", function(json) {
+			ajaxGET("../blog/blog.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
 					let post = data[i];
@@ -133,7 +133,7 @@
 		
 		// populates "menu" DOM element with a constant site-wide navigation
 		if ($("menu")) {
-			ajaxGET("menu.json", function(json) {
+			ajaxGET("../menu.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
 					// creates an <a> within a <p> for each menu item
@@ -150,7 +150,7 @@
 		
 		// populates footer with links to social media and contact information
 		if ($("contact")) {
-			ajaxGET("contact.json", function(json) {
+			ajaxGET("../contact.json", function(json) {
 				let data = JSON.parse(json);
 				for (let i = 0; i < data.length; i++) {
 					// <a> within <p> for each individual option

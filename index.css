@@ -111,15 +111,14 @@ footer img {
 	padding: 0px 15px;
 }
 
-#content > p,
-#content > p a {
+body > h2,
+body > h2 a {
 	margin: 15px;
-	order: 0;
 	text-align: center;
 	text-decoration: underline;
+	font-weight: normal;
 	color: black;
 	font-size: 20pt;
-	
 }
 
 article {

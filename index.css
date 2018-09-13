@@ -126,7 +126,7 @@ article {
 	flex-flow: row wrap;
 	padding: 10px;
 	margin: 15px;
-	border: 3px solid; /* color defined independently below */
+	border: 5px solid; /* color defined independently below */
 	border-radius: 10px;
 	box-shadow: 3px 5px 25px #333333;
 }
@@ -149,9 +149,9 @@ article section {
 }
 
 #projects article {
-	--project-color: red;
-	border-color: var(--project-color);
-	background-color: rgba(var(--project-color), 0.5);
+	--language-color: red;
+	border-color: var(--language-color);
+	background-color: rgba(var(--language-color), 0.5);
 	width: 200px;
 }
 
@@ -167,7 +167,7 @@ article section {
 article .text {
 	border: inherit;
 	border-radius: inherit;
-	border-width: 1.5px;
+	border-width: 3px;
 	box-shadow: 1px 3px 20px #777777;
 	padding: 3px 4px;
 	background-color: white;

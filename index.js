@@ -10,10 +10,9 @@
 		if ($("projects")) {
 			ajaxGET("projects.json", function(json) {
 				let div = $("projects");
-				let data = JSON.parse(json);
-				let projects = data.projects;
-				let languages = data.languages;
+				let projects = JSON.parse(json);
 				for (let i = 0; i < projects.length; i++) {
+					
 
 					let project = projects[i];
 					let article = ce("article");
@@ -54,9 +53,9 @@
 						article.appendChild(textSection);
 					}
 					
-					let color = languages[project["language"]]
-					if (color) {
-						article.style.setProperty("--language-color", color);
+					if (project["language"]) {
+						article.classList.add("bordered");
+						article.classList.add(project["language"]);
 					}
 
 					div.appendChild(article);

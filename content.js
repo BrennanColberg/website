@@ -16,6 +16,20 @@
 	// shortcuts to manipulate DOM elements more easily
 	function $(id) { return document.getElementById(id); }
 	function ce(tag) { return document.createElement(tag); }
+	// generic AJAX GET method, adapted from my code hosted online at
+	// https://brennancolberg.github.io/abbr/js/ajax.js
+	function ajaxGET(url, onSuccess) {
+		fetch(url, { credentials: "include" })
+			.then(function(r) { 
+				if (r.status >= 200 && r.status < 300) {
+					return r.text();
+				}
+			})
+			.then(onSuccess)
+			.catch(function(e) { 
+				console.log(e);
+			});
+	}
 	
 	window.addEventListener("load", function() {
 		

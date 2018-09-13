@@ -11,9 +11,10 @@
 			ajaxGET("projects.json", function(json) {
 				let div = $("projects");
 				let data = JSON.parse(json);
-				for (let i = 0; i < data.length; i++) {
+				let projects = Object.keys(data);
+				for (let i = 0; i < projects.length; i++) {
 
-					let datum = data[i];
+					let datum = data[projects[i]];
 					let project = ce("article");
 
 					// title
@@ -55,8 +56,13 @@
 					div.appendChild(project);
 
 				}
+				ajaxGET("languages.json", function(json) {
+					let languageKey = JSON.parse(json);
+					
+				});
 			});
 		}
+		
 		
 		if ($("blog")) {
 			ajaxGET("blog.json", function(json) {

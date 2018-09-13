@@ -1,6 +1,17 @@
 [
 	{
-		"title": "Sentence Generator",
+		"title": "BFramework",
+		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
+		"language": "java",
+		"links": [
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/BFramework-C.5.12/"
+			}
+		]
+	},
+	{
+		"title": "Backus-Naur Sentence Generator",
 		"description": "Exploring natural language processing for a presentation, I made a grammar parser which can randomly generate sentences in various languages. I plan to use it to create a math problem generator.",
 		"language": "php",
 		"links": [
@@ -16,7 +27,7 @@
 	},
 	{
 		"title": "Carbon Cycle Simulator",
-		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Well, I did, and here's the result!",
+		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Working with the instructor, I then created this website!",
 		"language": "javascript",
 		"links": [
 			{
@@ -67,17 +78,6 @@
 			{
 				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/fmbq/"
-			}
-		]
-	},
-	{
-		"title": "BFramework",
-		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
-		"language": "java",
-		"links": [
-			{
-				"text": "[code]",
-				"href": "https://github.com/BrennanColberg/BFramework-C.5.12/"
 			}
 		]
 	}

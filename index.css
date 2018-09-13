@@ -149,8 +149,9 @@ article section {
 }
 
 #projects article {
-	border-color: red;
-	background-color: rgba(255, 0, 0, 0.1);
+	--project-color: red;
+	border-color: var(--project-color);
+	background-color: rgba(var(--project-color), 0.5);
 	width: 200px;
 }
 

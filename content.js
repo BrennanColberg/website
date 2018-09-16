@@ -111,7 +111,7 @@
 				if ($("project-languages")) {
 					let div = $("project-languages");
 					for (let i = 0; i < languages.length; i++) {
-						let p = ce("p");
+						let p = ce("h4");
 						p.textContent = data[languages[i]].name;
 						p.classList.add(languages[i]);
 						div.appendChild(p);

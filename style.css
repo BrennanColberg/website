@@ -120,7 +120,7 @@ article section {
 #project-languages {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 #project-languages * {
@@ -136,9 +136,15 @@ article section {
 	align-content: flex-start;
 	justify-content: flex-start;
 	flex-shrink: 2;
-	height: 480px;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	padding: 5px;
+}
+#page-home #projects {
+	height: 500px;
+}
+#page-projects #projects {
+	height: 1000px;
 }
 
 #projects article {

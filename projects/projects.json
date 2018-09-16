@@ -67,6 +67,17 @@
 		]
 	},
 	{
+		"title": "Pranks",
+		"description": "A collection of simple BASH commands with humorous effects, hosted online so that I can easily access and run them on other computers.",
+		"language": "shell",
+		"links": [
+			{
+				"text": "[view]",
+				"href": "https://github.com/BrennanColberg/pranks"
+			}
+		]
+	},
+	{
 		"title": "Binary Quiz (App Lab)",
 		"description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Made with code.org's \"App Lab\".",
 		"language": "javascript",

@@ -49,7 +49,6 @@
 					// conditionally adds a colored border if a language is
 					// set, to show the language
 					if (project["language"]) {
-						article.classList.add("bordered");
 						article.classList.add(project["language"]);
 					}
 					// parses and adds title in <h2> form
@@ -89,18 +88,14 @@
 					div.appendChild(article);
 				}
 			});
-		}
-		
-		if ($("project-languages")) {
 			ajaxGET("../projects/languages.json", function(json) {
-				let sheet = window.document.styleSheets[0];
 				let data = JSON.parse(json);
 				let languages = Object.keys(data);
-				console.log(data);
+				
+				let sheet = window.document.styleSheets[0];
 				let css = "";
 				for (let i = 0; i < languages.length; i++) {
 					let language = data[languages[i]];
-					console.log(language);
 					let rgb = language.rgba;
 					let colorString = rgb[0] + ", " + rgb[1] + ", " + rgb[2];
 					css += "." + languages[i] + " {\n";
@@ -111,9 +106,21 @@
 				let style = ce("style");
 				style.rel = "stylesheet";
 				style.innerHTML = css;
-				document.querySelector("head").appendChild(style);
+				document.querySelector("head").prepend(style);
+				
+				if ($("project-languages")) {
+					let div = $("project-languages");
+					for (let i = 0; i < languages.length; i++) {
+						let p = ce("p");
+						p.textContent = data[languages[i]].name;
+						p.classList.add(languages[i]);
+						div.appendChild(p);
+					}
+				}
+				
 			});
 		}
+		
 		
 		// populates "blog" DOM element with various <article> elements, in a
 		// manner extremely similar to the "projects" section. No coloring.

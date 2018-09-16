@@ -117,6 +117,19 @@ article section {
 	margin: 5px 3px;
 }
 
+#project-languages {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+#project-languages * {
+	padding: 5px 10px;
+	margin: 5px;
+	border: 2px solid;
+	border-radius: 5px;
+}
+
 #projects {
 	display: flex;
 	flex-direction: column;
@@ -138,9 +151,9 @@ article section {
 }
 
 article .text {
-	border: inherit;
+	border: 3px solid;
+	border-color: inherit;
 	border-radius: inherit;
-	border-width: 3px;
 	box-shadow: 1px 3px 20px #777777;
 	padding: 3px 4px;
 	background-color: white;

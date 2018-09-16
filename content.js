@@ -91,6 +91,30 @@
 			});
 		}
 		
+		if ($("project-languages")) {
+			ajaxGET("../projects/languages.json", function(json) {
+				let sheet = window.document.styleSheets[0];
+				let data = JSON.parse(json);
+				let languages = Object.keys(data);
+				console.log(data);
+				let css = "";
+				for (let i = 0; i < languages.length; i++) {
+					let language = data[languages[i]];
+					console.log(language);
+					let rgb = language.rgba;
+					let colorString = rgb[0] + ", " + rgb[1] + ", " + rgb[2];
+					css += "." + languages[i] + " {\n";
+					css += "\tborder-color: rgb(" + colorString + ");\n";
+					css += "\tbackground-color: rgba(" + colorString + ", " + rgb[3] + ");\n";
+					css += "}\n";
+				}
+				let style = ce("style");
+				style.rel = "stylesheet";
+				style.innerHTML = css;
+				document.querySelector("head").appendChild(style);
+			});
+		}
+		
 		// populates "blog" DOM element with various <article> elements, in a
 		// manner extremely similar to the "projects" section. No coloring.
 		if ($("blog")) {

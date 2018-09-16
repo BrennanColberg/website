@@ -15,19 +15,6 @@ body {
 	background-color: white;
 }
 
-.bordered.java {
-	border-color: rgb(175, 113, 37);
-	background-color: rgba(175, 113, 37, 0.15);
-}
-.bordered.javascript {
-	border-color: rgb(240, 223, 101);
-	background-color: rgba(240, 223, 101, 0.15);
-}
-.bordered.php {
-	border-color: rgb(80, 94, 147);
-	background-color: rgba(80, 94, 147, 0.15);
-}
-
 header {
 	display: flex;
 	flex-flow: row wrap;

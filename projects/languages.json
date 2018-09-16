@@ -1,0 +1,22 @@
+{
+	"java": {
+		"name": "Java",
+		"rgba": [175, 113, 37, 0.15]
+	},
+	"javascript": {
+		"name": "JavaScript",
+		"rgba": [240, 223, 101, 0.15]
+	},
+	"php": {
+		"name": "PHP",
+		"rgba": [80, 94, 147, 0.15]
+	},
+	"python": {
+		"name": "Python",
+		"rgba": [53, 114, 165, 0.15]
+	},
+	"shell": {
+		"name": "Shell",
+		"rgba": [137, 224, 81, 0.15]
+	}
+}

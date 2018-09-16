@@ -88,18 +88,27 @@
 					div.appendChild(article);
 				}
 			});
+			// queries for the languages if there's a project file, in order to
+			// create CSS rules to color each project according to the language
+			// in which it was programmed (matching GitHub conventions on these
+			// language-specific colors). Also, if there's a div for it, creates
+			// a key for the colors!
 			ajaxGET("../projects/languages.json", function(json) {
 				let data = JSON.parse(json);
 				let languages = Object.keys(data);
 				
-				let sheet = window.document.styleSheets[0];
+				// adds custom CSS to the document's <head> to link each
+				// language (as a class) with its color (specifically, sets
+				// both background and border to be that color)
 				let css = "";
 				for (let i = 0; i < languages.length; i++) {
 					let language = data[languages[i]];
 					let rgb = language.rgba;
 					let colorString = rgb[0] + ", " + rgb[1] + ", " + rgb[2];
 					css += "." + languages[i] + " {\n";
+					// border-color set
 					css += "\tborder-color: rgb(" + colorString + ");\n";
+					// background-color set
 					css += "\tbackground-color: rgba(" + colorString + ", " + rgb[3] + ");\n";
 					css += "}\n";
 				}
@@ -108,6 +117,8 @@
 				style.innerHTML = css;
 				document.querySelector("head").prepend(style);
 				
+				// if there's a div for it, puts a colored key so that the user
+				// knows which color links with which language!
 				if ($("project-languages")) {
 					let div = $("project-languages");
 					for (let i = 0; i < languages.length; i++) {

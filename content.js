@@ -32,12 +32,16 @@
 			});
 	}
 	
+	// DOM elements representing project writeups
+	let projectDOMs = [];
+	
 	window.addEventListener("load", function() {
 		
 		// only queries for each file if there's an object to put it in
 		if ($("projects")) {
 			ajaxGET("../projects/projects.json", loadProjects);
 			ajaxGET("../projects/languages.json", loadProjectLanguages);
+			// reformats the display of the projects as the window resizes
 			window.addEventListener("resize", showProjects);
 		}
 		if ($("blog")) ajaxGET("../blog/blog.json", loadBlog);
@@ -45,8 +49,6 @@
 		if ($("contact")) ajaxGET("../contact.json", loadContact);
 		
 	});
-	
-	let projectDOMs = [];
 	
 	// populates "projects" DOM element with various <article> elements,
 	// each of which has a title, some links, and a description of the
@@ -97,27 +99,34 @@
 				textSection.appendChild(text);
 				article.appendChild(textSection);
 			}
+			// adds the new DOM to the list of these
 			projectDOMs.push(article);
 		}
-		console.log(projectDOMs);
+		// displays the DOMs dynamically
 		showProjects();
 	}
 	
+	// puts the project DOM elements inside column divs within the #projects
+	// display, depending on the window width. Easy to call to reformat the
+	// way these are displayed based on changing width!
 	function showProjects() {
 		let projects = $("projects");
-		while (projects.firstChild) projects.removeChild(projects.firstChild);
+		let width = projects.offsetWidth;
 		let cols = [];
 		cols[0] = ce("div");
-		console.log(window.innerWidth);
-		while ((cols.length + 1) * 260 < window.innerWidth) {
+		// creates the maximum amount of columns to fill the avaialble width
+		// without overflow
+		while ((cols.length + 1) * 260 < width)
 			cols[cols.length] = ce("div");
-		}
-		for (let i = 0; i < cols.length; i++) {
-			$("projects").appendChild(cols[i]);
-		}
-		for (let i = 0; i < projectDOMs.length; i++) {
+		// chears projects div, thenn attaches columns to the projects div
+		// to replace the old elements
+		while (projects.firstChild)
+			projects.removeChild(projects.firstChild);
+		for (let i = 0; i < cols.length; i++)
+			projects.appendChild(cols[i]);
+		// distributes projects to columns iteratively
+		for (let i = 0; i < projectDOMs.length; i++)
 			cols[i % cols.length].appendChild(projectDOMs[i]);
-		}
 	}
 	
 	// queries for the languages if there's a project file, in order to

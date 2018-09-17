@@ -34,6 +34,7 @@
 	
 	// DOM elements representing project writeups
 	let projectDOMs = [];
+	let languageFilter = [];
 	
 	window.addEventListener("load", function() {
 		
@@ -110,8 +111,8 @@
 	// display, depending on the window width. Easy to call to reformat the
 	// way these are displayed based on changing width!
 	function showProjects() {
-		let projects = $("projects");
-		let width = projects.offsetWidth;
+		let div = $("projects");
+		let width = div.offsetWidth;
 		let cols = [];
 		cols[0] = ce("div");
 		// creates the maximum amount of columns to fill the avaialble width
@@ -120,13 +121,26 @@
 			cols[cols.length] = ce("div");
 		// chears projects div, thenn attaches columns to the projects div
 		// to replace the old elements
-		while (projects.firstChild)
-			projects.removeChild(projects.firstChild);
+		while (div.firstChild)
+			div.removeChild(div.firstChild);
 		for (let i = 0; i < cols.length; i++)
-			projects.appendChild(cols[i]);
+			div.appendChild(cols[i]);
 		// distributes projects to columns iteratively
-		for (let i = 0; i < projectDOMs.length; i++)
-			cols[i % cols.length].appendChild(projectDOMs[i]);
+		for (let i = 0, c = 0; i < projectDOMs.length; i++) {
+			let valid = true;
+			if (languageFilter.length) {
+				console.log("filtered!");
+				valid = false;
+				let project = projectDOMs[i];
+				for (let l = 0; l < languageFilter.length; l++) {
+					if (project.classList.contains(languageFilter[l])) {
+						valid = true;
+					}
+				}
+			}
+			if (valid)
+				cols[c++ % cols.length].appendChild(projectDOMs[i]);
+		}
 	}
 	
 	// queries for the languages if there's a project file, in order to

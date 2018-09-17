@@ -13,6 +13,7 @@
 "use strict";
 (function() {
 	
+	
 	// shortcuts to manipulate DOM elements more easily
 	function $(id) { return document.getElementById(id); }
 	function ce(tag) { return document.createElement(tag); }
@@ -37,15 +38,15 @@
 		if ($("projects")) {
 			ajaxGET("../projects/projects.json", loadProjects);
 			ajaxGET("../projects/languages.json", loadProjectLanguages);
-			window.addEventListener("resize", function() {
-				ajaxGET("../projects/projects.json", loadProjects);
-			});
+			window.addEventListener("resize", showProjects);
 		}
 		if ($("blog")) ajaxGET("../blog/blog.json", loadBlog);
 		if ($("menu")) ajaxGET("../menu.json", loadMenu);
 		if ($("contact")) ajaxGET("../contact.json", loadContact);
 		
 	});
+	
+	let projectDOMs = [];
 	
 	// populates "projects" DOM element with various <article> elements,
 	// each of which has a title, some links, and a description of the
@@ -54,15 +55,6 @@
 	function loadProjects(json) {
 		let div = $("projects");
 		let projects = JSON.parse(json);
-		let cols = [];
-		cols[0] = ce("div");
-		console.log(window.innerWidth);
-		while ((cols.length + 1) * 260 < window.innerWidth) {
-			cols[cols.length] = ce("div");
-		}
-		for (let i = 0; i < cols.length; i++) {
-			$("projects").appendChild(cols[i]);
-		}
 		for (let i = 0; i < projects.length; i++) {
 			let project = projects[i];
 			// creates new DOM element
@@ -105,8 +97,26 @@
 				textSection.appendChild(text);
 				article.appendChild(textSection);
 			}
-			// adds new complete <article> to DOM
-			cols[i %cols.length].appendChild(article);
+			projectDOMs.push(article);
+		}
+		console.log(projectDOMs);
+		showProjects();
+	}
+	
+	function showProjects() {
+		let projects = $("projects");
+		while (projects.firstChild) projects.removeChild(projects.firstChild);
+		let cols = [];
+		cols[0] = ce("div");
+		console.log(window.innerWidth);
+		while ((cols.length + 1) * 260 < window.innerWidth) {
+			cols[cols.length] = ce("div");
+		}
+		for (let i = 0; i < cols.length; i++) {
+			$("projects").appendChild(cols[i]);
+		}
+		for (let i = 0; i < projectDOMs.length; i++) {
+			cols[i % cols.length].appendChild(projectDOMs[i]);
 		}
 	}
 	

@@ -37,6 +37,9 @@
 		if ($("projects")) {
 			ajaxGET("../projects/projects.json", loadProjects);
 			ajaxGET("../projects/languages.json", loadProjectLanguages);
+			window.addEventListener("resize", function() {
+				ajaxGET("../projects/projects.json", loadProjects);
+			});
 		}
 		if ($("blog")) ajaxGET("../blog/blog.json", loadBlog);
 		if ($("menu")) ajaxGET("../menu.json", loadMenu);
@@ -51,6 +54,15 @@
 	function loadProjects(json) {
 		let div = $("projects");
 		let projects = JSON.parse(json);
+		let cols = [];
+		cols[0] = ce("div");
+		console.log(window.innerWidth);
+		while ((cols.length + 1) * 260 < window.innerWidth) {
+			cols[cols.length] = ce("div");
+		}
+		for (let i = 0; i < cols.length; i++) {
+			$("projects").appendChild(cols[i]);
+		}
 		for (let i = 0; i < projects.length; i++) {
 			let project = projects[i];
 			// creates new DOM element
@@ -94,7 +106,7 @@
 				article.appendChild(textSection);
 			}
 			// adds new complete <article> to DOM
-			div.appendChild(article);
+			cols[i %cols.length].appendChild(article);
 		}
 	}
 	

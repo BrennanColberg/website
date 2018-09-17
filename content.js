@@ -179,10 +179,24 @@
 			for (let i = 0; i < languages.length; i++) {
 				let p = ce("h4");
 				p.textContent = data[languages[i]].name;
-				p.classList.add(languages[i]);
+				p.className = languages[i];
+				p.onclick = toggleFilteredLanguage;
 				div.appendChild(p);
 			}
 		}
+	}
+	
+	function toggleFilteredLanguage() {
+		let language = this.classList[0];
+		let index = languageFilter.indexOf(language);
+		if (index == -1) {
+			languageFilter.push(language);
+			this.classList.add("selected");
+		} else {
+			languageFilter.splice(index, 1);
+			this.classList.remove("selected");
+		}
+		showProjects();
 	}
 	
 	// populates "blog" DOM element with various <article> elements, in a

@@ -129,6 +129,10 @@ article section {
 	border-radius: 5px;
 }
 
+#project-languages .selected {
+	border: 1px solid black;
+}
+
 #projects {
 	display: flex;
 	flex-flow: row nowrap;

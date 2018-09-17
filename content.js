@@ -34,6 +34,9 @@
 	
 	// DOM elements representing project writeups
 	let projectDOMs = [];
+	// holds programming languages that are whitelisted to be shown
+	// (empty = show everything)
+	let languageFilter = [];
 	
 	window.addEventListener("load", function() {
 		
@@ -110,8 +113,8 @@
 	// display, depending on the window width. Easy to call to reformat the
 	// way these are displayed based on changing width!
 	function showProjects() {
-		let projects = $("projects");
-		let width = projects.offsetWidth;
+		let div = $("projects");
+		let width = div.offsetWidth;
 		let cols = [];
 		cols[0] = ce("div");
 		// creates the maximum amount of columns to fill the avaialble width
@@ -120,13 +123,32 @@
 			cols[cols.length] = ce("div");
 		// chears projects div, thenn attaches columns to the projects div
 		// to replace the old elements
-		while (projects.firstChild)
-			projects.removeChild(projects.firstChild);
+		while (div.firstChild)
+			div.removeChild(div.firstChild);
 		for (let i = 0; i < cols.length; i++)
-			projects.appendChild(cols[i]);
+			div.appendChild(cols[i]);
 		// distributes projects to columns iteratively
-		for (let i = 0; i < projectDOMs.length; i++)
-			cols[i % cols.length].appendChild(projectDOMs[i]);
+		for (let i = 0, c = 0; i < projectDOMs.length; i++) {
+			let valid = true;
+			// filter implementation!
+			// filter only does something if it's not empty; empty filter
+			// shows everything!
+			if (languageFilter.length) {
+				valid = false;
+				let project = projectDOMs[i];
+				for (let l = 0; l < languageFilter.length; l++) {
+					if (project.classList.contains(languageFilter[l])) {
+						valid = true;
+						break;
+					}
+				}
+			}
+			// needing "valid" allows for filter to remove elements
+			// "c" variable is a separate increment from "i" because
+			// there may be elements considered by "i" that do not end up
+			// displayed to screen... hence, "c" keeps distribution even
+			if (valid) cols[c++ % cols.length].appendChild(projectDOMs[i]);
+		}
 	}
 	
 	// queries for the languages if there's a project file, in order to
@@ -165,10 +187,27 @@
 			for (let i = 0; i < languages.length; i++) {
 				let p = ce("h4");
 				p.textContent = data[languages[i]].name;
-				p.classList.add(languages[i]);
+				p.className = languages[i];
+				p.onclick = toggleFilteredLanguage;
 				div.appendChild(p);
 			}
 		}
+	}
+	
+	// called by a DOM element representing a programming language, this
+	// method toggles that language's present on a filter that determines
+	// which projects may be shown, then refreshes the project display
+	function toggleFilteredLanguage() {
+		let language = this.classList[0];
+		let index = languageFilter.indexOf(language);
+		if (index == -1) {
+			languageFilter.push(language);
+			this.classList.add("selected");
+		} else {
+			languageFilter.splice(index, 1);
+			this.classList.remove("selected");
+		}
+		showProjects();
 	}
 	
 	// populates "blog" DOM element with various <article> elements, in a

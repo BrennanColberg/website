@@ -34,6 +34,8 @@
 	
 	// DOM elements representing project writeups
 	let projectDOMs = [];
+	// holds programming languages that are whitelisted to be shown
+	// (empty = show everything)
 	let languageFilter = [];
 	
 	window.addEventListener("load", function() {
@@ -128,18 +130,24 @@
 		// distributes projects to columns iteratively
 		for (let i = 0, c = 0; i < projectDOMs.length; i++) {
 			let valid = true;
+			// filter implementation!
+			// filter only does something if it's not empty; empty filter
+			// shows everything!
 			if (languageFilter.length) {
-				console.log("filtered!");
 				valid = false;
 				let project = projectDOMs[i];
 				for (let l = 0; l < languageFilter.length; l++) {
 					if (project.classList.contains(languageFilter[l])) {
 						valid = true;
+						break;
 					}
 				}
 			}
-			if (valid)
-				cols[c++ % cols.length].appendChild(projectDOMs[i]);
+			// needing "valid" allows for filter to remove elements
+			// "c" variable is a separate increment from "i" because
+			// there may be elements considered by "i" that do not end up
+			// displayed to screen... hence, "c" keeps distribution even
+			if (valid) cols[c++ % cols.length].appendChild(projectDOMs[i]);
 		}
 	}
 	
@@ -186,6 +194,9 @@
 		}
 	}
 	
+	// called by a DOM element representing a programming language, this
+	// method toggles that language's present on a filter that determines
+	// which projects may be shown, then refreshes the project display
 	function toggleFilteredLanguage() {
 		let language = this.classList[0];
 		let index = languageFilter.indexOf(language);

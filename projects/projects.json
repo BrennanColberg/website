@@ -26,6 +26,21 @@
 		]
 	},
 	{
+		"title": "Resume",
+		"description": "View my programming resume online! I made it using pure HTML & CSS, a format that seemed quite fitting for a professional web developer.",
+		"language": "html",
+		"links": [
+			{
+				"text": "[view]",
+				"href": "https://resume.brennancolberg.com"
+			},
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/resume"
+			}
+		]
+	},
+	{
 		"title": "Carbon Cycle Simulator",
 		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Working with the instructor, I then created this website!",
 		"language": "javascript",
@@ -52,6 +67,21 @@
 			{
 				"text": "[code]",
 				"href": "https://github.com/BrennanColberg/axis-allies/"
+			}
+		]
+	},
+	{
+		"title": "FMBQ Jump Lights",
+		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
+		"language": "javascript",
+		"links": [
+			{
+				"text": "[use it]",
+				"href": "https://fmbq.brennancolberg.com/"
+			},
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/fmbq/"
 			}
 		]
 	},
@@ -85,21 +115,6 @@
 			{
 				"text": "[use it]",
 				"href": "https://studio.code.org/projects/applab/qIUEXKwKGgHDxjoZzQzEQo8JtBmT3YWbUAoQD1p8dU4"
-			}
-		]
-	},
-	{
-		"title": "FMBQ Jump Lights",
-		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
-		"language": "javascript",
-		"links": [
-			{
-				"text": "[use it]",
-				"href": "https://fmbq.brennancolberg.com/"
-			},
-			{
-				"text": "[code]",
-				"href": "https://github.com/BrennanColberg/fmbq/"
 			}
 		]
 	}

@@ -135,43 +135,43 @@
 		for (let i = 0; i < cols.length; i++)
 			div.appendChild(cols[i]);
 		
+		// applies filter if there's anything in the filter, otherwise let
+		// everything through
+		let showableDOMs = undefined;
+		if (languageFilter.length) {
+			showableDOMs = [];
+			for (let f = 0; f < languageFilter.length; f++) {
+				let language = languageFilter[f];
+				for (let p = 0; p < projectDOMs.length; p++) {
+					let project = projectDOMs[p];
+					if (project.classList.contains(language)) {
+						showableDOMs.push(project);
+					}
+				}
+			}
+		} else {
+			showableDOMs = projectDOMs;
+		}
+		
 		// distributes projects to columns iteratively
-		for (let i = 0; i < projectDOMs.length; i++) {
-			
-			// needing "valid" allows for filter to remove elements
-			let valid = true;
-			
-			// filter implementation!
-			// filter only does something if it's not empty; empty filter
-			// shows everything!
-			if (languageFilter.length) {
-				valid = false;
-				let project = projectDOMs[i];
-				for (let l = 0; l < languageFilter.length; l++) {
-					if (project.classList.contains(languageFilter[l])) {
-						valid = true;
-						break;
-					}
+		for (let i = 0; i < showableDOMs.length; i++) {
+
+			// iterates through each column to find the shortest one
+			// this is imperfect due to margins, I think (but maybe
+			// using offsetHeight lower down fixes that)
+			let selectedIndex = undefined;
+			for (let h = 0; h < cols.length; h++) {
+				if (selectedIndex === undefined
+					|| colHeights[h] < colHeights[selectedIndex]) {
+					selectedIndex = h;
 				}
 			}
 			
-			if (valid) {
-				// iterates through each column to find the shortest one
-				// this is imperfect due to margins, I think (but maybe
-				// using offsetHeight lower down fixes that)
-				let selectedIndex = undefined;
-				for (let h = 0; h < cols.length; h++) {
-					if (selectedIndex === undefined
-						|| colHeights[h] < colHeights[selectedIndex]) {
-						selectedIndex = h;
-					}
-				}
-				// add DOM to view and record height (perhaps I could read
-				// simple DOM height of column constantly to make more
-				// efficient in the future)
-				cols[selectedIndex].appendChild(projectDOMs[i]);
-				colHeights[selectedIndex] += projectDOMs[i].offsetHeight;
-			}
+			// add DOM to view and record height (perhaps I could read
+			// simple DOM height of column constantly to make more
+			// efficient in the future)
+			cols[selectedIndex].appendChild(showableDOMs[i]);
+			colHeights[selectedIndex] += showableDOMs[i].offsetHeight;
 			
 		}
 		

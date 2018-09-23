@@ -113,26 +113,34 @@
 	// display, depending on the window width. Easy to call to reformat the
 	// way these are displayed based on changing width!
 	function showProjects() {
+		
 		let div = $("projects");
 		let width = div.offsetWidth;
 		let cols = [];
+		let colHeights = [];
+		
 		cols[0] = ce("div");
-		let colHeights = [0];
+		colHeights[0] = 0;
 		// creates the maximum amount of columns to fill the avaialble width
 		// without overflow
 		while ((cols.length + 1) * 260 < width) {
 			cols[cols.length] = ce("div");
 			colHeights[cols.length] = 0;
 		}
-		// chears projects div, thenn attaches columns to the projects div
+		
+		// chears projects div, then attaches columns to the projects div
 		// to replace the old elements
 		while (div.firstChild)
 			div.removeChild(div.firstChild);
 		for (let i = 0; i < cols.length; i++)
 			div.appendChild(cols[i]);
+		
 		// distributes projects to columns iteratively
-		for (let i = 0, c = 0; i < projectDOMs.length; i++) {
+		for (let i = 0; i < projectDOMs.length; i++) {
+			
+			// needing "valid" allows for filter to remove elements
 			let valid = true;
+			
 			// filter implementation!
 			// filter only does something if it's not empty; empty filter
 			// shows everything!
@@ -146,12 +154,11 @@
 					}
 				}
 			}
-//			// needing "valid" allows for filter to remove elements
-//			// "c" variable is a separate increment from "i" because
-//			// there may be elements considered by "i" that do not end up
-//			// displayed to screen... hence, "c" keeps distribution even
-//			if (valid) cols[c++ % cols.length].appendChild(projectDOMs[i]);
+			
 			if (valid) {
+				// iterates through each column to find the shortest one
+				// this is imperfect due to margins, I think (but maybe
+				// using offsetHeight lower down fixes that)
 				let selectedIndex = undefined;
 				for (let h = 0; h < cols.length; h++) {
 					if (selectedIndex === undefined
@@ -159,10 +166,15 @@
 						selectedIndex = h;
 					}
 				}
+				// add DOM to view and record height (perhaps I could read
+				// simple DOM height of column constantly to make more
+				// efficient in the future)
 				cols[selectedIndex].appendChild(projectDOMs[i]);
 				colHeights[selectedIndex] += projectDOMs[i].offsetHeight;
 			}
+			
 		}
+		
 	}
 	
 	// queries for the languages if there's a project file, in order to

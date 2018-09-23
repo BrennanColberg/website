@@ -117,10 +117,13 @@
 		let width = div.offsetWidth;
 		let cols = [];
 		cols[0] = ce("div");
+		let colHeights = [0];
 		// creates the maximum amount of columns to fill the avaialble width
 		// without overflow
-		while ((cols.length + 1) * 260 < width)
+		while ((cols.length + 1) * 260 < width) {
 			cols[cols.length] = ce("div");
+			colHeights[cols.length] = 0;
+		}
 		// chears projects div, thenn attaches columns to the projects div
 		// to replace the old elements
 		while (div.firstChild)
@@ -143,11 +146,22 @@
 					}
 				}
 			}
-			// needing "valid" allows for filter to remove elements
-			// "c" variable is a separate increment from "i" because
-			// there may be elements considered by "i" that do not end up
-			// displayed to screen... hence, "c" keeps distribution even
-			if (valid) cols[c++ % cols.length].appendChild(projectDOMs[i]);
+//			// needing "valid" allows for filter to remove elements
+//			// "c" variable is a separate increment from "i" because
+//			// there may be elements considered by "i" that do not end up
+//			// displayed to screen... hence, "c" keeps distribution even
+//			if (valid) cols[c++ % cols.length].appendChild(projectDOMs[i]);
+			if (valid) {
+				let selectedIndex = undefined;
+				for (let h = 0; h < cols.length; h++) {
+					if (selectedIndex === undefined
+						|| colHeights[h] < colHeights[selectedIndex]) {
+						selectedIndex = h;
+					}
+				}
+				cols[selectedIndex].appendChild(projectDOMs[i]);
+				colHeights[selectedIndex] += projectDOMs[i].offsetHeight;
+			}
 		}
 	}
 	

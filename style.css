@@ -1,10 +1,5 @@
-a {
-	color: darkslategray;
-}
-
-a:hover {
-	font-weight: bold;
-}
+/* imports most of the colors, fonts, etc that make my style up */
+@import "theme.css";
 
 body {
 	background-size: auto;
@@ -21,7 +16,6 @@ header {
 }
 
 header h1 {
-	font-family: "Space Mono", monospace;
 	font-size: 40pt;
 	margin: 10px 40px;
 }
@@ -43,28 +37,21 @@ nav {
 }
 
 nav p {
-	padding: 2px 4px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
 	margin: 8px;
-	font-family: monospace;
 	font-size: 14pt;
 	border: 2px solid rgb(192, 192, 192);
 	background-color: white;
 	border-radius: 5px;
 }
 
-nav a {
-	color: black;
-	text-decoration: underline;
-}
-
-nav a:hover {
-	font-weight: bold;
-}
-
 footer {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 	margin: 5px;
 }
 
@@ -88,22 +75,18 @@ footer a {
 #introduction {
 	margin: 20px;
 	text-align: justify;
-	font-family: sans-serif;
 }
 
 body > h2,
 body > h2 a {
 	margin: 15px;
-	text-align: center;
-	text-decoration: underline;
-	font-weight: normal;
-	color: black;
 	font-size: 20pt; 	
 }
 
 article {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 	padding: 10px;
 	margin: 15px;
 	border: 5px solid; /* color defined independently below */
@@ -150,10 +133,6 @@ article section {
 	width: 200px;
 }
 
-#projects h2 {
-	text-align: center;
-}
-
 article .text {
 	border: 3px solid;
 	border-color: inherit;
@@ -167,35 +146,23 @@ article .text {
 .feed section.link {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
 	text-align: center;
 	margin: auto 0px;
 }
 
-.feed article a:hover {
-	text-decoration: none;
-	font-weight: normal;
-}
-
 article p,
-article h2,
-article h4 {
+article h3 {
 	margin: 0px;
 	padding: 5px;
 }
 
-article h2,
-article h4 {
-	font-family: Merriweather;
-}
-
-article p {
-	font-family: Lato, sans-serif;
+article h3 {
+	font-size: 18pt;
+	text-align: center;
 }
 
 article a {
-	text-decoration: none;
-	font-family: "Roboto Mono";
 	font-weight: bold;
 	font-size: 12pt;
+	text-align: center;
 }

@@ -73,7 +73,7 @@
 			if (project["title"]) {
 				let titleSection = ce("section");
 				titleSection.className = "title";
-				let title = ce("h2");
+				let title = ce("h3");
 				title.textContent = project["title"];
 				titleSection.appendChild(title);
 				article.appendChild(titleSection);

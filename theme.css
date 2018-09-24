@@ -44,5 +44,6 @@ nav a {
 	text-decoration: underline;
 }
 nav a:hover {
+	color: black;
 	text-decoration: none;
 }

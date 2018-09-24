@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+/* typical content */
+p, li {
+	font-family: "Lato", sans-serif;
+}
+
+/* normal links to other content */
+a {
+	font-family: "Roboto Mono", sans-serif;
+	text-decoration: none;
+	color: #777;
+}
+a:hover {
+	color: #aaa;
+}
+
+/* Heading of site (generally my name) */
+h1 {
+	font-family: "Space Mono", monospace;
+}
+
+/* Section heading (describing what the below section contains) */
+h2 {
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+/* Content instance heading (describing entry, etc) */
+h3 {
+	font-family: "Merriweather";
+}
+
+/* Navigation links */
+nav a {
+	color: black;
+	font-family: "Inconsolata";
+	text-decoration: underline;
+}
+nav a:hover {
+	text-decoration: none;
+}

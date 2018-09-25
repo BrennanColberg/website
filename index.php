@@ -20,9 +20,7 @@
 		</p>
 		
 		<h2>Personal Projects</h2>
-		<div id="projects" class="feed">
-			<!-- generated with index.js from projects/projects.json -->
-		</div>
+		<?php include("projects.php"); ?>
 		
 		<footer>
 			<?php include("contact.php"); ?>

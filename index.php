@@ -3,7 +3,8 @@
 	
 	<head>
 		<title>Brennan Colberg</title>
-		<link href="../index.css" rel="stylesheet" />
+		<link href="index.css" rel="stylesheet">
+		<link href="colors.php" rel="stylesheet">
 		<script src="../index.js"></script>
 	</head>
 
@@ -20,6 +21,7 @@
 		</p>
 		
 		<h2>Personal Projects</h2>
+		<?php include("project-languages.php"); ?>
 		<?php include("projects.php"); ?>
 		
 		<footer>

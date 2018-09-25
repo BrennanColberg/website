@@ -1,22 +1,22 @@
 {
 	"java": {
 		"name": "Java",
-		"rgba": [175, 113, 37, 0.15]
+		"color": [175, 113, 37]
 	},
 	"javascript": {
 		"name": "JavaScript",
-		"rgba": [240, 223, 101, 0.15]
+		"color": [240, 223, 101]
 	},
 	"php": {
 		"name": "PHP",
-		"rgba": [80, 94, 147, 0.15]
+		"color": [80, 94, 147]
 	},
 	"html": {
 		"name": "HTML",
-		"rgba": [227, 76, 38, 0.15]
+		"color": [227, 76, 38]
 	},
 	"shell": {
 		"name": "Shell",
-		"rgba": [137, 224, 81, 0.15]
+		"color": [137, 224, 81]
 	}
 }

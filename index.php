@@ -12,9 +12,7 @@
 		<!-- body header (with my name!) -->
 		<header>
 			<h1>Brennan Colberg</h1>
-			<nav id="menu">
-				<!-- generated with index.js from menu.json -->
-			</nav>
+			<?php include("menu.php"); ?>
 		</header>
 		
 		<p id="introduction">

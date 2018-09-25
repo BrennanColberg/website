@@ -4,7 +4,7 @@
 	<head>
 		<title>Brennan Colberg</title>
 		<link href="../style.css" rel="stylesheet" />
-		<!--<script src="../content.js"></script>-->
+		<script src="../index.js"></script>
 	</head>
 
 	<body id="page-home">

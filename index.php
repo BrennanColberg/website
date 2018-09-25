@@ -3,7 +3,7 @@
 	
 	<head>
 		<title>Brennan Colberg</title>
-		<link href="../style.css" rel="stylesheet" />
+		<link href="../index.css" rel="stylesheet" />
 		<script src="../index.js"></script>
 	</head>
 

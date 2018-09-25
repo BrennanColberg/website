@@ -25,9 +25,7 @@
 		</div>
 		
 		<footer>
-			<div id="contact">
-				<!-- generated with index.js from contact.json -->
-			</div>
+			<?php include("contact.php"); ?>
 			<p>&copy; Brennan Colberg 2018</p>
 		</footer>
 		

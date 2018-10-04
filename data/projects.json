@@ -1,7 +1,7 @@
 [
 	{
 		"title": "BFramework",
-		"description": "I taught myself Java by building a video game framework. Was it dumb? Probably. Did it work? Yep, it worked! I and a team built a game on top of this framework and took 2nd place internationally in TSA's \"Video Game Design & Programming\" event in 2017.",
+		"description": "2D game framework made with Java’s AWT/Swing libraries. Was the foundation for a game which won 2nd place internationally in TSA’s Video Game Design/Programming competition in 2017.",
 		"language": "java",
 		"links": [
 			{
@@ -12,7 +12,7 @@
 	},
 	{
 		"title": "Backus-Naur Sentence Generator",
-		"description": "Exploring natural language processing for a presentation, I made a grammar parser which can randomly generate sentences in various languages. I plan to use it to create a math problem generator.",
+		"description": "Website that can randomly generate sentences from predefined Backus-Naur Form (BNF) machine grammars, much to one's general amusement.",
 		"language": "php",
 		"links": [
 			{
@@ -27,11 +27,11 @@
 	},
 	{
 		"title": "Resume",
-		"description": "View my programming resume online! I made it using pure HTML & CSS, a format that seemed quite fitting for a professional web developer.",
+		"description": "My professional resume, made using HTML & CSS to suitably showcase web development abilities.",
 		"language": "html",
 		"links": [
 			{
-				"text": "[view]",
+				"text": "[read it]",
 				"href": "https://resume.brennancolberg.com"
 			},
 			{
@@ -41,8 +41,23 @@
 		]
 	},
 	{
+		"title": "Business Card",
+		"description": "My personal business card, made with HTML & CSS.",
+		"language": "html",
+		"links": [
+			{
+				"text": "[see it]",
+				"href": "https://business-card.brennancolberg.com"
+			},
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/business-card"
+			}
+		]
+	},
+	{
 		"title": "Carbon Cycle Simulator",
-		"description": "One day in Biology class, we were doing a complicated simulation of the carbon cycle; 'wow, I could automate that,' I thought. Working with the instructor, I then created this website!",
+		"description": "Interactive simulation of the carbon cycle, designed and implemented as an activity for high school biology classes. Based on a lesson originally designed by Jennifer Ceven.",
 		"language": "javascript",
 		"links": [
 			{
@@ -56,8 +71,19 @@
 		]
 	},
 	{
+		"title": "Personal Website",
+		"description": "My personal website; currently being rebuilt to use simple PHP instead of an unholy mess of JavaScript. Note: currently published version is old Javascript, and will be udpated to the PHP version when functionality matches.",
+		"language": "javascript",
+		"links": [
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/website"
+			}
+		]
+	},
+	{
 		"title": "Axis & Allies Dashboard",
-		"description": "Have you ever been playing a nice game of \"Axis & Allies\"™ yet cannot remember whose turn it is or lack sufficiently invigorating music? Worry no longer! This website cycles through the countries in proper order, showing their flags and playing their anthems (all as in WWII)!",
+		"description": "Website to use while playing \"Axis & Allies,\" a WWII-based strategy board game. Cycles through each country’s turn, showing each nation's gamestate (with WWII anthem) and doing all bookkeeping.",
 		"language": "javascript",
 		"links": [
 			{
@@ -72,7 +98,7 @@
 	},
 	{
 		"title": "FMBQ Jump Lights",
-		"description": "Putting the \"free\" back into Free Methodist Bible Quizzing, this program effectively simulates a $150 set of jump seats and can be used with a simple combination of screen and standard QWERTY keyboard!",
+		"description": "Free alternative to jump seats for the Free Methodist Bible Quizzing competition. Two teams sit on opposite sides of a keyboard with fingers on it for \"jumping.\" Substitutes for $150+ of equipment.",
 		"language": "javascript",
 		"links": [
 			{
@@ -87,7 +113,7 @@
 	},
 	{
 		"title": "BV.game",
-		"description": "A simple game made with a completely rebuilt version of BFramework, with teammates, for the TSA \"Video Game Design/Programming\" event in 2018.",
+		"description": "Game built for TSA’s 2018 Video Game Design/Programming event with BFramework V, the fifth complete rebuild of a custom JAVA game engine. Said framework is built into the game code here, instead of being a separate project.",
 		"language": "java",
 		"links": [
 			{
@@ -98,7 +124,7 @@
 	},
 	{
 		"title": "Pranks",
-		"description": "A collection of simple BASH commands with humorous effects, hosted online so that I can easily access and run them on other computers.",
+		"description": "A collection of various files which set up frustrating situations on computers when run. Fun to run on friends' computers while they're distracted, as pranks.",
 		"language": "shell",
 		"links": [
 			{
@@ -109,12 +135,27 @@
 	},
 	{
 		"title": "Binary Quiz (App Lab)",
-		"description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Made with code.org's \"App Lab\".",
+		"description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Made with code.org's \"App Lab\" (currently being ported to iOS & Android)",
 		"language": "javascript",
 		"links": [
 			{
 				"text": "[use it]",
 				"href": "https://studio.code.org/projects/applab/qIUEXKwKGgHDxjoZzQzEQo8JtBmT3YWbUAoQD1p8dU4"
+			}
+		]
+	},
+	{
+		"title": "Online Periodic Table",
+		"description": "An experiment to see how much fancy functionality I can add to something simple by abusing JavaScript. Data from Bowserinator/Periodic-Table-JSON is used for content generation.",
+		"language": "javascript",
+		"links": [
+			{
+				"text": "[use it]",
+				"href": "https://periodic-table.brennancolberg.com"
+			},
+			{
+				"text": "[code]",
+				"href": "https://github.com/BrennanColberg/periodic-table"
 			}
 		]
 	}

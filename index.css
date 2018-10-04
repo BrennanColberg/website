@@ -60,6 +60,7 @@ footer {
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+
 #contact p {
 	margin: auto 10px;
 }
@@ -80,7 +81,7 @@ footer a {
 body > h2,
 body > h2 a {
 	margin: 15px;
-	font-size: 20pt; 	
+	font-size: 20pt;
 }
 
 article {
@@ -89,7 +90,8 @@ article {
 	justify-content: center;
 	padding: 10px;
 	margin: 15px;
-	border: 5px solid; /* color defined independently below */
+	border: 5px solid;
+	/* color defined independently below */
 	border-radius: 10px;
 	box-shadow: 3px 5px 25px #333333;
 }
@@ -120,12 +122,6 @@ article section {
 	justify-content: center;
 	flex-shrink: 2;
 	padding: 5px;
-}
-#page-home #projects {
-	height: 500px;
-	overflow-y: scroll;
-}
-#page-projects #projects {
 	height: auto;
 }
 

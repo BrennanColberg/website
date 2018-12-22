@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Testing surge.sh deployment! 2
           </a>
         </header>
       </div>

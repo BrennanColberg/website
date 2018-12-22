@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Menu from './Menu.js';
-import Intro from './Intro.js';
 import Projects from './Projects.js';
+import introJSON from './assets/intro.json';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1 className="name">Brennan Colberg</h1>
-        <Menu />
-        <Intro />
-        <Projects />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <h1 className="name">Brennan Colberg</h1>
+    <Menu />
+    <p>{introJSON}</p>
+    <Projects />
+  </div>
+);
 
 export default App;

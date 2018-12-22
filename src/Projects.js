@@ -1,62 +1,38 @@
 import React from 'react';
 import projectsJSON from './assets/projects.json';
 
-
 /**
  * Displays all projects encoded in ./assets/projects.json to
  * showcase my accomplishments and technological progress.
  */
-const Projects = () => {
-
-  // generates a display for each project in the JSON
-  let projects = [];
-  for (let project of projectsJSON) {
-    projects.push(
+const Projects = () => (
+  <section className="Projects">
+    {projectsJSON.map(project => (
       <Project
         project={project}
         key={project.name}
       />
-    );
-  }
-
-  return (
-    <section className="Projects">
-      {projects}
-    </section>
-  );
-  
-}
-
+    ))}
+  </section>
+);
 
 /**
  * Displays all relevant fields of encoded information about a single
  * project! Allows for easy formalization of the look of said projects.
  */
-const Project = (props) => {
-
-  // generates a list item for each technology
-  let technologies = [];
-  if (props.project.technologies) {
-    for (let technology of props.project.technologies) {
-      // generate standard class name with regex
-      let technologyClassName = technology.toLowerCase().replace(/[ _:\/\.]+/, "-");
-      technologies.push(
+const Project = (props) => (
+  <div className="Project">
+    <h2>{props.project.name}</h2>
+    <p>{props.project.description}</p>
+    <ul>
+      {props.project.technologies.map(technology => (
         <li
-          className={technologyClassName}
-          key={technologyClassName}
+          className={technology.toLowerCase().replace(/[ _:\/\.]+/, "-")}
+          key={technology}
         >{technology}</li>
-      );
-    }
-  }
-
-  return (
-    <div className="Project">
-      <h2>{props.project.name}</h2>
-      <p>{props.project.description}</p>
-      <ul>{technologies}</ul>
-    </div>
-  );
-};
-
+      ))}
+    </ul>
+  </div>
+);
 
 export default Projects;

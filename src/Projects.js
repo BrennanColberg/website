@@ -38,10 +38,13 @@ const Project = (props) => {
   let technologies = [];
   if (props.project.technologies) {
     for (let technology of props.project.technologies) {
+      // generate standard class name with regex
+      let technologyClassName = technology.toLowerCase().replace(/[ _:\/\.]+/, "-");
       technologies.push(
-        <li key={technology}>
-          {technology}
-        </li>
+        <li
+          className={technologyClassName}
+          key={technologyClassName}
+        >{technology}</li>
       );
     }
   }

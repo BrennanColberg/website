@@ -1,0 +1,20 @@
+[
+  {
+    "name": "BFramework",
+    "description": "yada yada",
+    "technologies": [
+      "Java",
+      "Game Development"
+    ]
+  },
+  {
+    "name": "Axis & Allies Dashboard",
+    "description": "my go-to tech learning thing",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Vanilla JS",
+      "React JS"
+    ]
+  }
+]

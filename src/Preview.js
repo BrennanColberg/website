@@ -48,24 +48,6 @@ const SinglePreview = (props) => {
     );
   }
 
-  // article links
-  if (props.article.links) {
-    items.push(
-      <div className="links" key="links">
-        {props.article.links.map(link => (
-          <a href={link.href} key={link.href}>{link.text}</a>
-        ))}
-      </div>
-    );
-  }
-
-  // article description
-  if (props.article.description) {
-    items.push(
-      <p key="description">{props.article.description}</p>
-    );
-  }
-
   // article tags
   if (props.article.tags) {
     items.push(
@@ -80,7 +62,27 @@ const SinglePreview = (props) => {
     )
   }
 
-  return <div className="SinglePreview">{items}</div>;
+  // article description
+  if (props.article.description) {
+    items.push(
+      <p key="description">{props.article.description}</p>
+    );
+  }
+
+  // article links
+  if (props.article.links) {
+    items.push(
+      <ul className="links" key="links">
+        {props.article.links.map(link => (
+          <li key={link.href}>
+            <a href={link.href} target="_blank">{link.text}</a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  return <article className={props.article.className}>{items}</article>;
 };
 
 export default Preview;

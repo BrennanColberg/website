@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "title": "One Book"
+  },
+  {
+    "title": "Two Book"
+  },
+  {
+    "title": "Red Book",
+    "className": "red-book"
+  },
+  {
+    "title": "Blue Book",
+    "className": "blue-book"
+  },
+  {
+    "title": "Theodore Geisel"
+  }
+]

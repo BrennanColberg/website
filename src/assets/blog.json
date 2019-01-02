@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "title": "the education system sucks ass",
+    "subtitle": "and obviously nobody's ever tried to fix it before"
+  },
+  {
+    "title": "i don't want to have to work",
+    "subtitle": "3 hot takes on capitalism by some random white guy",
+    "links": [
+      {
+        "text": "berniesanders.org",
+        "href": "https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch01.htm"
+      }
+    ]
+  },
+  {
+    "title": "why don't we have flying cars",
+    "subtitle": "I want a flying car :("
+  },
+  {
+    "title": "the education system sucks ass part 2",
+    "subtitle": "playing minecraft is more educational ackchyually"
+  }
+]

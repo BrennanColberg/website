@@ -1,0 +1,31 @@
+.Preview {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+
+.Preview article {
+  border: 1px solid orange;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.Preview article * {
+  margin: 0px;
+}
+
+.Preview article ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.red-book * {
+  color: red;
+}
+
+.blue-book * {
+  color: blue;
+}

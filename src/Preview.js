@@ -25,21 +25,25 @@ const SinglePreview = (props) => {
   // article title
   if (props.article.title) {
     items.push(
-      <h3 key="title">{props.article.title}</h3>
+      <h3 className="Preview_title" key="title">
+        {props.article.title}
+      </h3>
     );
   }
 
   // article subtitle
   if (props.article.subtitle) {
     items.push(
-      <h4 key="subtitle">{props.article.subtitle}</h4>
+      <h4 className="Preview_subtitle" key="subtitle">
+        {props.article.subtitle}
+      </h4>
     );
   }
 
   // article tags
   if (props.article.tags) {
     items.push(
-      <ul key="tags">
+      <ul className="Preview_tags" key="tags">
         {props.article.tags.map(technology => (
           <li
             className={technology.toLowerCase().replace(/[ _:\/\.]+/, "-")}
@@ -53,14 +57,16 @@ const SinglePreview = (props) => {
   // article description
   if (props.article.description) {
     items.push(
-      <p key="description">{props.article.description}</p>
+      <p className="Preview_description" key="description">
+        {props.article.description}
+      </p>
     );
   }
 
   // article links
   if (props.article.links) {
     items.push(
-      <ul className="links" key="links">
+      <ul className="Preview_links" key="links">
         {props.article.links.map(link => (
           <li key={link.href}>
             <a href={link.href} target="_blank">{link.text}</a>
@@ -70,7 +76,12 @@ const SinglePreview = (props) => {
     );
   }
 
-  return <article className={props.article.className}>{items}</article>;
+  return (
+    <article className={"Preview_article " + props.article.className}>
+      {items}
+    </article>
+  );
+  
 };
 
 export default Preview;

@@ -1,45 +1,75 @@
-.App h1 {
+.App > h1 {
   text-align: center;
+  font-size: 40pt;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
-.App p {
+.App > p {
   text-align: left;
   margin: 10px auto;
-  max-width: 600px;
+  margin-top: 30px;
+  max-width: min(600px, 80vw);
+}
+
+.App > p:last-of-type {
+  text-align: center;
 }
 
 .Preview {
   display: flex;
   flex-flow: row nowrap;
+  align-items: flex-start;
   overflow-x: scroll;
   max-width: 1000px;
   margin: auto;
 }
 
-.Preview article {
-  border: 1px solid orange;
+.Preview_article {
+  border: 3px solid #666;
+  border-radius: 10px;
+  box-shadow: 2px 3px 8px #888;
+  padding: 6px 7px;
+  box-sizing: border-box;
   margin: 10px;
   min-width: 200px;
   max-width: 250px;
 }
 
-.Preview article * {
+.Preview_article * {
   margin: 0px;
 }
 
-.Preview article ul {
+.Preview_description {
+  border: 3px solid darkgray;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.Preview_article ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
 }
 
-.red-book * {
-  color: red;
+.Preview_tags li {
+  margin: 0 3px;
 }
 
-.blue-book * {
-  color: blue;
+.Preview_links {
+  justify-content: space-around;
+  font-family: monospace;
+}
+
+.Preview_links a {
+  color: #333;
+}
+
+.Preview_links a:hover {
+  text-decoration: none;
 }
 
 .ContactInfo {

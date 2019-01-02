@@ -1,6 +1,7 @@
 [
   {
     "name": "BFramework",
+    "code": "https://github.com/BrennanColberg/BFramework",
     "description": "yada yada",
     "technologies": [
       "Java",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Axis & Allies Dashboard",
+    "code": "https://github.com/BrennanColberg/aa3",
     "description": "my go-to tech learning thing",
     "technologies": [
       "HTML",

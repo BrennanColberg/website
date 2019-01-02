@@ -23,25 +23,29 @@ const App = () => (
       });
     })} />
 
+    {/*
     <p>
       In my spare time, I try to read as much as possible. Here are
       some books I've read, notable quotes from them, and what I think
       about them:
     </p>
     <Preview json={require('./assets/books.json').map(book => ({
-      "title": book.title /* + (book.subtitle ? ": " + book.subtitle : "") */,
+      "title": book.title /* + (book.subtitle ? ": " + book.subtitle : "") *\/,
       "subtitle": book.subtitle,
       "tags": book.author
     }))} />
+    */}
 
+    {/*
     <p>
       I also write about interesting thoughts that come to me, occasionally:
       read some of those ramblings here!
     </p>
     <Preview json={require('./assets/blog.json')} />
+    */}
 
     <p>
-      Want to get in touch? Here lie my online personas:
+      Want to get in touch? Here are my profiles on common websites:
     </p>
     <ContactInfo />
 

@@ -13,7 +13,7 @@ const App = () => (
     </p>
     <Preview json={require('./assets/projects.json').map(project => {
         let links = [];
-        if (project.link) links.push({"text": "use it", "href": project.link});
+        if (project.link) links.push({"text": "view", "href": project.link});
         if (project.code) links.push({"text": "code", "href": project.code})
         return ({
         "title": project.name,
@@ -29,7 +29,7 @@ const App = () => (
       about them:
     </p>
     <Preview json={require('./assets/books.json').map(book => ({
-      "title": book.title,
+      "title": book.title /* + (book.subtitle ? ": " + book.subtitle : "") */,
       "subtitle": book.subtitle,
       "tags": book.author
     }))} />

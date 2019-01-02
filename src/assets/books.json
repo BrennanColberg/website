@@ -1,10 +1,12 @@
 [
   {
     "title": "Irresistable",
+    "subtitle": "The Rise of Addictive Technology and the Business of Keeping Us Hooked",
     "author": ["Adam Alter"]
   },
   {
     "title": "Creativity, Inc.",
+    "subtitle": "Overcoming the Unseen Forces That Stand in the Way of True Inspiration",
     "author": ["Ed Catmull"]
   },
   {
@@ -17,6 +19,7 @@
   },
   {
     "title": "Originals",
+    "subtitle": "How Non-Conformists Move the World",
     "author": ["Adam Grant"]
   },
   {
@@ -41,10 +44,12 @@
   },
   {
     "title": "The Teenage Liberation Handbook",
+    "subtitle": "How to Quit School and Get a Real Life and Education",
     "author": ["Grace Llewellyn"]
   },
   {
     "title": "The Idealist",
+    "subtitle": "Aaron Swartz and the Rise of Free Culture on the Internet",
     "author": ["Justin Peters"]
   },
   {
@@ -53,10 +58,12 @@
   },
   {
     "title": "The Self-Driven Child",
+    "subtitle": "The Science and Sense of Giving Your Kids More Control Over Their Lives",
     "author": ["William Stixrud", "Ned Johnson"]
   },
   {
     "title": "Zero to One",
+    "subtitle": "Notes on Startups, or How to Build the Future",
     "author": ["Peter Thiel"]
   }
 ]

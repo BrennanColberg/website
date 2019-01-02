@@ -46,7 +46,7 @@ const SinglePreview = (props) => {
       <ul className="Preview_tags" key="tags">
         {props.article.tags.map(technology => (
           <li
-            className={technology.toLowerCase().replace(/[ _:\/\.]+/, "-")}
+            className={technology.toLowerCase().replace(/[ _:/.]+/, "-")}
             key={technology}
           >{technology}</li>
         ))}
@@ -69,7 +69,7 @@ const SinglePreview = (props) => {
       <ul className="Preview_links" key="links">
         {props.article.links.map(link => (
           <li key={link.href}>
-            <a href={link.href} target="_blank">
+            <a href={link.href} target="_blank" rel="noopener noreferrer">
               [{link.text}]
             </a>
           </li>

@@ -1,23 +1,33 @@
 [
   {
     "name": "BFramework",
-    "code": "https://github.com/BrennanColberg/BFramework",
-    "description": "yada yada",
-    "technologies": [
+    "links": [
+      {
+        "text": "code",
+        "href": "https://github.com/BrennanColberg/BFramework"
+      }
+    ],
+    "tags": [
       "Java",
       "Game Development"
-    ]
+    ],
+    "description": "yada yada"
   },
   {
     "name": "Axis & Allies Dashboard",
-    "code": "https://github.com/BrennanColberg/aa3",
-    "description": "my go-to tech learning thing",
-    "technologies": [
+    "links": [
+      {
+        "text": "code",
+        "href": "https://github.com/BrennanColberg/aa3"
+      }
+    ],
+    "tags": [
       "HTML",
       "CSS",
       "JavaScript",
       "Java",
       "React"
-    ]
+    ],
+    "description": "my go-to tech learning thing"
   }
 ]

@@ -1,19 +1,37 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 /**
  * Displays all projects encoded in ./assets/projects.json to
  * showcase my accomplishments and technological progress.
  */
-const Preview = (props) => (
-  <section className={"Preview " + (props.className ? props.className : "")}>
-    {props.json.map(article => (
-      <SinglePreview
-        article={article}
-        key={article.title}
-      />
-    ))}
-  </section>
-);
+class Preview extends Component {
+
+  state = {
+    articles: [],
+    className: 'Preview'
+  }
+
+  componentDidMount() {
+    if (this.props.json) {
+      this.setState({
+        articles: this.state.articles.concat(this.props.json)
+      });
+    }
+  }
+
+  render() {
+    return (
+      <section className={this.state.className}>
+        {this.state.articles.map(article => (
+          <SinglePreview
+            article={article}
+            key={article.title}
+          />
+        ))}
+      </section>
+    );
+  }
+}
 
 /**
  * Displays all relevant fields of encoded information about a single

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import contactJSON from './assets/contact.json';
 
 const App = () => (
   <div className="App">
@@ -26,11 +27,17 @@ const App = () => (
   </div>
 );
 
+/**
+ * Displays contact info from a JSON file. Does not provide simplified
+ * previews without clicking; however, it may in the future.
+ */
 class ContactInfo extends Component {
   render() {
     return (
       <div className="ContactInfo">
-
+        {contactJSON.map(item => (
+          <li><a href={item.link}>{item.name}</a></li>
+        ))}
       </div>
     );
   }

@@ -9,18 +9,18 @@ const App = () => (
       Hi, my name's Brennan! I'm a student who likes to learn and
       program; here are some past projects of mine:
     </p>
-    <Preview file={'projects.json'} />
+    <Preview json={require('./assets/projects.json')} />
     <p>
       In my spare time, I try to read as much as possible. Here are
       some books I've read, notable quotes from them, and what I think
       about them:
     </p>
-    <Preview file={'books.json'} />
+    <Preview json={require('./assets/books.json')} />
     <p>
       I also write about interesting thoughts that come to me, occasionally:
       read some of those ramblings here!
     </p>
-    <Preview file={'blog.json'} />
+    <Preview json={require('./assets/blog.json')} />
     <p>
       Want to get in touch? Here lie my online personas:
     </p>

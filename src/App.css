@@ -1,6 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
+p, li {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover {
+  color: #aaa;
+}
+
 .App > h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 45pt;
   text-align: center;
-  font-size: 40pt;
   margin: 20px;
   margin-bottom: 50px;
 }
@@ -16,6 +35,18 @@
   text-align: center;
 }
 
+.Projects {
+  --color: 175, 113, 37;
+}
+
+.Books {
+  --color: 240, 223, 101;
+}
+
+.Blog {
+  --color: 253, 171, 80;
+}
+
 .Preview {
   display: flex;
   flex-flow: row nowrap;
@@ -23,29 +54,48 @@
   overflow-x: scroll;
   max-width: 1000px;
   margin: auto;
+  padding: 10px;
 }
 
 .Preview_article {
-  border: 3px solid #666;
+  border: 5px solid;
   border-radius: 10px;
-  box-shadow: 2px 3px 8px #888;
-  padding: 6px 7px;
-  box-sizing: border-box;
-  margin: 10px;
+  box-shadow: 3px 5px 25px #333;
+  padding: 10px;
+  margin: 15px;
   min-width: 200px;
   max-width: 250px;
+  border-color: rgba(var(--color), 1);
+  background-color: rgba(var(--color), 0.15);
 }
 
 .Preview_article * {
   margin: 0px;
 }
 
+.Preview_title {
+  font-family: "Merriweather", serif;
+  font-size: 16pt;
+  padding: 5px;
+  text-align: center;
+}
+
+.Preview_subtitle {
+  font-family: "Merriweather", serif;
+  font-size: 12pt;
+  text-align: center;
+}
+
 .Preview_description {
-  border: 3px solid darkgray;
-  border-radius: 10px;
-  padding: 2px 5px;
-  margin: 4px 0;
+  border: 3px solid;
+  border-color: inherit;
+  border-radius: inherit;
+  box-shadow: 1px 3px 20px #777;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.75;
   box-sizing: border-box;
+  margin: 8px 0;
 }
 
 .Preview_article ul {
@@ -55,21 +105,23 @@
   flex-flow: row wrap;
 }
 
+.Preview_tags {
+  justify-content: center;
+}
+
 .Preview_tags li {
-  margin: 0 3px;
+  margin: 0 5px;
 }
 
 .Preview_links {
-  justify-content: space-around;
+  justify-content: center;
   font-family: monospace;
 }
 
 .Preview_links a {
-  color: #333;
-}
-
-.Preview_links a:hover {
-  text-decoration: none;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
 .ContactInfo {

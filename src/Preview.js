@@ -5,7 +5,7 @@ import React from 'react';
  * showcase my accomplishments and technological progress.
  */
 const Preview = (props) => (
-  <section className="Preview">
+  <section className={"Preview " + (props.className ? props.className : "")}>
     {props.json.map(article => (
       <SinglePreview
         article={article}
@@ -69,7 +69,9 @@ const SinglePreview = (props) => {
       <ul className="Preview_links" key="links">
         {props.article.links.map(link => (
           <li key={link.href}>
-            <a href={link.href} target="_blank">{link.text}</a>
+            <a href={link.href} target="_blank">
+              [{link.text}]
+            </a>
           </li>
         ))}
       </ul>
@@ -77,11 +79,11 @@ const SinglePreview = (props) => {
   }
 
   return (
-    <article className={"Preview_article " + props.article.className}>
+    <article className={"Preview_article" + (props.article.className ? " " + props.article.className : "")}>
       {items}
     </article>
   );
-  
+
 };
 
 export default Preview;

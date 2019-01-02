@@ -1,6 +1,6 @@
 [
   {
-    "name": "BFramework",
+    "title": "BFramework",
     "links": [
       {
         "text": "code",
@@ -14,7 +14,7 @@
     "description": "yada yada"
   },
   {
-    "name": "Axis & Allies Dashboard",
+    "title": "Axis & Allies Dashboard",
     "links": [
       {
         "text": "code",

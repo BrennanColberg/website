@@ -18,7 +18,7 @@ class Preview extends Component {
         {this.json.map(article => (
           <SinglePreview
             article={article}
-            key={article.name}
+            key={article.title}
           />
         ))}
       </section>
@@ -31,19 +31,56 @@ class Preview extends Component {
  * Displays all relevant fields of encoded information about a single
  * article! Allows for easy formalization of the look of said previews.
  */
-const SinglePreview = (props) => (
-  <div className="SinglePreview">
-    <h2>{props.article.name}</h2>
-    <p>{props.article.description}</p>
-    <ul>
-      {props.article.tags.map(technology => (
-        <li
-          className={technology.toLowerCase().replace(/[ _:\/\.]+/, "-")}
-          key={technology}
-        >{technology}</li>
-      ))}
-    </ul>
-  </div>
-);
+const SinglePreview = (props) => {
+  let items = [];
+
+  // article title
+  if (props.article.title) {
+    items.push(
+      <h3 key="title">{props.article.title}</h3>
+    );
+  }
+
+  // article subtitle
+  if (props.article.subtitle) {
+    items.push(
+      <h4 key="subtitle">{props.article.subtitle}</h4>
+    );
+  }
+
+  // article links
+  if (props.article.links) {
+    items.push(
+      <div className="links" key="links">
+        {props.article.links.map(link => (
+          <a href={link.href} key={link.href}>{link.text}</a>
+        ))}
+      </div>
+    );
+  }
+
+  // article description
+  if (props.article.description) {
+    items.push(
+      <p key="description">{props.article.description}</p>
+    );
+  }
+
+  // article tags
+  if (props.article.tags) {
+    items.push(
+      <ul key="tags">
+        {props.article.tags.map(technology => (
+          <li
+            className={technology.toLowerCase().replace(/[ _:\/\.]+/, "-")}
+            key={technology}
+          >{technology}</li>
+        ))}
+      </ul>
+    )
+  }
+
+  return <div className="SinglePreview">{items}</div>;
+};
 
 export default Preview;

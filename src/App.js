@@ -37,7 +37,7 @@ class ContactInfo extends Component {
     return (
       <div className="ContactInfo">
         {contactJSON.map(item => (
-          <li><a href={item.link}>{item.name}</a></li>
+          <li key={item.link}><a href={item.link}>{item.name}</a></li>
         ))}
       </div>
     );

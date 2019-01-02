@@ -35,11 +35,11 @@ const App = () => (
 class ContactInfo extends Component {
   render() {
     return (
-      <div className="ContactInfo">
+      <ul className="ContactInfo">
         {contactJSON.map(item => (
           <li key={item.link}><a href={item.link}>{item.name}</a></li>
         ))}
-      </div>
+      </ul>
     );
   }
 }

@@ -1,7 +1,19 @@
+.App h1 {
+  text-align: center;
+}
+
+.App p {
+  text-align: left;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
 .Preview {
   display: flex;
   flex-flow: row nowrap;
   overflow-x: scroll;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .Preview article {
@@ -28,4 +40,18 @@
 
 .blue-book * {
   color: blue;
+}
+
+.ContactInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.ContactInfo li {
+  display: block;
+  margin: 0 20px;
 }

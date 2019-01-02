@@ -9,7 +9,6 @@ class Preview extends Component {
   constructor(props) {
     super(props);
     this.json = require('./assets/' + props.file);
-    console.log(this.json);
   }
 
   render() {

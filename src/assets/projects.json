@@ -2,32 +2,104 @@
   {
     "title": "BFramework",
     "links": [
-      {
-        "text": "code",
-        "href": "https://github.com/BrennanColberg/BFramework"
-      }
+      {"text": "code", "href": "https://github.com/BrennanColberg/BFramework"}
     ],
-    "tags": [
-      "Java",
-      "Game Development"
+    "tags": ["Java"],
+    "description": "2D game framework made with Java’s AWT/Swing libraries. Was the foundation for a game which won 2nd place internationally in TSA’s Video Game Design/Programming competition in 2017."
+  },
+  {
+    "title": "Backus-Naur Sentence Generator",
+    "links": [
+      {"text": "use it", "href": "https://students.washington.edu/bcolberg/grammar/" },
+      {"text": "code", "href": "https://github.com/BrennanColberg/grammar/"}
     ],
-    "description": "yada yada"
+    "tags": ["PHP"],
+    "description": "Website that can randomly generate sentences from predefined Backus-Naur Form (BNF) machine grammars, much to one's general amusement."
+  },
+  {
+    "title": "Resume",
+    "links": [
+      {"text": "read it", "href": "https://resume.brennancolberg.com"},
+      {"text": "code", "href": "https://github.com/BrennanColberg/resume"}
+    ],
+    "tags": ["HTML", "CSS"],
+    "description": "My professional resume, made using HTML & CSS to suitably showcase web development abilities."
+  },
+  {
+    "title": "Carbon Cycle Simulator",
+    "links": [
+      {"text": "use it", "href": "https://carbon.brennancolberg.com"},
+      {"text": "code", "href": "https://github.com/BrennanColberg/carbon"}
+    ],
+    "tags": ["JavaScript"],
+    "description": "Interactive simulation of the carbon cycle, designed and implemented as an activity for high school biology classes. Based on a lesson originally designed by Jennifer Ceven."
+  },
+  {
+    "title": "Personal Website",
+    "links": [
+      {"text": "code", "href": "https://github.com/BrennanColberg/website"}
+    ],
+    "tags": ["React", "CSS"],
+    "description": "My personal website; built first in vanila JS, then PHP, and now React, I use it to tinker with and learn various web technologies."
+  },
+  {
+    "title": "FMBQ Jump Lights",
+    "links": [
+      {"text": "use it", "href": "https://fmbq.brennancolberg.com"},
+      {"text": "code", "href": "https://github.com/BrennanColberg/fmbq"}
+    ],
+    "tags": ["JavaScript"],
+    "description": "Free alternative to jump seats for the Free Methodist Bible Quizzing competition. Two teams sit on opposite sides of a keyboard with fingers on it for \"jumping.\" Substitutes for $150+ of equipment."
+  },
+  {
+    "title": "BV.game",
+    "links": [
+      {"text": "code", "href": "https://github.com/BrennanColberg/BV.game"}
+    ],
+    "tags": ["Java"],
+    "description": "Game built for TSA’s 2018 Video Game Design/Programming event with BFramework V, the fifth complete rebuild of a custom JAVA game engine. Said framework is built into the game code here, instead of being a separate project."
+  },
+  {
+    "title": "Binary Quiz (App Lab)",
+    "links": [
+      {"text": "use it", "href": "https://studio.code.org/projects/applab/qIUEXKwKGgHDxjoZzQzEQo8JtBmT3YWbUAoQD1p8dU4"},
+      {"text": "code", "href": "https://studio.code.org/projects/applab/qIUEXKwKGgHDxjoZzQzEQo8JtBmT3YWbUAoQD1p8dU4/view"}
+    ],
+    "tags": ["JavaScript", "App Lab"],
+    "description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive."
+  },
+  {
+    "title": "Binary Quiz (iOS)",
+    "links": [
+      {"text": "code", "href": "https://github.com/BrennanColberg/BinaryQuiz"}
+    ],
+    "tags": ["Swift"],
+    "description": "A simple quiz that asks you to categorize words into one of two similar categories! Simple, but addictive. Not yet finished."
+  },
+  {
+    "title": "Online Periodic Table",
+    "links": [
+      {"text": "use it", "href": "https://periodic-table.brennancolberg.com"},
+      {"text": "code", "href": "https://github.com/BrennanColberg/periodic-table"}
+    ],
+    "tags": ["JavaScript"],
+    "description": "An experiment to see how much fancy functionality I can add to something simple by abusing JavaScript. Data from Bowserinator/Periodic-Table-JSON is used for content generation."
+  },
+  {
+    "title": "Pranks",
+    "links": [
+      {"text": "view", "href": "https://github.com/BrennanColberg/pranks"}
+    ],
+    "tags": ["Shell"],
+    "description": "A collection of various files which set up frustrating situations on computers when run. Fun to run on friends' computers while they're distracted, as pranks."
   },
   {
     "title": "Axis & Allies Dashboard",
     "links": [
-      {
-        "text": "code",
-        "href": "https://github.com/BrennanColberg/aa3"
-      }
+      {"text": "use it", "href": "https://axis-allies.brennancolberg.com"},
+      {"text": "code", "href": "https://github.com/BrennanColberg/axis-allies"}
     ],
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Java",
-      "React"
-    ],
-    "description": "my go-to tech learning thing"
+    "tags": ["JavaScript"],
+    "description": "Website to use while playing \"Axis & Allies,\" a WWII-based strategy board game. Cycles through each country’s turn, showing each nation's gamestate (with WWII anthem) and doing all bookkeeping."
   }
 ]

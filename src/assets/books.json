@@ -1,19 +1,62 @@
 [
   {
-    "title": "One Book"
+    "title": "Irresistable",
+    "subtitle": "Adam Alter"
   },
   {
-    "title": "Two Book"
+    "title": "Creativity, Inc.",
+    "subtitle": "Ed Catmull"
   },
   {
-    "title": "Red Book",
-    "className": "red-book"
+    "title": "Homeschooling for Excellence",
+    "subtitle": "David & Micki Colfax"
   },
   {
-    "title": "Blue Book",
-    "className": "blue-book"
+    "title": "American Gods",
+    "subtitle": "Neil Gaiman"
   },
   {
-    "title": "Theodore Geisel"
+    "title": "Originals",
+    "subtitle": "Adam Grant"
+  },
+  {
+    "title": "Dune",
+    "subtitle": "Frank Herbert"
+  },
+  {
+    "title": "How Children Fail",
+    "subtitle": "John Holt"
+  },
+  {
+    "title": "How Children Learn",
+    "subtitle": "John Holt"
+  },
+  {
+    "title": "The Case Against Standardized Testing",
+    "subtitle": "Alfie Kohn"
+  },
+  {
+    "title": "The Homework Myth",
+    "subtitle": "Alfie Kohn"
+  },
+  {
+    "title": "The Teenage Liberation Handbook",
+    "subtitle": "Grace Llewellyn"
+  },
+  {
+    "title": "The Idealist",
+    "subtitle": "Justin Peters"
+  },
+  {
+    "title": "Red Mars",
+    "subtitle": "Kim Stanley Robinson"
+  },
+  {
+    "title": "The Self-Driven Child",
+    "subtitle": "William Stixrud & Ned Johnson"
+  },
+  {
+    "title": "Zero to One",
+    "subtitle": "Peter Thiel"
   }
 ]

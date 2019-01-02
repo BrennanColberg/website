@@ -1,62 +1,62 @@
 [
   {
     "title": "Irresistable",
-    "subtitle": "Adam Alter"
+    "author": ["Adam Alter"]
   },
   {
     "title": "Creativity, Inc.",
-    "subtitle": "Ed Catmull"
+    "author": ["Ed Catmull"]
   },
   {
     "title": "Homeschooling for Excellence",
-    "subtitle": "David & Micki Colfax"
+    "author": ["David Colfax", "Micki Colfax"]
   },
   {
     "title": "American Gods",
-    "subtitle": "Neil Gaiman"
+    "author": ["Neil Gaiman"]
   },
   {
     "title": "Originals",
-    "subtitle": "Adam Grant"
+    "author": ["Adam Grant"]
   },
   {
     "title": "Dune",
-    "subtitle": "Frank Herbert"
+    "author": ["Frank Herbert"]
   },
   {
     "title": "How Children Fail",
-    "subtitle": "John Holt"
+    "author": ["John Holt"]
   },
   {
     "title": "How Children Learn",
-    "subtitle": "John Holt"
+    "author": ["John Holt"]
   },
   {
     "title": "The Case Against Standardized Testing",
-    "subtitle": "Alfie Kohn"
+    "author": ["Alfie Kohn"]
   },
   {
     "title": "The Homework Myth",
-    "subtitle": "Alfie Kohn"
+    "author": ["Alfie Kohn"]
   },
   {
     "title": "The Teenage Liberation Handbook",
-    "subtitle": "Grace Llewellyn"
+    "author": ["Grace Llewellyn"]
   },
   {
     "title": "The Idealist",
-    "subtitle": "Justin Peters"
+    "author": ["Justin Peters"]
   },
   {
     "title": "Red Mars",
-    "subtitle": "Kim Stanley Robinson"
+    "author": ["Kim Stanley Robinson"]
   },
   {
     "title": "The Self-Driven Child",
-    "subtitle": "William Stixrud & Ned Johnson"
+    "author": ["William Stixrud", "Ned Johnson"]
   },
   {
     "title": "Zero to One",
-    "subtitle": "Peter Thiel"
+    "author": ["Peter Thiel"]
   }
 ]

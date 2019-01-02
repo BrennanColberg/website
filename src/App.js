@@ -4,27 +4,47 @@ import contactJSON from './assets/contact.json';
 
 const App = () => (
   <div className="App">
+
     <h1>Brennan Colberg</h1>
+
     <p>
       Hi, my name's Brennan! I'm a student who likes to learn and
       program; here are some past projects of mine:
     </p>
-    <Preview json={require('./assets/projects.json')} />
+    <Preview json={require('./assets/projects.json').map(project => {
+        let links = [];
+        if (project.link) links.push({"text": "use it", "href": project.link});
+        if (project.code) links.push({"text": "code", "href": project.code})
+        return ({
+        "title": project.name,
+        "tags": project.languages,
+        "description": project.description,
+        "links": links
+      });
+    })} />
+
     <p>
       In my spare time, I try to read as much as possible. Here are
       some books I've read, notable quotes from them, and what I think
       about them:
     </p>
-    <Preview json={require('./assets/books.json')} />
+    <Preview json={require('./assets/books.json').map(book => ({
+      "title": book.title,
+      "subtitle": book.subtitle,
+      "tags": book.author
+    }))} />
+
     <p>
       I also write about interesting thoughts that come to me, occasionally:
       read some of those ramblings here!
     </p>
     <Preview json={require('./assets/blog.json')} />
+
     <p>
       Want to get in touch? Here lie my online personas:
     </p>
     <ContactInfo />
+
   </div>
 );
 

@@ -1,15 +1,23 @@
 import Preview from './Preview.js';
-import books from './assets/books.json';
+import bookFileIndex from './assets/book-index.json';
 
 class BookPreview extends Preview {
 
   componentDidMount() {
     this.setState({
-      articles: books.map(book => ({
-        "title": book.title,
-        "tags": book.author
-      })),
+
+      articles: bookFileIndex.map(file => {
+        // get book JSON that is referred to
+        let book = require("./assets/books/" + file + ".json")
+        // translate it into display format
+        return ({
+          "title": book.title,
+          "tags": book.author
+        });
+      }),
+
       className: this.state.className + " Book"
+
     });
   }
 

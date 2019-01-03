@@ -1,10 +1,9 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
-# update indices of content
-python3 scripts/index-projects.py
-python3 scripts/index-books.py
-python3 scripts/index-blog.py
+# update content storage
+python3 scripts/compile-markdown.py
+python3 scripts/update-indices.py
 
 # build website
 npm run build

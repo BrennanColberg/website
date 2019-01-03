@@ -164,8 +164,8 @@ class BlogPreview extends Preview {
         let post = require("./assets/blog/" + file + ".json")
         // translate it into display format
         return ({
-          "title": post.title,
-          "subtitle": post.subtitle,
+          "title": post.title + (post.subtitle ? ": " + post.subtitle : ""),
+          "subtitle": post.date,
           "link": "/blog/" + file
         });
       }),

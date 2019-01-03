@@ -20,7 +20,7 @@ const Home = () => (
 
     <p>
       I also write about interesting thoughts that come to me, occasionally:
-      read some of those ramblings here!
+      read some of those [self-evidently unedited] ramblings here!
     </p>
     <BlogPreview />
 

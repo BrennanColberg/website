@@ -7,12 +7,15 @@ p, li {
 }
 
 a {
-  font-family: inherit;
+  color: inherit;
   text-decoration: none;
+}
+
+a.external {
   color: #777;
 }
 
-a:hover {
+a.external:hover {
   color: #aaa;
 }
 
@@ -95,7 +98,7 @@ a:hover {
   background-color: white;
   opacity: 0.75;
   box-sizing: border-box;
-  margin: 8px 0;
+  margin-top: 8px;
 }
 
 .Preview_article ul {

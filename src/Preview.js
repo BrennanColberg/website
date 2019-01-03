@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 /**
  * Displays all projects encoded in ./assets/projects.json to
@@ -23,10 +24,12 @@ class Preview extends Component {
     return (
       <section className={this.state.className}>
         {this.state.articles.map(article => (
-          <SinglePreview
-            article={article}
-            key={article.title}
-          />
+          <Link to={article.link ? article.link : "/"}>
+            <SinglePreview
+              article={article}
+              key={article.title}
+            />
+          </Link>
         ))}
       </section>
     );
@@ -81,13 +84,14 @@ const SinglePreview = (props) => {
     );
   }
 
+  /* DISABLED DUE TO NESTED LINKS NOT WORKING (CARD = LINK)
   // article links
   if (props.article.links) {
     items.push(
       <ul className="Preview_links" key="links">
         {props.article.links.map(link => (
           <li key={link.href}>
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
+            <a href={link.href} className="external" target="_blank" rel="noopener noreferrer">
               [{link.text}]
             </a>
           </li>
@@ -95,6 +99,7 @@ const SinglePreview = (props) => {
       </ul>
     );
   }
+  */
 
   return (
     <article className={"Preview_article" + (props.article.className ? " " + props.article.className : "")}>

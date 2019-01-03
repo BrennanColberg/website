@@ -11,7 +11,7 @@ class ContactInfo extends Component {
       <ul className="ContactInfo">
         {contactJSON.map(item => (
           <li key={item.link}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <a href={item.link} className="external" target="_blank" rel="noopener noreferrer">
               {item.name}
             </a>
           </li>

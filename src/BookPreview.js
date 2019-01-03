@@ -12,7 +12,8 @@ class BookPreview extends Preview {
         // translate it into display format
         return ({
           "title": book.title,
-          "tags": book.author
+          "tags": book.author,
+          "link": "/books/" + file
         });
       }),
 

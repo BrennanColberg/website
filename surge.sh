@@ -7,6 +7,7 @@ python3 scripts/update-indices.py
 
 # build website
 npm run build
+cd build
 
 # publish to surge
 echo 'bcolberg.surge.sh' > CNAME

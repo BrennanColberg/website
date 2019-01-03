@@ -6,11 +6,7 @@ import Book from './Book.js';
 const App = () => (
   <Router>
     <div className="App">
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/book/">book</Link>
-      </nav>
-      <h1>Brennan Colberg</h1>
+      <Link to="/"><h1>Brennan Colberg</h1></Link>
       <Route exact path="/" component={Home} />
       <Route path="/book/:book" component={Book} />
     </div>

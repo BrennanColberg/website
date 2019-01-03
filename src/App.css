@@ -19,7 +19,7 @@ a.external:hover {
   color: #aaa;
 }
 
-.App > h1 {
+.App h1 {
   font-family: "Space Mono", monospace;
   font-size: 45pt;
   text-align: center;

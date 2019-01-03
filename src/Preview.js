@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import projectFileIndex from './assets/project-index.json';
+import bookFileIndex from './assets/book-index.json';
+import blogFileIndex from './assets/blog-index.json';
 
 /**
  * Displays all projects encoded in ./assets/projects.json to
@@ -109,4 +112,73 @@ const SinglePreview = (props) => {
 
 };
 
+class ProjectPreview extends Preview {
+  componentDidMount() {
+    this.setState({
+
+      articles: projectFileIndex.map(file => {
+        // get JSON that is referred to
+        let project = require("./assets/projects/" + file + ".json")
+        // translate it into display format
+        return ({
+          "title": project.name,
+          "tags": project.languages,
+          "description": project.description,
+          "link": "/projects/" + file
+        });
+      }),
+
+      className: this.state.className + " Project"
+
+    });
+  }
+}
+
+class BookPreview extends Preview {
+  componentDidMount() {
+    this.setState({
+
+      articles: bookFileIndex.map(file => {
+        // get JSON that is referred to
+        let book = require("./assets/books/" + file + ".json")
+        // translate it into display format
+        return ({
+          "title": book.title,
+          "tags": book.author,
+          "link": "/books/" + file
+        });
+      }),
+
+      className: this.state.className + " Book"
+
+    });
+  }
+}
+
+class BlogPreview extends Preview {
+  componentDidMount() {
+    this.setState({
+
+      articles: blogFileIndex.map(file => {
+        // get JSON that is referred to
+        let post = require("./assets/blog/" + file + ".json")
+        // translate it into display format
+        return ({
+          "title": post.title,
+          "subtitle": post.subtitle,
+          "link": "/blog/" + file
+        });
+      }),
+
+      className: this.state.className + " Blog"
+
+    });
+  }
+}
+
 export default Preview;
+export {
+  ProjectPreview,
+  BookPreview,
+  BlogPreview
+};

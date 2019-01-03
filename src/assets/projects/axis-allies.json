@@ -1,0 +1,7 @@
+{
+  "name": "Axis & Allies Dashboard",
+  "link": "https://axis-allies.brennancolberg.com",
+  "code": "https://github.com/BrennanColberg/axis-allies",
+  "languages": ["JavaScript"],
+  "description": "Website to use while playing \"Axis & Allies,\" a WWII-based strategy board game. Cycles through each country’s turn, showing each nation's gamestate (with WWII anthem) and doing all bookkeeping."
+}

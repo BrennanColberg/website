@@ -1,0 +1,7 @@
+{
+  "name": "Online Periodic Table",
+  "link": "https://periodic-table.brennancolberg.com",
+  "code": "https://github.com/BrennanColberg/periodic-table",
+  "languages": ["JavaScript"],
+  "description": "An experiment to see how much fancy functionality I can add to something simple by abusing JavaScript. Data from Bowserinator/Periodic-Table-JSON is used for content generation."
+}

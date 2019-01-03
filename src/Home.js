@@ -1,7 +1,5 @@
 import React from 'react';
-import ProjectPreview from './ProjectPreview.js';
-import BookPreview from './BookPreview.js';
-import BlogPreview from './BlogPreview.js';
+import {ProjectPreview, BookPreview, BlogPreview} from './Preview.js';
 import ContactInfo from './ContactInfo.js';
 
 const Home = () => (

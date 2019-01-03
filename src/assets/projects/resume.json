@@ -1,0 +1,7 @@
+{
+  "name": "Resume",
+  "link": "https://resume.brennancolberg.com",
+  "code": "https://github.com/BrennanColberg/resume",
+  "languages": ["HTML", "CSS"],
+  "description": "My professional resume, made using HTML & CSS to suitably showcase web development abilities."
+}

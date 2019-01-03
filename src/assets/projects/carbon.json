@@ -1,0 +1,7 @@
+{
+  "name": "Carbon Cycle Simulator",
+  "link": "https://carbon.brennancolberg.com",
+  "code": "https://github.com/BrennanColberg/carbon",
+  "languages": ["JavaScript"],
+  "description": "Interactive simulation of the carbon cycle, designed and implemented as an activity for high school biology classes. Based on a lesson originally designed by Jennifer Ceven."
+}

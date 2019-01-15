@@ -1,5 +1,5 @@
 #!/bin/bash
-cd "$(dirname "$0")"
+# run from directory folder!
 
 # update content storage
 python3 scripts/compile-markdown.py

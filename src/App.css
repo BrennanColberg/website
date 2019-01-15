@@ -140,3 +140,8 @@ a.external:hover {
   display: block;
   margin: 0 20px;
 }
+
+.Article {
+  max-width: min(1000px, 90%);
+  margin: auto;
+}

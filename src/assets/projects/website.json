@@ -1,6 +1,0 @@
-{
-  "name": "Personal Website",
-  "code": "https://github.com/BrennanColberg/website",
-  "languages": ["React", "CSS"],
-  "description": "My personal website; built first in vanila JS, then PHP, and now React, I use it to tinker with and learn various web technologies."
-}

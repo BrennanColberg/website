@@ -1,7 +1,0 @@
-{
-  "name": "FMBQ Jump Lights",
-  "link": "https://fmbq.brennancolberg.com",
-  "code": "https://github.com/BrennanColberg/fmbq",
-  "languages": ["JavaScript"],
-  "description": "Free alternative to jump seats for the Free Methodist Bible Quizzing competition. Two teams sit on opposite sides of a keyboard with fingers on it for \"jumping.\" Substitutes for $150+ of equipment."
-}

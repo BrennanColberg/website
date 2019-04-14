@@ -1,7 +1,0 @@
-{
-  "name": "Backus-Naur Sentence Generator",
-  "link": "https://students.washington.edu/bcolberg/grammar/",
-  "code": "https://github.com/BrennanColberg/grammar/",
-  "languages": ["PHP"],
-  "description": "Website that can randomly generate sentences from predefined Backus-Naur Form (BNF) machine grammars, much to one's general amusement."
-}

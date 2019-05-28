@@ -1,0 +1,31 @@
+.book {
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+
+  span {
+    display: inline-block;
+  }
+
+  .date {
+    color: #888;
+    margin-right: 30px;
+  }
+
+  .title {
+    color: #000;
+  }
+
+  .subtitle {
+    color: #111;
+    &::before {
+      content: ": ";
+    }
+  }
+
+  .author {
+    color: #666;
+    margin-left: auto;
+  }
+}

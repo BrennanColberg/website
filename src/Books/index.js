@@ -1,21 +1,14 @@
+import "./Books.scss";
+
 import React from "react";
 
 import Book from "./Book";
-
-let books = [
-  {
-    title: "Free At Last",
-    subtitle: "The Sudbury Valley School",
-    author: "Daniel Greenberg",
-    date: "May 13, 2019",
-    link: "https://www.amazon.com/Free-Last-Sudbury-Valley-School/dp/1888947004"
-  }
-];
+import json from "./books";
 
 export default () => (
-  <div>
-    {books.map(book => (
+  <main className="books">
+    {json.map(book => (
       <Book book={book} />
     ))}
-  </div>
+  </main>
 );

@@ -1,15 +1,10 @@
 import React from "react";
 
 export default ({ book: { title, subtitle, author, date, link } }) => (
-  <tr>
-    <td>{title}</td>
-    <td>{subtitle}</td>
-    <td>{author}</td>
-    <td>{date}</td>
-    <td>
-      <a href={link} target="_blank">
-        Amazon
-      </a>
-    </td>
-  </tr>
+  <div className="book">
+    <span className="date">{date}</span>
+    <span className="title">{title}</span>
+    {subtitle && <span className="subtitle">{subtitle}</span>}
+    <span className="author">{author}</span>
+  </div>
 );

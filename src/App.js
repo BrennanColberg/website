@@ -1,24 +1,14 @@
 import React from "react";
-import "./App.css";
+import { HashRouter as Router, Link, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Home from "./Home";
+import Books from "./Books";
 
-export default App;
+export default () => (
+  <Router>
+    <>
+      <Route exact path="/" component={Home} />
+      <Route path="/books" component={Books} />
+    </>
+  </Router>
+);

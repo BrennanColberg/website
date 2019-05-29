@@ -1,3 +1,5 @@
+import "./App.scss";
+
 import React from "react";
 import { HashRouter as Router, Link, Route } from "react-router-dom";
 

@@ -1,31 +1,77 @@
+// .book {
+//   font-family: sans-serif;
+//   display: flex;
+//   flex-flow: row nowrap;
+//   justify-content: left;
+
+//   > span {
+//     display: inline-block;
+//   }
+
+//   .date {
+//     color: #888;
+//     margin-right: 30px;
+//   }
+
+//   .title {
+//     color: #000;
+//   }
+
+//   .subtitle {
+//     color: #333;
+//     &::before {
+//       color: #000;
+//       content: ": ";
+//     }
+//   }
+
+//   .author {
+//     color: #666;
+//     margin-left: auto;
+//   }
+// }
+
+.books {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 .book {
   font-family: sans-serif;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: left;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 10px 20px;
+  box-shadow: 4px 2px 10px gray;
+  cursor: default;
 
-  span {
+  > span {
     display: inline-block;
-  }
-
-  .date {
-    color: #888;
-    margin-right: 30px;
+    margin: 2px;
   }
 
   .title {
-    color: #000;
+    font-weight: bold;
+    font-size: 15pt;
   }
 
   .subtitle {
-    color: #111;
     &::before {
-      content: ": ";
+      content: " – ";
     }
+    font-weight: normal;
+    font-size: 12pt;
   }
 
   .author {
-    color: #666;
-    margin-left: auto;
+    font-size: 11pt;
   }
 }

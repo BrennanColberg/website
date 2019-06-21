@@ -1,77 +1,41 @@
-// .book {
-//   font-family: sans-serif;
-//   display: flex;
-//   flex-flow: row nowrap;
-//   justify-content: left;
-
-//   > span {
-//     display: inline-block;
-//   }
-
-//   .date {
-//     color: #888;
-//     margin-right: 30px;
-//   }
-
-//   .title {
-//     color: #000;
-//   }
-
-//   .subtitle {
-//     color: #333;
-//     &::before {
-//       color: #000;
-//       content: ": ";
-//     }
-//   }
-
-//   .author {
-//     color: #666;
-//     margin-left: auto;
-//   }
-// }
-
 .books {
-  display: flex;
-  flex-flow: column wrap;
-  height: 80vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
+	display: flex;
+	flex-flow: column wrap;
+	height: 80vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
 
-.book {
-  font-family: sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-  align-items: center;
-  width: 150px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 6px;
-  margin: 10px 20px;
-  box-shadow: 4px 2px 10px gray;
-  cursor: default;
+	.book {
+		font-family: sans-serif;
+		text-align: center;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		width: 180px;
+		margin: 10px 20px;
+		padding: 6px;
+		box-shadow: 4px 2px 10px gray;
+		border: 1px solid gray;
+		border-radius: 10px;
+		cursor: default;
 
-  > span {
-    display: inline-block;
-    margin: 2px;
-  }
+		> span {
+			display: inline-block;
+			margin: 2px;
+		}
 
-  .title {
-    font-weight: bold;
-    font-size: 15pt;
-  }
+		.title {
+			font-weight: bold;
+			font-size: 15pt;
+		}
 
-  .subtitle {
-    &::before {
-      content: " – ";
-    }
-    font-weight: normal;
-    font-size: 12pt;
-  }
+		.subtitle {
+			font-style: italic;
+			font-size: 12pt;
+		}
 
-  .author {
-    font-size: 11pt;
-  }
+		.author {
+			font-size: 11pt;
+		}
+	}
 }

@@ -13,9 +13,10 @@ export default () => (
 			<p>
 				I read a lot. Since June 2018, I've finished {json.length} books–from
 				novels to academic summaries, history to educational theory, classics to
-				self-help books, I tend to pick up anything that piques my interest. All
-				of those books are above, in chronological order of when I finished each{" "}
-				<Paren>if I read something twice, it's posted twice</Paren>.
+				self-help books, I tend to pick up anything that piques my interest. All{" "}
+				{json.length} reads are listed below, in chronological order{" "}
+				<Paren>most recent first</Paren>. If I read something twice, it's listed
+				twice.
 			</p>
 			<p class="hidden">
 				I've given each book a personal rating on a scale between -1.0 and 1.0
@@ -35,10 +36,11 @@ export default () => (
 				If you're interested in chatting about any of these books{" "}
 				<Paren>
 					whether from personal curiosity, wanting to hear my take on them, or
-					wanting to chat in more depth
+					just wanting to talk in more depth
 				</Paren>
-				, then <a href="mailto:brennan.colberg@gmail.com">shoot me an email!</a>{" "}
-				I'll respond as fast as I can.
+				, feel free to{" "}
+				<a href="mailto:brennan.colberg@gmail.com">shoot me an email!</a> I'll
+				respond as fast as I can.
 			</p>
 		</article>
 	</>

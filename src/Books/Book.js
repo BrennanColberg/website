@@ -5,12 +5,10 @@ import React from "react";
 function shadowColorFromRating(rating) {}
 
 export default ({ book: { title, subtitle, author, date, link } }) => (
-  <div className="book">
-    <span className="date">{date}</span>
-    <span className="title">
-      {title}
-      {subtitle && <span className="subtitle">{subtitle}</span>}
-    </span>
-    <span className="author">{author}</span>
-  </div>
+	<div className="book">
+		<span className="date hidden">{date}</span>
+		<span className="title">{title}</span>
+		{subtitle && <span className="subtitle">{subtitle}</span>}
+		<span className="author">{author}</span>
+	</div>
 );

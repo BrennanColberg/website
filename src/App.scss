@@ -64,6 +64,13 @@ article {
 			content: ")";
 		}
 	}
+
+	> div {
+		// full width of screen
+		width: 100vw;
+		// centered using negative margins
+		margin-left: calc((100% - 100vw) / 2);
+	}
 }
 
 .hidden {

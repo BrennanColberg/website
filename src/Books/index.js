@@ -8,13 +8,6 @@ import Paren from "../Paren";
 
 export default () => (
 	<>
-		<div className="books">
-			{json
-				.sort((a, b) => a.date < b.date) // descending chronological order
-				.map(book => (
-					<Book book={book} />
-				))}
-		</div>
 		<article>
 			<h1>My Reading</h1>
 			<p>
@@ -31,6 +24,13 @@ export default () => (
 				recommend it. The more red it is, the less I'd recommend it. If there's
 				no shadow, I haven't coded an opinion in for that book yet.
 			</p>
+			<div className="books">
+				{json
+					.sort((a, b) => a.date < b.date) // descending chronological order
+					.map(book => (
+						<Book book={book} />
+					))}
+			</div>
 			<p>
 				If you're interested in chatting about any of these books{" "}
 				<Paren>

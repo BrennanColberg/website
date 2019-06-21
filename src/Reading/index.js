@@ -1,4 +1,4 @@
-import "./Books.scss";
+import "./Reading.scss";
 
 import React from "react";
 

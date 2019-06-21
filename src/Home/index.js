@@ -5,7 +5,10 @@ import Paren from "../Paren";
 
 export default () => (
 	<article>
-		<h3>My name is Brennan Colberg; I'm an autodidact, among other things.</h3>
+		<h1>
+			My name is Brennan Colberg.{" "}
+			<span class="no-bold">I'm an autodidact, among other things.</span>
+		</h1>
 		<p>
 			Here you'll find a list of <Link to="/books">the books I've read</Link>{" "}
 			<Paren>and what I think of at least some of them</Paren>, writings on

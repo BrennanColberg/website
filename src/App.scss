@@ -13,7 +13,7 @@ footer {
 	font-family: sans-serif;
 
 	* {
-		margin: 0 5px;
+		margin: 0 7px;
 		font-size: inherit;
 
 		&:first-child {
@@ -61,6 +61,7 @@ article {
 		max-width: 800px;
 		margin: 15px auto;
 		font-family: sans-serif;
+		text-align: left;
 	}
 
 	p {
@@ -85,4 +86,16 @@ article {
 
 .hidden {
 	display: none !important;
+}
+
+.no {
+	&-bold {
+		font-weight: normal;
+	}
+	&-underline {
+		text-decoration: none;
+	}
+	&-italic {
+		font-style: normal;
+	}
 }

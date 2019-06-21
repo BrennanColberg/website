@@ -4,18 +4,18 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 import Home from "./Home";
-import Books from "./Books";
+import Reading from "./Reading";
 
 export default () => (
 	<Router>
 		<>
 			<header>
 				<Link to="/">BDC</Link>
-				<Link to="/books">Books</Link>
+				<Link to="/reading">Reading</Link>
 			</header>
 			<main>
 				<Route exact path="/" component={Home} />
-				<Route path="/books" component={Books} />
+				<Route exact path="/reading" component={Reading} />
 			</main>
 			<footer>
 				<span>&copy; Brennan Colberg 2019.</span>{" "}

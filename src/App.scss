@@ -1,15 +1,18 @@
+$gray-1: #444;
+$gray-2: #888;
+$gray-3: #ddd;
+$blue-1: #236cba;
+
 header,
 footer {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-direction: row;
 	overflow-x: scroll;
-	justify-content: left;
 	align-items: center;
 
 	padding: 5px 7px;
 
-	background-color: #ddd;
-	color: #444;
+	color: $gray-1;
 	font-family: sans-serif;
 
 	* {
@@ -31,15 +34,24 @@ footer {
 	}
 }
 header {
+	background-color: $gray-3;
 	font-size: 15pt;
+	justify-content: left;
+	flex-wrap: nowrap;
 }
 footer {
+	color: $gray-2;
 	font-size: 11pt;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 main {
+	// make sure footer is on bottom
+	min-height: calc(100vh - 180px);
+
 	a {
-		color: #236cba;
+		color: $blue-1;
 		text-decoration: none;
 		span {
 			text-decoration: underline;
@@ -69,13 +81,7 @@ article {
 		font-size: 14pt;
 
 		span.paren {
-			color: #888;
-			&::before {
-				content: "(";
-			}
-			&::after {
-				content: ")";
-			}
+			color: $gray-2;
 		}
 
 		& + *:not(p) {

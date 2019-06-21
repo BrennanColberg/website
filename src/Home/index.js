@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Paren from "../Paren";
+import EmailLink from "../EmailLink";
 
 export default () => (
 	<article>
@@ -43,7 +44,7 @@ export default () => (
 				Messenger
 			</a>
 			. For longer-form or formal contact, please{" "}
-			<a href="mailto:brennan.colberg@gmail.com">email me</a> instead!{" "}
+			<EmailLink>email me</EmailLink> instead!{" "}
 			<Paren>
 				Since June 12, 2019, due to a longstanding struggle with social media
 				addiction, I no longer have accounts on Twitter, Reddit, Facebook

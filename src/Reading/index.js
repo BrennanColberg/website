@@ -5,6 +5,7 @@ import React from "react";
 import Book from "./Book";
 import json from "./books";
 import Paren from "../Paren";
+import EmailLink from "../EmailLink";
 
 export default () => (
 	<>
@@ -38,9 +39,8 @@ export default () => (
 					whether from personal curiosity, wanting to hear my take on them, or
 					just wanting to talk in more depth
 				</Paren>
-				, feel free to{" "}
-				<a href="mailto:brennan.colberg@gmail.com">shoot me an email!</a> I'll
-				respond as fast as I can.
+				, feel free to <EmailLink>shoot me an email!</EmailLink> I'll respond as
+				fast as I can.
 			</p>
 		</article>
 	</>

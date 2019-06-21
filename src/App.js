@@ -1,10 +1,11 @@
 import "./App.scss";
 
 import React from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 import Home from "./Home";
 import Reading from "./Reading";
+import Writing from "./Writing";
 
 export default () => (
 	<Router>
@@ -12,10 +13,14 @@ export default () => (
 			<header>
 				<Link to="/">BDC</Link>
 				<Link to="/reading">Reading</Link>
+				<Link to="/writing">Writing</Link>
 			</header>
 			<main>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/reading" component={Reading} />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/reading" component={Reading} />
+					<Route path="/writing" component={Writing} />
+				</Switch>
 			</main>
 			<footer>
 				<span>&copy; Brennan Colberg 2019.</span>{" "}

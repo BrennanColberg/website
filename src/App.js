@@ -10,16 +10,17 @@ export default () => (
 	<Router>
 		<>
 			<header>
-				<h3>
-					<Link to="/">BDC</Link>
-				</h3>
+				<Link to="/">BDC</Link>
 				<Link to="/books">Books</Link>
 			</header>
 			<main>
 				<Route exact path="/" component={Home} />
 				<Route path="/books" component={Books} />
 			</main>
-			<footer>&copy; Brennan Colberg 2019. All rights reserved.</footer>
+			<footer>
+				<span>&copy; Brennan Colberg 2019.</span>{" "}
+				<span>All rights reserved.</span>
+			</footer>
 		</>
 	</Router>
 );

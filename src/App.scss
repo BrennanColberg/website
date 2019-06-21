@@ -38,38 +38,41 @@ main {
 }
 
 article {
-	width: 80%;
-	max-width: 800px;
-	margin: auto;
-
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
-	h6 {
+	h6,
+	p {
+		width: 80%;
+		max-width: 800px;
+		margin: 15px auto;
 		font-family: sans-serif;
 	}
 
 	p {
+		font-family: serif;
 		font-size: 14pt;
-	}
 
-	span.paren {
-		color: #888;
-		&::before {
-			content: "(";
+		span.paren {
+			color: #888;
+			&::before {
+				content: "(";
+			}
+			&::after {
+				content: ")";
+			}
 		}
-		&::after {
-			content: ")";
-		}
-	}
 
-	> div {
-		// full width of screen
-		width: 100vw;
-		// centered using negative margins
-		margin-left: calc((100% - 100vw) / 2);
+		& + h1,
+		& + h2,
+		& + h3,
+		& + h4,
+		& + h5,
+		& + h6 {
+			margin-top: 25px;
+		}
 	}
 }
 

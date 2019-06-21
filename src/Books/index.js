@@ -7,14 +7,14 @@ import json from "./books";
 
 export default () => (
 	<>
-		<section className="books">
+		<div className="books">
 			{json
 				.sort((a, b) => a.date < b.date) // descending chronological order
 				.map(book => (
 					<Book book={book} />
 				))}
-		</section>
-		<section className="exposition">
+		</div>
+		<article>
 			<h1>My Reading</h1>
 			<p>
 				I read a lot. Since June 2018, I've finished {json.length} books–from
@@ -38,6 +38,6 @@ export default () => (
 				respond as fast as I can–and I'd love to grab coffee to chat about
 				almost anything in more depth if you're interested!
 			</p>
-		</section>
+		</article>
 	</>
 );

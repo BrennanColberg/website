@@ -327,7 +327,7 @@
 		"authors": ["Mihaly Csikszentmihalyi"],
 		"title": "Flow",
 		"subtitle": "The Psychology of Optimal Experience",
-		"rating": 0.3
+		"rating": 0.9
 	},
 	{
 		"dates": ["2019-03-12"],
@@ -453,14 +453,14 @@
 		"authors": ["Daniel Greenberg", "Mimsy Sadofsky"],
 		"title": "Starting a Sudbury School",
 		"subtitle": "A Summary of the Experiences of Fifteen Start-up Groups",
-		"rating": 0.2
+		"rating": 0.1
 	},
 	{
 		"dates": ["2019-05-21"],
 		"authors": ["Daniel Greenberg"],
 		"title": "A Place to Grow",
 		"subtitle": "The Culture of Sudbury Valley School",
-		"rating": 0.9
+		"rating": 1.0
 	},
 	{
 		"dates": ["2019-05-25"],
@@ -481,7 +481,7 @@
 		"authors": ["Ta-Nehisi Coates"],
 		"title": "We Were Eight Years in Power",
 		"subtitle": "An American Tragedy",
-		"rating": 0.7
+		"rating": 0.8
 	},
 	{
 		"dates": ["2019-06-22"],

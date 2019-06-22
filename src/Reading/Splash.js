@@ -22,18 +22,27 @@ export default () => (
 		<h1>My Reading</h1>
 		<p>
 			I read a lot. Since June 2018, I've finished {uniqueBooks.length}{" "}
-			different books–from novels to academic summaries, history to educational
+			different books–from novels to political analyses, history to educational
 			theory, classics to self-help books, I tend to pick up anything that
 			piques my interest. All {books.length} reads{" "}
-			<Paren>I've read some multiple times</Paren> are listed below, in
-			chronological order <Paren>most recent first</Paren>.
+			<Paren>
+				including some re-reads, notably Asimov's <em>Foundation</em> series
+			</Paren>{" "}
+			are listed below, in chronological order by finishing date{" "}
+			<Paren>most recent first</Paren>.
 		</p>
-		<p className="hidden">
-			I've given each book a personal rating on a scale between -1.0 and 1.0
-			based on how likely I would be to recommend it. This rating is expressed
-			in each of the books' shadows; the greener a shadow is, the more I'd
-			recommend it. The more red it is, the less I'd recommend it. If there's no
-			shadow, I haven't coded an opinion in for that book yet.
+		<p>
+			I've given each book a personal rating, shown by color: the greener a book
+			is, the more I'd recommend it; the redder, the less.{" "}
+			<Paren>
+				Obviously, these are all purely my opinion, which often diverges from
+				the norm; for instance, most people seem to love Gaiman's{" "}
+				<em>American Gods</em>, while I could barely get through it.
+			</Paren>{" "}
+			<Paren>
+				Recommending a book doesn't necessarily mean that I agree with
+				everything it says; I just think that you should read it.
+			</Paren>
 		</p>
 		<div className="books">
 			{books

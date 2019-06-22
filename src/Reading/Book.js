@@ -12,7 +12,7 @@ function generateBackgroundColor(rating) {
 			${127 - Math.floor(rating * 128)}, 
 			${127 + Math.floor(rating * 128)},
 			${127 - Math.abs(Math.floor(rating * 128))}, 
-			0.4
+			0.5
 		)`;
 	}
 }

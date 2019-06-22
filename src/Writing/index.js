@@ -12,12 +12,13 @@ export default class extends Component {
 
 	// cancer markdown path loading
 	componentDidMount() {
-		posts.forEach(async ({ file, slug }, i) => {
-			const source = await fetch(require(`./posts/${file}`));
-			const text = await source.text();
-			this.setState({
-				routes: [
-					...this.state.routes,
+		posts.forEach(async ({ file, slug, visible, published }, i) => {
+			if (visible || published) {
+				// get markdown text from file
+				const source = await fetch(require(`./posts/${file}`));
+				const text = await source.text();
+				// create new route based on given slug
+				const route = (
 					<Route
 						key={i}
 						path={`/writing/${slug}`}
@@ -27,8 +28,12 @@ export default class extends Component {
 							</article>
 						)}
 					/>
-				]
-			});
+				);
+				// add route to render
+				this.setState({
+					routes: [...this.state.routes, route]
+				});
+			}
 		});
 	}
 

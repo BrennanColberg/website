@@ -49,14 +49,17 @@ export default () => (
 			love to hear your feedback!
 		</p>
 		<ul className="articles">
-			{posts.map(({ slug, title, subtitle }, i) => (
-				<li key={i}>
-					<Link to={`/writing/${slug}`}>
-						{title}
-						{subtitle && <>: {subtitle}</>}
-					</Link>
-				</li>
-			))}
+			{posts.map(
+				({ slug, title, subtitle, published }, i) =>
+					published && (
+						<li key={i}>
+							<Link to={`/writing/${slug}`}>
+								{title}
+								{subtitle && <>: {subtitle}</>}
+							</Link>
+						</li>
+					)
+			)}
 		</ul>
 	</article>
 );

@@ -1,17 +1,38 @@
 import React from "react";
+import classNames from "classnames";
 
-// // returns a color based on a rating from -1.0 to 1.0
-// // where it is closer to green as it gets closer to 1.0 and red along with -1.0
-// function shadowColorFromRating(rating) {}
+// returns a color based on a rating from -1.0 to 1.0
+// 1.0 makes it pure green, -1.0 pure red, 0.0 exact middle gray (127)
+// (middling ratings make it grayer by adding proportionally more blue)
+// all colors have opacity of 40% (alpha 0.4)
+function generateBackgroundColor(rating) {
+	if (rating === undefined) return "inherit";
+	else {
+		return `rgba(
+			${127 - Math.floor(rating * 128)}, 
+			${127 + Math.floor(rating * 128)},
+			${127 - Math.abs(Math.floor(rating * 128))}, 
+			0.4
+		)`;
+	}
+}
 
-export default ({ book: { title, subtitle, authors, date, link } }) => (
-	<div className="book">
+export default ({ book: { title, subtitle, authors, date, link, rating } }) => (
+	<div
+		className="book"
+		style={{
+			backgroundColor: generateBackgroundColor(rating)
+		}}
+	>
 		<span className="date hidden">{date}</span>
 		<span className="title">{title}</span>
 		{subtitle && <span className="subtitle">{subtitle}</span>}
 		<div className="authors">
-			{authors.map(author => (
-				<span className="author">{author}</span>
+			{/* splits authors apart, puts each in their own span for CSS */}
+			{authors.map((author, i) => (
+				<span key={i} className="author">
+					{author}
+				</span>
 			))}
 		</div>
 	</div>

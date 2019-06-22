@@ -1,314 +1,323 @@
 [
 	{
-		"dates": ["2018-06-27"],
+		"finishes": [{ "date": "2018-06-27" }],
 		"authors": ["Isaac Asimov"],
 		"title": "I, Robot",
 		"subtitle": null,
 		"rating": 0.9
 	},
 	{
-		"dates": ["2018-06-28"],
+		"finishes": [{ "date": "2018-06-28" }],
 		"authors": ["Isaac Asimov"],
 		"title": "The Caves of Steel",
 		"subtitle": null,
 		"rating": 0.8
 	},
 	{
-		"dates": ["2018-06-30"],
+		"finishes": [{ "date": "2018-06-30" }],
 		"authors": ["Isaac Asimov"],
 		"title": "The Naked Sun",
 		"subtitle": null,
 		"rating": 0.5
 	},
 	{
-		"dates": ["2018-07-02"],
+		"finishes": [{ "date": "2018-07-02" }],
 		"authors": ["Isaac Asimov"],
 		"title": "The Robots of Dawn",
 		"subtitle": null,
 		"rating": 0.5
 	},
 	{
-		"dates": ["2018-07-21", "2019-05-25"],
+		"finishes": [
+			{ "date": "2018-07-21" },
+			{ "date": "2019-05-25", "order": 1 }
+		],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation",
 		"subtitle": null,
 		"rating": 0.9
 	},
 	{
-		"dates": ["2018-07-22", "2019-05-25"],
+		"finishes": [
+			{ "date": "2018-07-22" },
+			{ "date": "2019-05-25", "order": 2 }
+		],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation and Empire",
 		"subtitle": null,
 		"rating": 0.9
 	},
 	{
-		"dates": ["2018-07-24", "2019-05-25"],
+		"finishes": [
+			{ "date": "2018-07-24" },
+			{ "date": "2019-05-25", "order": 3 }
+		],
 		"authors": ["Isaac Asimov"],
 		"title": "Second Foundation",
 		"subtitle": null,
 		"rating": 0.9
 	},
 	{
-		"dates": ["2018-09-10"],
+		"finishes": [{ "date": "2018-09-10" }],
 		"authors": ["Alfie Kohn"],
 		"title": "The Case Against Standardized Testing",
 		"subtitle": "Raising the Scores, Ruining the Schools",
 		"rating": 0.5
 	},
 	{
-		"dates": ["2018-09-18"],
+		"finishes": [{ "date": "2018-09-18" }],
 		"authors": ["Alfie Kohn"],
 		"title": "The Homework Myth",
 		"subtitle": "Why Our Kids Get Too Much of a Bad Thing",
 		"rating": 0.4
 	},
 	{
-		"dates": ["2018-09-20"],
+		"finishes": [{ "date": "2018-09-20" }],
 		"authors": ["Salman Khan"],
 		"title": "The One World Schoolhouse",
 		"subtitle": "Education Reimagined",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2018-10-08"],
+		"finishes": [{ "date": "2018-10-08" }],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation’s Edge",
 		"subtitle": null,
 		"rating": -0.2
 	},
 	{
-		"dates": ["2018-10-10"],
+		"finishes": [{ "date": "2018-10-10" }],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation and Earth",
 		"subtitle": null,
 		"rating": -0.3
 	},
 	{
-		"dates": ["2018-10-12"],
+		"finishes": [{ "date": "2018-10-12" }],
 		"authors": ["Isaac Asimov"],
 		"title": "Prelude to Foundation",
 		"subtitle": null,
 		"rating": -0.1
 	},
 	{
-		"dates": ["2018-10-13"],
+		"finishes": [{ "date": "2018-10-13" }],
 		"authors": ["Isaac Asimov"],
 		"title": "Forward the Foundation",
 		"subtitle": null,
 		"rating": -0.2
 	},
 	{
-		"dates": ["2018-11-04"],
+		"finishes": [{ "date": "2018-11-04" }],
 		"authors": ["Aaron Swartz"],
 		"title": "The Boy Who Could Change the World",
 		"subtitle": "The Writings of Aaron Swartz",
 		"rating": 0.8
 	},
 	{
-		"dates": ["2018-11-07"],
+		"finishes": [{ "date": "2018-11-07" }],
 		"authors": ["John Holt"],
 		"title": "How Children Fail",
 		"subtitle": null,
 		"rating": 1.0
 	},
 	{
-		"dates": ["2018-11-09"],
+		"finishes": [{ "date": "2018-11-09" }],
 		"authors": ["John Holt"],
 		"title": "How Children Learn",
 		"subtitle": null,
 		"rating": 1.0
 	},
 	{
-		"dates": ["2018-11-15"],
+		"finishes": [{ "date": "2018-11-15" }],
 		"authors": ["Grace Llewellyn"],
 		"title": "The Teenage Liberation Handbook",
 		"subtitle": "How to Quit School and Get a Real Life and Education",
 		"rating": 0.7
 	},
 	{
-		"dates": ["2018-11-16"],
+		"finishes": [{ "date": "2018-11-16" }],
 		"authors": ["David Colfax", "Micki Colfax"],
 		"title": "Homeschooling for Excellence",
 		"subtitle": "How to Take Charge of Your Child's Education—and Why You Absolutely Must",
 		"rating": 0
 	},
 	{
-		"dates": ["2018-11-25"],
+		"finishes": [{ "date": "2018-11-25" }],
 		"authors": ["Frank Herbert"],
 		"title": "Dune",
 		"subtitle": null,
 		"rating": 0.8
 	},
 	{
-		"dates": ["2018-11-26"],
+		"finishes": [{ "date": "2018-11-26" }],
 		"authors": ["Adam Grant"],
 		"title": "Originals",
 		"subtitle": "How Non-Conformists Move the World",
 		"rating": 0.7
 	},
 	{
-		"dates": ["2018-11-29"],
+		"finishes": [{ "date": "2018-11-29" }],
 		"authors": ["William Stixrud", "Ned Johnson"],
 		"title": "The Self-Driven Child",
 		"subtitle": "The Science and Sense of Giving Your Kids More Control Over Their Lives",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2018-12-03"],
+		"finishes": [{ "date": "2018-12-03" }],
 		"authors": ["Justin Peters"],
 		"title": "The Idealist",
 		"subtitle": "Aaron Swartz and the Rise of Free Culture on the Internet",
 		"rating": 0.65
 	},
 	{
-		"dates": ["2018-12-06"],
+		"finishes": [{ "date": "2018-12-06" }],
 		"authors": ["Adam Alter"],
 		"title": "Irresistible",
 		"subtitle": "The Rise of Addictive Technology and the Business of Keeping Us Hooked",
 		"rating": 0.2
 	},
 	{
-		"dates": ["2018-12-09"],
+		"finishes": [{ "date": "2018-12-09" }],
 		"authors": ["Carl Sagan"],
 		"title": "The Demon-Haunted World",
 		"subtitle": "Science as a Candle in the Dark",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2018-12-13"],
+		"finishes": [{ "date": "2018-12-13" }],
 		"authors": ["Neil Gaiman"],
 		"title": "American Gods",
 		"subtitle": null,
 		"rating": -0.6
 	},
 	{
-		"dates": ["2018-12-24"],
+		"finishes": [{ "date": "2018-12-24" }],
 		"authors": ["Ed Catmull"],
 		"title": "Creativity, Inc.",
 		"subtitle": "Overcoming the Unseen Forces That Stand in the Way of True Inspiration",
 		"rating": 0.3
 	},
 	{
-		"dates": ["2018-12-31"],
+		"finishes": [{ "date": "2018-12-31" }],
 		"authors": ["Kim Stanley Robinson"],
 		"title": "Red Mars",
 		"subtitle": null,
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-01-01"],
+		"finishes": [{ "date": "2019-01-01" }],
 		"authors": ["Peter Thiel", "Blake Masters"],
 		"title": "Zero to One",
 		"subtitle": "Notes on Startups, or How to Build the Future",
 		"rating": 0.7
 	},
 	{
-		"dates": ["2019-01-08"],
+		"finishes": [{ "date": "2019-01-08" }],
 		"authors": ["Kendall Hailey"],
 		"title": "The Day I Became an Autodidact",
 		"subtitle": "And the Advice, Adventures, and Acrimonies That Befell Me Thereafter",
 		"rating": 0.3
 	},
 	{
-		"dates": ["2019-01-18"],
+		"finishes": [{ "date": "2019-01-18", "order": 0 }],
 		"authors": ["Yascha Mounk"],
 		"title": "The People vs Democracy",
 		"subtitle": "Why Our Freedom Is in Danger and How to Save It",
 		"rating": 0.5
 	},
 	{
-		"dates": ["2019-01-18"],
+		"finishes": [{ "date": "2019-01-18", "order": 1 }],
 		"authors": ["Sun Tzu"],
 		"title": "The Art of War",
 		"subtitle": null,
 		"rating": 0.1
 	},
 	{
-		"dates": ["2019-01-19"],
+		"finishes": [{ "date": "2019-01-19", "order": 0 }],
 		"authors": ["Jim Collins"],
 		"title": "Good to Great",
 		"subtitle": "Why Some Companies Make the Leap and Others Don't",
 		"rating": 0.5
 	},
 	{
-		"dates": ["2019-01-20"],
+		"finishes": [{ "date": "2019-01-20" }],
 		"authors": ["Frank Herbert"],
 		"title": "Dune Messiah",
 		"subtitle": null,
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-01-21"],
+		"finishes": [{ "date": "2019-01-21" }],
 		"authors": ["David Cohen", "Brad Feld"],
 		"title": "Do More Faster",
 		"subtitle": "TechStars Lessons to Accelerate Your Startup",
 		"rating": -0.7
 	},
 	{
-		"dates": ["2019-01-23"],
+		"finishes": [{ "date": "2019-01-23", "order": 0 }],
 		"authors": ["Richard Feynman"],
 		"title": "“Surely You’re Joking, Mr. Feynman!”",
 		"subtitle": "Adventures of a Curious Character",
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-01-23"],
+		"finishes": [{ "date": "2019-01-23", "order": 1 }],
 		"authors": ["Jia Jiang"],
 		"title": "Rejection Proof",
 		"subtitle": "How I Beat Fear and Became Invincible Through 100 Days of Rejection",
 		"rating": 0.3
 	},
 	{
-		"dates": ["2019-01-26"],
+		"finishes": [{ "date": "2019-01-26" }],
 		"authors": ["Yuval Harari"],
 		"title": "Sapiens",
 		"subtitle": "A Brief History of Humankind",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2019-02-02"],
+		"finishes": [{ "date": "2019-02-02" }],
 		"authors": ["Walter Isaacson"],
 		"title": "Steve Jobs",
 		"subtitle": null,
 		"rating": 0.7
 	},
 	{
-		"dates": ["2019-02-13"],
+		"finishes": [{ "date": "2019-02-13" }],
 		"authors": ["J.E. Gordon"],
 		"title": "Structures",
 		"subtitle": "Or Why Things Don't Fall Down",
 		"rating": 0.4
 	},
 	{
-		"dates": ["2019-02-15"],
+		"finishes": [{ "date": "2019-02-15" }],
 		"authors": ["Blake Masters", "Peter Thiel"],
 		"title": "Notes Essays—Peter Thiel's CS183: Startup",
 		"subtitle": "Stanford University, Spring 2012",
 		"rating": 0.8
 	},
 	{
-		"dates": ["2019-02-16"],
+		"finishes": [{ "date": "2019-02-16" }],
 		"authors": ["Douglas Adams"],
 		"title": "The Hitchhiker’s Guide to the Galaxy",
 		"subtitle": null,
 		"rating": 0.6
 	},
 	{
-		"dates": ["2019-02-18"],
+		"finishes": [{ "date": "2019-02-18", "order": 0 }],
 		"authors": ["Kurt Vonnegut"],
 		"title": "Slaughterhouse-Five",
 		"subtitle": null,
 		"rating": 0.1
 	},
 	{
-		"dates": ["2019-02-18"],
+		"finishes": [{ "date": "2019-02-18", "order": 1 }],
 		"authors": ["Douglas Adams"],
 		"title": "The Restaurant at the End of the Universe",
 		"subtitle": null,
 		"rating": 0.6
 	},
 	{
-		"dates": ["2019-02-20"],
+		"finishes": [{ "date": "2019-02-20" }],
 		"authors": ["Jo Boaler"],
 		"title": "Mathematical Mindsets",
 		"subtitle": "Unleashing Students' Potential through Creative Math, Inspiring Messages and Innovative Teaching",
@@ -316,161 +325,161 @@
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-03-05"],
+		"finishes": [{ "date": "2019-03-05" }],
 		"authors": ["J.D. Salinger"],
 		"title": "The Catcher in the Rye",
 		"subtitle": null,
 		"rating": -0.2
 	},
 	{
-		"dates": ["2019-03-11"],
+		"finishes": [{ "date": "2019-03-11" }],
 		"authors": ["Mihaly Csikszentmihalyi"],
 		"title": "Flow",
 		"subtitle": "The Psychology of Optimal Experience",
 		"rating": 0.9
 	},
 	{
-		"dates": ["2019-03-12"],
+		"finishes": [{ "date": "2019-03-12", "order": 0 }],
 		"authors": ["Yevgeny Zamyatin"],
 		"title": "We",
 		"subtitle": null,
 		"rating": 0.1
 	},
 	{
-		"dates": ["2019-03-12"],
+		"finishes": [{ "date": "2019-03-12", "order": 1 }],
 		"authors": ["Herb Cohen"],
 		"title": "You Can Negotiate Anything",
 		"subtitle": "How to Get What You Want",
 		"rating": 0
 	},
 	{
-		"dates": ["2019-03-18"],
+		"finishes": [{ "date": "2019-03-18" }],
 		"authors": ["Andy Weir"],
 		"title": "Artemis",
 		"subtitle": null,
 		"rating": -0.7
 	},
 	{
-		"dates": ["2019-03-24"],
+		"finishes": [{ "date": "2019-03-24" }],
 		"authors": ["Neil Postman", "Charles Weingartner"],
 		"title": "Teaching as a Subversive Activity",
-		"subtitle": "A no-holds-barred assault on outdatesd teaching methods—with dramatic and practical proposals on how education can be made relevant to today's world.",
+		"subtitle": "A no-holds-barred assault on outfinishesd teaching methods—with dramatic and practical proposals on how education can be made relevant to today's world.",
 		"rating": 0.8
 	},
 	{
-		"dates": ["2019-03-29"],
+		"finishes": [{ "date": "2019-03-29", "order": 0 }],
 		"authors": ["Ziauddin Yousafzai"],
 		"title": "Let Her Fly",
 		"subtitle": "A Father's Journey",
 		"rating": 0.1
 	},
 	{
-		"dates": ["2019-03-29"],
+		"finishes": [{ "date": "2019-03-29", "order": 1 }],
 		"authors": ["Carol Dweck"],
 		"title": "Mindset",
 		"subtitle": "The New Psychology of Success",
 		"rating": 0.7
 	},
 	{
-		"dates": ["2019-04-07"],
+		"finishes": [{ "date": "2019-04-07" }],
 		"authors": ["Daniel H. Pink"],
 		"title": "To Sell Is Human",
 		"subtitle": "The Surprising Truth About Moving Others",
 		"rating": 0.4
 	},
 	{
-		"dates": ["2019-04-09"],
+		"finishes": [{ "date": "2019-04-09" }],
 		"authors": ["Andrew Yang"],
 		"title": "The War On Normal People",
 		"subtitle": "The Truth About America's Disappearing Jobs and Why Universal Basic Income Is Our Future",
 		"rating": 0.3
 	},
 	{
-		"dates": ["2019-04-13"],
+		"finishes": [{ "date": "2019-04-13" }],
 		"authors": ["Angela Duckworth"],
 		"title": "Grit",
 		"subtitle": "The Power of Passion and Perseverance",
 		"rating": 0.4
 	},
 	{
-		"dates": ["2019-04-14"],
+		"finishes": [{ "date": "2019-04-14" }],
 		"authors": ["Herbert R. Kohl"],
 		"title": "The Open Classroom",
 		"subtitle": "A Practical Guide to a New Way of Teaching",
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-04-20"],
+		"finishes": [{ "date": "2019-04-20" }],
 		"authors": ["OWP/P Architects", "VS Furniture", "Bruce Mau Design"],
 		"title": "The Third Teacher",
 		"subtitle": "79 Ways You Can Use Design to Transform Teaching & Learning",
 		"rating": -0.5
 	},
 	{
-		"dates": ["2019-04-23"],
+		"finishes": [{ "date": "2019-04-23", "order": 0 }],
 		"authors": ["Cal Newport"],
 		"title": "Deep Work",
 		"subtitle": "Rules for Focused Success in a Distracted World",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2019-04-23"],
+		"finishes": [{ "date": "2019-04-23", "order": 1 }],
 		"authors": ["Isaac Asimov"],
 		"title": "The Rest of the Robots",
 		"subtitle": null,
 		"rating": 0.2
 	},
 	{
-		"dates": ["2019-04-25"],
+		"finishes": [{ "date": "2019-04-25" }],
 		"authors": ["C. Northcote Parkinson"],
 		"title": "Parkinson—The Law",
 		"subtitle": null,
 		"rating": -0.3
 	},
 	{
-		"dates": ["2019-04-29"],
+		"finishes": [{ "date": "2019-04-29" }],
 		"authors": ["Walter Isaacson"],
 		"title": "The Innovators",
 		"subtitle": "How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
 		"rating": 0.3
 	},
 	{
-		"dates": ["2019-05-08"],
+		"finishes": [{ "date": "2019-05-08" }],
 		"authors": ["Daniel Pink"],
 		"title": "Drive",
 		"subtitle": "The Surprising Truth About What Motivates Us",
 		"rating": 0
 	},
 	{
-		"dates": ["2019-05-13"],
+		"finishes": [{ "date": "2019-05-13" }],
 		"authors": ["Daniel Greenberg"],
 		"title": "Free at Last",
 		"subtitle": "The Sudbury Valley School",
 		"rating": 0.8
 	},
 	{
-		"dates": ["2019-05-20"],
+		"finishes": [{ "date": "2019-05-20" }],
 		"authors": ["Daniel Greenberg", "Mimsy Sadofsky"],
 		"title": "Starting a Sudbury School",
 		"subtitle": "A Summary of the Experiences of Fifteen Start-up Groups",
 		"rating": 0.1
 	},
 	{
-		"dates": ["2019-05-21"],
+		"finishes": [{ "date": "2019-05-21" }],
 		"authors": ["Daniel Greenberg"],
 		"title": "A Place to Grow",
 		"subtitle": "The Culture of Sudbury Valley School",
 		"rating": 1.0
 	},
 	{
-		"dates": ["2019-05-25"],
+		"finishes": [{ "date": "2019-05-25", "order": 0 }],
 		"authors": ["Mimsy Sadofsky", "Daniel Greenberg"],
 		"title": "Kingdom of Childhood",
 		"subtitle": "Growing Up at Sudbury Valley School",
 		"rating": 0.4
 	},
 	{
-		"dates": ["2019-06-15"],
+		"finishes": [{ "date": "2019-06-15" }],
 		"authors": ["Walter Isaacson"],
 		"title": "Einstein",
 		"subtitle": "His Life and Universe",
@@ -480,14 +489,14 @@
 		"published": false
 	},
 	{
-		"dates": ["2019-06-22"],
+		"finishes": [{ "date": "2019-06-22", "order": 0 }],
 		"authors": ["Ta-Nehisi Coates"],
 		"title": "We Were Eight Years in Power",
 		"subtitle": "An American Tragedy",
 		"rating": 0.8
 	},
 	{
-		"dates": ["2019-06-22"],
+		"finishes": [{ "date": "2019-06-22", "order": 1 }],
 		"authors": ["H. G. Wells"],
 		"title": "The Door in the Wall",
 		"subtitle": "And Other Stories",

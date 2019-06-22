@@ -18,7 +18,7 @@ function generateBackgroundColor(rating) {
 	}
 }
 
-function generateBook({ title, subtitle, authors, date, rating }) {
+function generateBook({ title, subtitle, authors, finish: { date }, rating }) {
 	return (
 		<div
 			className="book"

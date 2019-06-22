@@ -9,10 +9,10 @@ const books = [];
 uniqueBooks.forEach(book =>
 	// splits each book into multiple books, one for each date
 	// that it was read, and recombines them into one array
-	book.dates.forEach(date => {
+	book.finishes.forEach(finish => {
 		const singleBook = Object.assign({}, book);
-		delete singleBook.dates;
-		singleBook.date = date;
+		delete singleBook.finishes;
+		singleBook.finish = finish;
 		books.push(singleBook);
 	})
 );
@@ -49,7 +49,11 @@ export default () => (
 		<div className="books">
 			{books
 				// descending chronological order of most recent read
-				.sort((a, b) => a.date < b.date)
+				.sort((a, b) =>
+					a.finish.date !== b.finish.date
+						? a.finish.date < b.finish.date
+						: a.finish.order < b.finish.order
+				)
 				.map((book, i) => (
 					<Book key={i} book={book} />
 				))}

@@ -23,11 +23,7 @@ export default class extends Component {
 					<Route
 						key={i}
 						path={`/writing/${slug}`}
-						component={() => (
-							<article>
-								<ReactMarkdown source={text} />
-							</article>
-						)}
+						component={() => <ReactMarkdown source={text} />}
 					/>
 				);
 				// add route to render

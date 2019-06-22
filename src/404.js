@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <>Error 404: Not Found</>;
+export default () => <h1>Error 404: Page Not Found</h1>;

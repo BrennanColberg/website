@@ -18,7 +18,7 @@ uniqueBooks.forEach(book =>
 );
 
 export default () => (
-	<article>
+	<>
 		<h1>My Reading</h1>
 		<p>
 			I read a lot. Since June 2018, I've finished {uniqueBooks.length}{" "}
@@ -28,7 +28,7 @@ export default () => (
 			<Paren>I've read some multiple times</Paren> are listed below, in
 			chronological order <Paren>most recent first</Paren>.
 		</p>
-		<p class="hidden">
+		<p className="hidden">
 			I've given each book a personal rating on a scale between -1.0 and 1.0
 			based on how likely I would be to recommend it. This rating is expressed
 			in each of the books' shadows; the greener a shadow is, the more I'd
@@ -39,8 +39,8 @@ export default () => (
 			{books
 				// descending chronological order of most recent read
 				.sort((a, b) => a.date < b.date)
-				.map(book => (
-					<Book book={book} />
+				.map((book, i) => (
+					<Book key={i} book={book} />
 				))}
 		</div>
 		<p>
@@ -52,5 +52,5 @@ export default () => (
 			, feel free to <EmailLink>shoot me an email!</EmailLink> I'll respond as
 			fast as I can.
 		</p>
-	</article>
+	</>
 );

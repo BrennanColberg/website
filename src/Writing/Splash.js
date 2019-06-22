@@ -6,7 +6,7 @@ import EmailLink from "../EmailLink";
 import posts from "./posts/index.json";
 
 export default () => (
-	<article>
+	<>
 		<h1>Why &amp; What I Write</h1>
 		<p>
 			Ideas frustrate me. I don't know if I'm alone, but I constantly have
@@ -61,5 +61,5 @@ export default () => (
 					)
 			)}
 		</ul>
-	</article>
+	</>
 );

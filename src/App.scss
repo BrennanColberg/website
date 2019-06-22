@@ -47,20 +47,9 @@ footer {
 }
 
 main {
+	margin: 50px auto;
 	// make sure footer is on bottom
 	min-height: calc(100vh - 180px);
-
-	a {
-		color: $blue-1;
-		text-decoration: none;
-		span {
-			text-decoration: underline;
-		}
-	}
-}
-
-article {
-	margin: 50px auto;
 
 	h1,
 	h2,
@@ -87,6 +76,14 @@ article {
 
 		& + *:not(p) {
 			margin-top: 25px;
+		}
+	}
+
+	a {
+		color: $blue-1;
+		text-decoration: none;
+		span {
+			text-decoration: underline;
 		}
 	}
 }

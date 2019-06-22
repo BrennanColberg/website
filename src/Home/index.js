@@ -5,10 +5,10 @@ import Paren from "../Paren";
 import EmailLink from "../EmailLink";
 
 export default () => (
-	<article>
+	<>
 		<h1>
 			My name is Brennan Colberg.{" "}
-			<span class="no-bold">I'm an autodidact, among other things.</span>
+			<span className="no-bold">I'm an autodidact, among other things.</span>
 		</h1>
 		<p>
 			Here you'll find a list of <Link to="/books">the books I've read</Link>{" "}
@@ -51,5 +51,5 @@ export default () => (
 				proper, or Instagram.
 			</Paren>
 		</p>
-	</article>
+	</>
 );

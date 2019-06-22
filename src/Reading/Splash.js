@@ -42,7 +42,9 @@ export default () => (
 			<Paren>
 				Recommending a book doesn't necessarily mean that I agree with
 				everything it says; I just think that you should read it.
-			</Paren>
+			</Paren>{" "}
+			I've also written thoughts about and/or transcribed quotes from certain
+			books; those ones have a shadow. Click on each to read more.
 		</p>
 		<div className="books">
 			{books

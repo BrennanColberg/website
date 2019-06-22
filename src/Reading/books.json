@@ -63,28 +63,28 @@
 		"rating": 0.4
 	},
 	{
-		"dates": [null],
+		"dates": ["2018-09-20"],
 		"authors": ["Salman Khan"],
 		"title": "The One World Schoolhouse",
 		"subtitle": "Education Reimagined",
 		"rating": 0.6
 	},
 	{
-		"dates": ["2018-10?"],
+		"dates": ["2018-10-08"],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation’s Edge",
 		"subtitle": null,
 		"rating": -0.2
 	},
 	{
-		"dates": ["2018-10"],
+		"dates": ["2018-10-10"],
 		"authors": ["Isaac Asimov"],
 		"title": "Foundation and Earth",
 		"subtitle": null,
 		"rating": -0.3
 	},
 	{
-		"dates": ["2018-10-12?"],
+		"dates": ["2018-10-12"],
 		"authors": ["Isaac Asimov"],
 		"title": "Prelude to Foundation",
 		"subtitle": null,
@@ -474,7 +474,10 @@
 		"authors": ["Walter Isaacson"],
 		"title": "Einstein",
 		"subtitle": "His Life and Universe",
-		"rating": 0.7
+		"rating": 0.7,
+		"file": "einstein.md",
+		"slug": "einstein",
+		"published": false
 	},
 	{
 		"dates": ["2019-06-22"],

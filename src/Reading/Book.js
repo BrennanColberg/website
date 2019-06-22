@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classNames from "classnames";
 
 // returns a color based on a rating from -1.0 to 1.0
@@ -17,23 +18,35 @@ function generateBackgroundColor(rating) {
 	}
 }
 
-export default ({ book: { title, subtitle, authors, date, link, rating } }) => (
-	<div
-		className="book"
-		style={{
-			backgroundColor: generateBackgroundColor(rating)
-		}}
-	>
-		<span className="date hidden">{date}</span>
-		<span className="title">{title}</span>
-		{subtitle && <span className="subtitle">{subtitle}</span>}
-		<div className="authors">
-			{/* splits authors apart, puts each in their own span for CSS */}
-			{authors.map((author, i) => (
-				<span key={i} className="author">
-					{author}
-				</span>
-			))}
+function generateBook({ title, subtitle, authors, date, rating }) {
+	return (
+		<div
+			className="book"
+			style={{
+				backgroundColor: generateBackgroundColor(rating)
+			}}
+		>
+			<span className="date hidden">{date}</span>
+			<span className="title">{title}</span>
+			{subtitle && <span className="subtitle">{subtitle}</span>}
+			<div className="authors">
+				{/* splits authors apart, puts each in their own span for CSS */}
+				{authors.map((author, i) => (
+					<span key={i} className="author">
+						{author}
+					</span>
+				))}
+			</div>
 		</div>
-	</div>
-);
+	);
+}
+
+export default ({ book }) => {
+	const { slug, visible, published } = book;
+	console.log(slug, visible, published);
+	if (slug && (visible || published)) {
+		return <Link to={`/reading/${slug}`}>{generateBook(book)}</Link>;
+	} else {
+		return generateBook(book);
+	}
+};

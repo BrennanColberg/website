@@ -1,439 +1,421 @@
 [
 	{
-		"date": "2018-06-27",
+		"dates": ["2018-06-27"],
 		"author": "Isaac Asimov",
 		"title": "I, Robot",
 		"subtitle": null
 	},
 	{
-		"date": "2018-06-28",
+		"dates": ["2018-06-28"],
 		"author": "Isaac Asimov",
 		"title": "The Caves of Steel",
 		"subtitle": null
 	},
 	{
-		"date": "2018-06-30",
+		"dates": ["2018-06-30"],
 		"author": "Isaac Asimov",
 		"title": "The Naked Sun",
 		"subtitle": null
 	},
 	{
-		"date": "2018-07-02",
+		"dates": ["2018-07-02"],
 		"author": "Isaac Asimov",
 		"title": "The Robots of Dawn",
 		"subtitle": null
 	},
 	{
-		"date": "2018-07-21",
+		"dates": ["2018-07-21", "2019-05-25"],
 		"author": "Isaac Asimov",
 		"title": "Foundation",
 		"subtitle": null
 	},
 	{
-		"date": "2018-07-22",
+		"dates": ["2018-07-22", "2019-05-25"],
 		"author": "Isaac Asimov",
 		"title": "Foundation and Empire",
 		"subtitle": null
 	},
 	{
-		"date": "2018-07-24",
+		"dates": ["2018-07-24", "2019-05-25"],
 		"author": "Isaac Asimov",
 		"title": "Second Foundation",
 		"subtitle": null
 	},
 	{
-		"date": "2018-09-10",
+		"dates": ["2018-09-10"],
 		"author": "Alfie Kohn",
 		"title": "The Case Against Standardized Testing",
 		"subtitle": "Raising the Scores, Ruining the Schools"
 	},
 	{
-		"date": "2018-09-18",
+		"dates": ["2018-09-18"],
 		"author": "Alfie Kohn",
 		"title": "The Homework Myth",
 		"subtitle": "Why Our Kids Get Too Much of a Bad Thing"
 	},
 	{
-		"date": null,
+		"dates": [null],
 		"author": "Salman Khan",
 		"title": "The One World Schoolhouse",
 		"subtitle": "Education Reimagined"
 	},
 	{
-		"date": "2018-10?",
+		"dates": ["2018-10?"],
 		"author": "Isaac Asimov",
 		"title": "Foundation’s Edge",
 		"subtitle": null
 	},
 	{
-		"date": "2018-10",
+		"dates": ["2018-10"],
 		"author": "Isaac Asimov",
 		"title": "Foundation and Earth",
 		"subtitle": null
 	},
 	{
-		"date": "2018-10-12?",
+		"dates": ["2018-10-12?"],
 		"author": "Isaac Asimov",
 		"title": "Prelude to Foundation",
 		"subtitle": null
 	},
 	{
-		"date": "2018-10-13",
+		"dates": ["2018-10-13"],
 		"author": "Isaac Asimov",
 		"title": "Forward the Foundation",
 		"subtitle": null
 	},
 	{
-		"date": "2018-11-04",
+		"dates": ["2018-11-04"],
 		"author": "Aaron Swartz",
 		"title": "The Boy Who Could Change the World",
 		"subtitle": "The Writings of Aaron Swartz"
 	},
 	{
-		"date": "2018-11-07",
+		"dates": ["2018-11-07"],
 		"author": "John Holt",
 		"title": "How Children Fail",
 		"subtitle": null
 	},
 	{
-		"date": "2018-11-09",
+		"dates": ["2018-11-09"],
 		"author": "John Holt",
 		"title": "How Children Learn",
 		"subtitle": null
 	},
 	{
-		"date": "2018-11-15",
+		"dates": ["2018-11-15"],
 		"author": "Grace Llewellyn",
 		"title": "The Teenage Liberation Handbook",
 		"subtitle": "How to Quit School and Get a Real Life and Education"
 	},
 	{
-		"date": "2018-11-16",
+		"dates": ["2018-11-16"],
 		"author": "David & Micki Colfax",
 		"title": "Homeschooling for Excellence",
 		"subtitle": "How to Take Charge of Your Child's Education—and Why You Absolutely Must"
 	},
 	{
-		"date": "2018-11-25",
+		"dates": ["2018-11-25"],
 		"author": "Frank Herbert",
 		"title": "Dune",
 		"subtitle": null
 	},
 	{
-		"date": "2018-11-26",
+		"dates": ["2018-11-26"],
 		"author": "Adam Grant",
 		"title": "Originals",
 		"subtitle": "How Non-Conformists Move the World"
 	},
 	{
-		"date": "2018-11-29",
+		"dates": ["2018-11-29"],
 		"author": "William Stixrud, Ned Johnson",
 		"title": "The Self-Driven Child",
 		"subtitle": "The Science and Sense of Giving Your Kids More Control Over Their Lives"
 	},
 	{
-		"date": "2018-12-03",
+		"dates": ["2018-12-03"],
 		"author": "Justin Peters",
 		"title": "The Idealist",
 		"subtitle": "Aaron Swartz and the Rise of Free Culture on the Internet"
 	},
 	{
-		"date": "2018-12-06",
+		"dates": ["2018-12-06"],
 		"author": "Adam Alter",
 		"title": "Irresistible",
 		"subtitle": "The Rise of Addictive Technology and the Business of Keeping Us Hooked"
 	},
 	{
-		"date": "2018-12-09",
+		"dates": ["2018-12-09"],
 		"author": "Carl Sagan",
 		"title": "The Demon-Haunted World",
 		"subtitle": "Science as a Candle in the Dark"
 	},
 	{
-		"date": "2018-12-13",
+		"dates": ["2018-12-13"],
 		"author": "Neil Gaiman",
 		"title": "American Gods",
 		"subtitle": null
 	},
 	{
-		"date": "2018-12-24",
+		"dates": ["2018-12-24"],
 		"author": "Ed Catmull",
 		"title": "Creativity, Inc.",
 		"subtitle": "Overcoming the Unseen Forces That Stand in the Way of True Inspiration"
 	},
 	{
-		"date": "2018-12-31",
+		"dates": ["2018-12-31"],
 		"author": "Kim Stanley Robinson",
 		"title": "Red Mars",
 		"subtitle": null
 	},
 	{
-		"date": "2019-01-01",
+		"dates": ["2019-01-01"],
 		"author": "Peter Thiel",
 		"title": "Zero to One",
 		"subtitle": "Notes on Sttartups, or How to Build the Future"
 	},
 	{
-		"date": "2019-01-08",
+		"dates": ["2019-01-08"],
 		"author": "Kendall Hailey",
 		"title": "The Day I Became an Autodidact",
 		"subtitle": "And the Advice, Adventures, and Acrimonies That Befell Me Thereafter"
 	},
 	{
-		"date": "2019-01-18",
+		"dates": ["2019-01-18"],
 		"author": "Yascha Mounk",
 		"title": "The People vs Democracy",
 		"subtitle": "Why Our Freedom Is in Danger and How to Save It"
 	},
 	{
-		"date": "2019-01-18",
+		"dates": ["2019-01-18"],
 		"author": "Sun Tzu",
 		"title": "The Art of War",
 		"subtitle": null
 	},
 	{
-		"date": "2019-01-19",
+		"dates": ["2019-01-19"],
 		"author": "Jim Collins",
 		"title": "Good to Great",
 		"subtitle": "Why Some Companies Make the Leap and Others Don't"
 	},
 	{
-		"date": "2019-01-20",
+		"dates": ["2019-01-20"],
 		"author": "Frank Herbert",
 		"title": "Dune Messiah",
 		"subtitle": null
 	},
 	{
-		"date": "2019-01-21",
+		"dates": ["2019-01-21"],
 		"author": "David Cohen, Brad Feld",
 		"title": "Do More Faster",
 		"subtitle": "TechStars Lessons to Accelerate Your Startup"
 	},
 	{
-		"date": "2019-01-23",
+		"dates": ["2019-01-23"],
 		"author": "Richard Feynman",
 		"title": "“Surely You’re Joking, Mr. Feynman!”",
 		"subtitle": "Adventures of a Curious Character"
 	},
 	{
-		"date": "2019-01-23",
+		"dates": ["2019-01-23"],
 		"author": "Jia Jiang",
 		"title": "Rejection Proof",
 		"subtitle": "How I Beat Fear and Became Invincible Through 100 Days of Rejection"
 	},
 	{
-		"date": "2019-01-26",
+		"dates": ["2019-01-26"],
 		"author": "Yuval Harari",
 		"title": "Sapiens",
 		"subtitle": "A Brief History of Humankind"
 	},
 	{
-		"date": "2019-02-02",
+		"dates": ["2019-02-02"],
 		"author": "Walter Isaacson",
 		"title": "Steve Jobs",
 		"subtitle": null
 	},
 	{
-		"date": "2019-02-13",
+		"dates": ["2019-02-13"],
 		"author": "J.E. Gordon",
 		"title": "Structures",
 		"subtitle": "Or Why Things Don't Fall Down"
 	},
 	{
-		"date": "2019-02-15",
+		"dates": ["2019-02-15"],
 		"author": "Blake Masters, Peter Thiel",
 		"title": "http://blakemasters.com/peter-thiels-cs183-startup",
 		"subtitle": null
 	},
 	{
-		"date": "2019-02-16",
+		"dates": ["2019-02-16"],
 		"author": "Douglas Adams",
 		"title": "The Hitchhiker’s Guide to the Galaxy",
 		"subtitle": null
 	},
 	{
-		"date": "2019-02-18",
+		"dates": ["2019-02-18"],
 		"author": "Kurt Vonnegut",
 		"title": "Slaughterhouse-Five",
 		"subtitle": null
 	},
 	{
-		"date": "2019-02-18",
+		"dates": ["2019-02-18"],
 		"author": "Douglas Adams",
 		"title": "The Restaurant at the End of the Universe",
 		"subtitle": null
 	},
 	{
-		"date": "2019-02-20",
+		"dates": ["2019-02-20"],
 		"author": "Jo Boaler",
 		"title": "Mathematical Mindsets",
 		"subtitle": "Unleashing Students' Potential through Creative Math, Inspiring Messages and Innovative Teaching",
 		"link": "https://www.amazon.com/Mathematical-Mindsets-Unleashing-Potential-Innovative/dp/0470894520"
 	},
 	{
-		"date": "2019-03-05",
+		"dates": ["2019-03-05"],
 		"author": "J.D. Salinger",
 		"title": "The Catcher in the Rye",
 		"subtitle": null
 	},
 	{
-		"date": "2019-03-11",
+		"dates": ["2019-03-11"],
 		"author": "Mihaly Csikszentmihalyi",
 		"title": "Flow",
 		"subtitle": "The Psychology of Optimal Experience"
 	},
 	{
-		"date": "2019-03-12",
+		"dates": ["2019-03-12"],
 		"author": "Yevgeny Zamyatin",
 		"title": "We",
 		"subtitle": null
 	},
 	{
-		"date": "2019-03-12",
+		"dates": ["2019-03-12"],
 		"author": "Herb Cohen",
 		"title": "You Can Negotiate Anything",
 		"subtitle": "How to Get What You Want"
 	},
 	{
-		"date": "2019-03-18",
+		"dates": ["2019-03-18"],
 		"author": "Andy Weir",
 		"title": "Artemis",
 		"subtitle": null
 	},
 	{
-		"date": "2019-03-24",
+		"dates": ["2019-03-24"],
 		"author": "Neil Postman, Charles Weingartner",
 		"title": "Teaching as a Subversive Activity",
-		"subtitle": "A no-holds-barred assault on outdated teaching methods—with dramatic and practical proposals on how education can be made relevant to today's world."
+		"subtitle": "A no-holds-barred assault on outdatesd teaching methods—with dramatic and practical proposals on how education can be made relevant to today's world."
 	},
 	{
-		"date": "2019-03-29",
+		"dates": ["2019-03-29"],
 		"author": "Ziauddin Yousafzai",
 		"title": "Let Her Fly",
 		"subtitle": "A Father's Journey"
 	},
 	{
-		"date": "2019-03-29",
+		"dates": ["2019-03-29"],
 		"author": "Carol Dweck",
 		"title": "Mindset",
 		"subtitle": "The New Psychology of Success"
 	},
 	{
-		"date": "2019-04-07",
+		"dates": ["2019-04-07"],
 		"author": "Daniel H. Pink",
 		"title": "To Sell Is Human",
 		"subtitle": "The Surprising Truth About Moving Others"
 	},
 	{
-		"date": "2019-04-09",
+		"dates": ["2019-04-09"],
 		"author": "Andrew Yang",
 		"title": "The War On Normal People",
 		"subtitle": "The Truth About America's Disappearing Jobs and Why Universal Basic Income Is Our Future"
 	},
 	{
-		"date": "2019-04-13",
+		"dates": ["2019-04-13"],
 		"author": "Angela Duckworth",
 		"title": "Grit",
 		"subtitle": "The Power of Passion and Perseverance"
 	},
 	{
-		"date": "2019-04-14",
+		"dates": ["2019-04-14"],
 		"author": "Herbert R. Kohl",
 		"title": "The Open Classroom",
 		"subtitle": "A Practical Guide to a New Way of Teaching"
 	},
 	{
-		"date": "2019-04-20",
+		"dates": ["2019-04-20"],
 		"author": "OWP/P Architects, VS Furniture, Bruce Mau Design",
 		"title": "The Third Teacher",
 		"subtitle": "79 Ways You Can Use Design to Transform Teaching & Learning"
 	},
 	{
-		"date": "2019-04-23",
+		"dates": ["2019-04-23"],
 		"author": "Cal Newport",
 		"title": "Deep Work",
 		"subtitle": "Rules for Focused Success in a Distracted World"
 	},
 	{
-		"date": "2019-04-23",
+		"dates": ["2019-04-23"],
 		"author": "Isaac Asimov",
 		"title": "The Rest of the Robots",
 		"subtitle": null
 	},
 	{
-		"date": "2019-04-25",
+		"dates": ["2019-04-25"],
 		"author": "C. Northcote Parkinson",
 		"title": "Parkinson—The Law",
 		"subtitle": null
 	},
 	{
-		"date": "2019-04-29",
+		"dates": ["2019-04-29"],
 		"author": "Walter Isaacson",
 		"title": "The Innovators",
 		"subtitle": "How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution"
 	},
 	{
-		"date": "2019-05-08",
+		"dates": ["2019-05-08"],
 		"author": "Daniel Pink",
 		"title": "Drive",
 		"subtitle": "The Surprising Truth About What Motivates Us"
 	},
 	{
-		"date": "2019-05-13",
+		"dates": ["2019-05-13"],
 		"author": "Daniel Greenberg",
 		"title": "Free at Last",
 		"subtitle": "The Sudbury Valley School"
 	},
 	{
-		"date": "2019-05-20",
+		"dates": ["2019-05-20"],
 		"author": "Daniel Greenberg, Mimsy Sadofsky",
 		"title": "Starting a Sudbury School",
 		"subtitle": "A Summary of the Experiences of Fifteen Start-up Groups"
 	},
 	{
-		"date": "2019-05-21",
+		"dates": ["2019-05-21"],
 		"author": "Daniel Greenberg",
 		"title": "A Place to Grow",
 		"subtitle": "The Culture of Sudbury Valley School"
 	},
 	{
-		"date": "2019-05-25",
-		"author": "Isaac Asimov",
-		"title": "Foundation",
-		"subtitle": null
-	},
-	{
-		"date": "2019-05-25",
-		"author": "Isaac Asimov",
-		"title": "Foundation and Empire",
-		"subtitle": null
-	},
-	{
-		"date": "2019-05-25",
-		"author": "Isaac Asimov",
-		"title": "Second Foundation",
-		"subtitle": null
-	},
-	{
-		"date": "2019-05-25",
+		"dates": ["2019-05-25"],
 		"author": "Mimsy Sadofsky, Daniel Greenberg",
 		"title": "Kingdom of Childhood",
 		"subtitle": "Growing Up at Sudbury Valley School"
 	},
 	{
-		"date": "2019-06-15",
+		"dates": ["2019-06-15"],
 		"author": "Walter Isaacson",
 		"title": "Einstein",
 		"subtitle": "His Life and Universe"
 	},
 	{
-		"date": "2019-06-22",
+		"dates": ["2019-06-22"],
 		"author": "Ta-Nehisi Coates",
 		"title": "We Were Eight Years in Power",
 		"subtitle": "An American Tragedy"
 	},
 	{
-		"date": "2019-06-22",
+		"dates": ["2019-06-22"],
 		"author": "H. G. Wells",
 		"title": "The Door in the Wall",
 		"subtitle": "And Other Stories"

@@ -4,11 +4,15 @@ import React from "react";
 // // where it is closer to green as it gets closer to 1.0 and red along with -1.0
 // function shadowColorFromRating(rating) {}
 
-export default ({ book: { title, subtitle, author, date, link } }) => (
+export default ({ book: { title, subtitle, authors, date, link } }) => (
 	<div className="book">
 		<span className="date hidden">{date}</span>
 		<span className="title">{title}</span>
 		{subtitle && <span className="subtitle">{subtitle}</span>}
-		<span className="author">{author}</span>
+		<div className="authors">
+			{authors.map(author => (
+				<span className="author">{author}</span>
+			))}
+		</div>
 	</div>
 );

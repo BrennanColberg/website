@@ -4,6 +4,8 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 import Home from "./Home";
+import FAQ from "./FAQ";
+import Idiosyncracies from "./Idiosyncracies";
 import Reading from "./Reading";
 import Writing from "./Writing";
 import Error404 from "./404";
@@ -19,6 +21,8 @@ export default () => (
 			<main>
 				<Switch>
 					<Route exact path="/" component={Home} />
+					<Route exact path="/faq" component={FAQ} />
+					<Route exact path="/idiosyncracies" component={Idiosyncracies} />
 					<Route path="/reading" component={Reading} />
 					<Route path="/writing" component={Writing} />
 					<Route component={Error404} />

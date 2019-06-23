@@ -1,6 +1,6 @@
 import React from "react";
 
-import Paren from "./Paren";
+import Paren from "../Components/Paren";
 
 export default () => (
 	<>

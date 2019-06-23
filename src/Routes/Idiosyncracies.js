@@ -1,7 +1,7 @@
 import React from "react";
 
-import Paren from "./Paren";
-import EmailLink from "./EmailLink";
+import Paren from "../Components/Paren";
+import EmailLink from "../Components/EmailLink";
 
 export default () => (
 	<>

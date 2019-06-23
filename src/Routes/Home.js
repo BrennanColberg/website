@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Paren from "./Paren";
-import EmailLink from "./EmailLink";
+import Paren from "../Components/Paren";
+import EmailLink from "../Components/EmailLink";
 
 export default () => (
 	<>

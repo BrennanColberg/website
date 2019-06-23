@@ -1,10 +1,10 @@
 import React from "react";
 
-import Book from "./Book";
-import Paren from "../Paren";
-import EmailLink from "../EmailLink";
+import Book from "../../Components/Book";
+import Paren from "../../Components/Paren";
+import EmailLink from "../../Components/EmailLink";
 
-import uniqueBooks from "../posts/reading/index.json";
+import uniqueBooks from "../../Posts/reading/index.json";
 
 const bookFinishes = [];
 uniqueBooks.forEach(book =>

@@ -2,7 +2,6 @@
 	{
 		"title": "Test",
 		"subtitle": "Does It Work?",
-		"file": "test.md",
 		"slug": "test-post",
 		"visible": true,
 		"listed": false
@@ -10,9 +9,8 @@
 	{
 		"title": "Homework",
 		"subtitle": "A Tirade",
-		"file": "homework.md",
 		"slug": "homework-tirade",
-		"visible": false,
+		"visible": true,
 		"listed": false
 	}
 ]

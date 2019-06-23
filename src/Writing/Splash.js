@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Paren from "../Paren";
 import EmailLink from "../EmailLink";
-import posts from "./posts/index.json";
+import posts from "../posts/writing/index.json";
 
 export default () => (
 	<>

@@ -4,16 +4,17 @@ import Book from "./Book";
 import Paren from "../Paren";
 import EmailLink from "../EmailLink";
 
-import uniqueBooks from "./books";
-const books = [];
+import uniqueBooks from "../posts/reading/index.json";
+
+const bookFinishes = [];
 uniqueBooks.forEach(book =>
-	// splits each book into multiple books, one for each date
-	// that it was read, and recombines them into one array
+	// splits each book into multiple books, one for each time
+	// that it was finished, and recombines them into one array
 	book.finishes.forEach(finish => {
 		const singleBook = Object.assign({}, book);
 		delete singleBook.finishes;
 		singleBook.finish = finish;
-		books.push(singleBook);
+		bookFinishes.push(singleBook);
 	})
 );
 
@@ -24,7 +25,7 @@ export default () => (
 			I read a lot. Since June 2018, I've finished {uniqueBooks.length}{" "}
 			different books–from novels to political analyses, history to educational
 			theory, classics to self-help books, I tend to pick up anything that
-			piques my interest. All {books.length} reads{" "}
+			piques my interest. All {bookFinishes.length} reads{" "}
 			<Paren>
 				including some re-reads, notably Asimov's <em>Foundation</em> series
 			</Paren>{" "}
@@ -47,7 +48,7 @@ export default () => (
 			books; those ones have a shadow. Click on each to read more.
 		</p>
 		<div className="books">
-			{books
+			{bookFinishes
 				// descending chronological order of most recent read
 				.sort((a, b) =>
 					a.finish.date !== b.finish.date

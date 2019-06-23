@@ -5,14 +5,14 @@
 		"file": "test.md",
 		"slug": "test-post",
 		"visible": true,
-		"published": false
+		"listed": false
 	},
 	{
 		"title": "Homework",
 		"subtitle": "A Tirade",
 		"file": "homework.md",
 		"slug": "homework-tirade",
-		"visible": true,
-		"published": false
+		"visible": false,
+		"listed": false
 	}
 ]

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import classNames from "classnames";
 
 // returns a color based on a rating from -1.0 to 1.0
 // 1.0 makes it pure green, -1.0 pure red, 0.0 exact middle gray (127)
@@ -42,9 +41,8 @@ function generateBook({ title, subtitle, authors, finish: { date }, rating }) {
 }
 
 export default ({ book }) => {
-	const { slug, visible, published } = book;
-	console.log(slug, visible, published);
-	if (slug && (visible || published)) {
+	const { slug, visible, listed } = book;
+	if (slug && visible && listed) {
 		return <Link to={`/reading/${slug}`}>{generateBook(book)}</Link>;
 	} else {
 		return generateBook(book);

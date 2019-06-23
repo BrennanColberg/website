@@ -486,7 +486,8 @@
 		"rating": 0.7,
 		"file": "einstein.md",
 		"slug": "einstein",
-		"published": false
+		"visible": false,
+		"listed": false
 	},
 	{
 		"finishes": [{ "date": "2019-06-22", "order": 0 }],

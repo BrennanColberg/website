@@ -49,8 +49,8 @@ export default () => (
 			love to hear your feedback!
 		</p>
 		<ul className="articles">
-			{posts.map(({ title, subtitle, slug, visible, listed }, i) =>
-				slug && visible && listed ? (
+			{posts.map(({ title, subtitle, slug, listed }, i) =>
+				slug && listed ? (
 					<li key={i}>
 						<Link to={`/writing/${slug}`}>
 							{title}

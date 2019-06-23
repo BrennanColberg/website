@@ -2,15 +2,28 @@
 	{
 		"title": "Test",
 		"subtitle": "Does It Work?",
-		"slug": "test-post",
-		"visible": true,
+		"slug": "test",
 		"listed": false
 	},
 	{
-		"title": "Homework",
+		"title": "Homework's Actual Utility",
 		"subtitle": "A Tirade",
+		"date": "2017-05-18",
 		"slug": "homework-tirade",
-		"visible": true,
+		"listed": true
+	},
+	{
+		"title": "Relationships",
+		"subtitle": "Decline as a Default",
+		"date": "2018-11-06",
+		"slug": "relationship-decline",
+		"listed": false
+	},
+	{
+		"title": "To Think, To Learn, To Do",
+		"subtitle": "Automation and Society's Future",
+		"date": "2018-11-01",
+		"slug": "think-learn-do",
 		"listed": false
 	}
 ]

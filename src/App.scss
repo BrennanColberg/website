@@ -66,14 +66,14 @@ main {
 
 	p {
 		font-family: serif;
-		font-size: 14pt;
+		font-size: 15pt;
 
 		span.paren {
 			color: $gray-2;
 		}
 
 		& + *:not(p) {
-			margin-top: 25px;
+			margin-top: 30px;
 		}
 	}
 

@@ -43,8 +43,8 @@ function generateBook({ title, subtitle, authors, finish: { date }, rating }) {
 }
 
 export default ({ book }) => {
-	const { slug, visible, listed } = book;
-	if (slug && visible && listed) {
+	const { slug, listed } = book;
+	if (slug && listed) {
 		return <Link to={`/reading/${slug}`}>{generateBook(book)}</Link>;
 	} else {
 		return generateBook(book);

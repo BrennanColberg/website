@@ -2,6 +2,8 @@ import React from "react";
 import { Link, Route } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 
+import Date from "./Date";
+
 async function loadPostRoutes(type) {
 	// get list of posts from index file
 	const posts = require(`../Posts/${type}/index.json`);
@@ -30,27 +32,15 @@ async function loadPostRoutes(type) {
 	return validRoutes;
 }
 
-function displayDate(date, long = true) {
-	const [yyyy, mm, dd] = date.split("-");
-	const month = [
-		"January",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"August",
-		"September",
-		"October",
-		"November",
-		"December"
-	][parseInt(mm)];
-	const day = parseInt(dd);
-	return `${long ? month : month.substr(0, 3)} ${day}, ${yyyy}`;
-}
-
-const Post = ({ type, text, post: { title, subtitle, date } }) => (
+const Post = ({
+	type,
+	text,
+	post: {
+		title,
+		subtitle,
+		finish: { date }
+	}
+}) => (
 	<>
 		<Link to={`/${type}`} className="hidden">
 			<h3>← Back</h3>
@@ -59,7 +49,11 @@ const Post = ({ type, text, post: { title, subtitle, date } }) => (
 			{title}
 			{subtitle && <>: {subtitle}</>}
 		</h1>
-		{date && <h2 className="date">{displayDate(date)}</h2>}
+		{date && (
+			<h2>
+				<Date date={date} />
+			</h2>
+		)}
 		<ReactMarkdown source={text} />
 	</>
 );

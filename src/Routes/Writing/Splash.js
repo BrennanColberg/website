@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import Paren from "../../Components/Paren";
 import EmailLink from "../../Components/EmailLink";
+import Date from "../../Components/Date";
+
 import posts from "../../Posts/writing/index.json";
 
 export default () => (
@@ -49,18 +51,32 @@ export default () => (
 			love to hear your feedback!
 		</p>
 		<ul className="articles">
-			{posts.map(({ title, subtitle, slug, listed }, i) =>
-				slug && listed ? (
-					<li key={i}>
-						<Link to={`/writing/${slug}`}>
-							{title}
-							{subtitle && <>: {subtitle}</>}
-						</Link>
-					</li>
-				) : (
-					undefined
+			{posts
+				// top -> bottom: no date -> recent -> old
+				.sort((a, b) =>
+					a.finish !== undefined
+						? b.finish !== undefined
+							? a.finish.date < b.finish.date
+							: true
+						: false
 				)
-			)}
+				.map(({ title, subtitle, slug, listed, finish }, i) =>
+					slug && listed ? (
+						<li key={i} id={slug}>
+							<Link to={`/writing/${slug}`}>
+								{finish && finish.date && (
+									<>
+										[<Date date={finish.date} />]{" "}
+									</>
+								)}
+								{title}
+								{subtitle && <>: {subtitle}</>}
+							</Link>
+						</li>
+					) : (
+						undefined
+					)
+				)}
 		</ul>
 	</>
 );

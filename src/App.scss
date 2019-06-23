@@ -56,12 +56,24 @@ main {
 	h5,
 	h6,
 	p,
-	hr {
+	ol,
+	ul {
 		width: 80%;
 		max-width: 800px;
 		margin: 15px auto;
 		font-family: sans-serif;
 		text-align: left;
+	}
+
+	hr {
+		width: 50%;
+		max-width: 500px;
+		margin: 30px auto;
+		background-color: $gray-2;
+		border-color: $gray-2;
+		color: $gray-2;
+		border-style: solid;
+		border-radius: 2px;
 	}
 
 	p {

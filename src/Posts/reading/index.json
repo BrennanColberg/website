@@ -500,5 +500,11 @@
 		"title": "The Door in the Wall",
 		"subtitle": "And Other Stories",
 		"rating": -0.2
+	},
+	{
+		"finishes": [{ "date": "2019-06-24" }],
+		"authors": ["Bill Bryson"],
+		"title": "A Short History of Nearly Everything",
+		"rating": 0.6
 	}
 ]

@@ -502,7 +502,7 @@
 		"rating": -0.2
 	},
 	{
-		"finishes": [{ "date": "2019-06-24", "order": 1 }],
+		"finishes": [{ "date": "2019-06-24", "order": 0 }],
 		"authors": ["Bill Bryson"],
 		"title": "A Short History of Nearly Everything",
 		"rating": 0.6

@@ -511,6 +511,13 @@
 		"finishes": [{ "date": "2019-06-24", "order": 1 }],
 		"authors": ["Dale Carnegie"],
 		"title": "How to Win Friends and Influence People",
-		"rating": 0.5
+		"rating": 0.3
+	},
+	{
+		"finishes": [{ "date": "2019-06-25" }],
+		"authors": ["Dana Goldstein"],
+		"title": "The Teacher Wars",
+		"subtitle": "A History of America's Most Embattled Profession",
+		"rating": 0.25
 	}
 ]

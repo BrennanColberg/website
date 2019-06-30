@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 
-import { loadPostRoutes } from "../../Components/Post";
+import loadPostRoutes from "../../Components/loadPostRoutes";
 import Error404 from "../404";
 import Splash from "./Splash";
 

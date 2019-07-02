@@ -45,7 +45,7 @@ export default _ => (
 				</Switch>
 			</main>
 			<footer>
-				<span>&copy; Brennan Colberg 2019.</span>{" "}
+				<span>&copy; Brennan Colberg {new Date().getFullYear()}.</span>{" "}
 				<span>All rights reserved.</span>
 			</footer>
 			<ScrollToTopWhenNavigating />

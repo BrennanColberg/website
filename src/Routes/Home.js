@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Paren from "../Components/Paren";
 import EmailLink from "../Components/EmailLink";
 
-export default () => (
+export default _ => (
 	<>
 		<h1>
 			My name is Brennan Colberg.{" "}

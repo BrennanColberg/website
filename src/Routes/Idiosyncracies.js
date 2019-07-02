@@ -3,7 +3,7 @@ import React from "react";
 import Paren from "../Components/Paren";
 import EmailLink from "../Components/EmailLink";
 
-export default () => (
+export default _ => (
 	<>
 		<h1>Idiosyncracies</h1>
 

@@ -18,7 +18,7 @@ export default async (type, postComponent = WritingPost) => {
 				<Route
 					key={i}
 					path={`/${type}/${slug}`}
-					component={() =>
+					component={_ =>
 						React.createElement(postComponent, { type, text, post })
 					}
 				/>

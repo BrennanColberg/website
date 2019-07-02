@@ -5,11 +5,11 @@ import loadPostRoutes from "../../Components/loadPostRoutes";
 import Error404 from "../404";
 import Splash from "./Splash";
 
-export default () => {
+export default _ => {
 	const [routes, setRoutes] = useState([]);
 
 	// render routes for each post, once at creation of component
-	useEffect(() => {
+	useEffect(_ => {
 		loadPostRoutes("writing").then(setRoutes);
 	}, []);
 

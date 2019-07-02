@@ -2,7 +2,7 @@ import React from "react";
 
 import Paren from "../Components/Paren";
 
-export default () => (
+export default _ => (
 	<>
 		<h1>FAQ</h1>
 		<h3>What makes you interested in education?</h3>

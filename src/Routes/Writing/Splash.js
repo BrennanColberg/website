@@ -7,7 +7,7 @@ import Date from "../../Components/Date";
 
 import posts from "../../Posts/writing/index.json";
 
-export default () => (
+export default _ => (
 	<>
 		<h1>Why &amp; What I Write</h1>
 		<p>

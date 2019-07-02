@@ -18,7 +18,7 @@ uniqueBooks.forEach(book =>
 	})
 );
 
-export default () => (
+export default _ => (
 	<>
 		<h1>My Reading</h1>
 		<p>

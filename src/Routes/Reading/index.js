@@ -6,11 +6,11 @@ import ReadingPost from "../../Components/Posts/ReadingPost";
 import Error404 from "../404";
 import Splash from "./Splash";
 
-export default () => {
+export default _ => {
 	const [routes, setRoutes] = useState([]);
 
 	// render routes for each post, once at creation of component
-	useEffect(() => {
+	useEffect(_ => {
 		loadPostRoutes("reading", ReadingPost).then(setRoutes);
 	}, []);
 

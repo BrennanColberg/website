@@ -520,5 +520,13 @@
 		"title": "The Teacher Wars",
 		"subtitle": "A History of America's Most Embattled Profession",
 		"rating": 0.25
+	},
+	{
+		"finishes": [{ "date": "2019-07-01" }],
+		"authors": ["John Carreyrou"],
+		"title": "Bad Blood",
+		"subtitle": "Secrets and Lies in a Silicon Valley Startup",
+		"rating": 0.4,
+		"slug": "bad-blood"
 	}
 ]

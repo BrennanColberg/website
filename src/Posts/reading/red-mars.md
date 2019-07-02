@@ -1,0 +1,11 @@
+A science fiction novel about the settlement of Mars, this book is not fundamentally about either of those things; it's about economics, politics, society, and personal relationships.
+
+In the beginning, 100 settlers set up base there. They're scientists; funded by the UNOMA (United Nations Office of Martian Affairs), they simply explore and survive. Over time, different nations' and transnational corporations' settlements develop, with the first 100 settlers as sort of mythic figures. Research and existence focuses on the extraction of metals, the construction of a space elevator, and the consolidation of power around these industries.
+
+Those who arrive on Mars to this arrangement are often disillusioned; they imagined themselves at the frontier, exploring and innovating, when in reality they find themselves depressingly trapped to toil away in a barren wasteland. No exploring, just endless work... naturally, some want to break away and explore and learn for science's and adventure's sakes! That's what they do, often vanishing whole cities at a time.
+
+An inevitable conflict bubbles between those on Earth, where overpopulation abounds (set alight by the development of anti-aging techniques) and war is brewing, and those focused on Mars—who control absurd amounts of natural resources and who want to explore. Furthermore, there is conflict among two groups of Martians: the "Reds", who seek to preserve the planet's natural state, and the "Greens", who seek to terraform it as much as possible.
+
+Conflict naturally erupts in a tense and completely destructive battle; many of the 100 are killed, Mars is flooded, transnationals' setups and infrastructure is destroyed, and the book ends.
+
+Although scientific means are necessarily explained to forward the plot and cater to the "sci-fi" element of the book, its impact and significance of meaning seems sociological more than anything (at least compared to pure-science masterpieces like "The Martian" (Weir)). It shows what happens when powerful giants' aims fundamentally conflict in pressing ways, and how people can pursue different paths based on differing morals. There are conflicts of culture and vision everywhere in humanity: on Mars, Robinson shows, these must surface as a matter of necessity.

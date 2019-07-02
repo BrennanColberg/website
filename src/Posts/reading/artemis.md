@@ -1,0 +1,3 @@
+Reads more like late teen / young adult fiction than anything. Nothing anywhere near the quality and in-depth scientific accuracy that made the Martian such a masterpiece, though. Lots of forced references to sex, etc. Not really a fan, wouldn’t recommend it to anyone looking for “real” sci-fi (that is, the type with hard-hitting ideas that define the core of the genre); this is more of a YA novel set in space. Some may like it, but it’s not my thing.
+
+Seems to me (as a man, admittedly) like [r/menwritingwomen](https://reddit.com/r/menwritingwomen) material. Not very impressed with that more sexist aspect.

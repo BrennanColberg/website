@@ -1,0 +1,7 @@
+Critiquing “authoritarian schools,” Kohl advocates (in 1969) that individual teachers move towards an “open classroom” model which takes student suggestions to move fluidly through content instead of dictating truths within certain timescales through textbooks. 
+
+He writes to the teacher, giving tips on implementation and a vision for how transformation of their classroom could progress. Aware and wary of criticisms and entrenched opposition from “reactionary parents [and administrators],” the latter part of this book focuses on strategies to circumvent politics and confrontations about the model.
+
+What I find most interesting is Kohl’s emphasis on the physical structure of classrooms; he indirectly echoes McLuhan’s proclamation that “the medium is the message” in arguments that not simply curricula but classroom layouts themselves must change and be dynamic. Power and norms are established on the first day of class, he says, and teachers with open classrooms should emphasize that the normally entrenched order is malleable.
+
+Kohl is quick to warn against anarchy, however: if teachers abdicate all authority, students will move in to fill that authority gap and teachers’ authoritarianism will be replaced fluidly by that of the students themselves. Instead, a clear set of expectations and rules must be established to instantiate an environment in which suggestion and collaboration can successfully thrive.

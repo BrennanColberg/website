@@ -118,7 +118,8 @@
 		"authors": ["John Holt"],
 		"title": "How Children Fail",
 		"subtitle": null,
-		"rating": 1.0
+		"rating": 1.0,
+		"slug": "how-children-fail"
 	},
 	{
 		"finishes": [{ "date": "2018-11-09" }],

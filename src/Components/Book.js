@@ -44,7 +44,7 @@ function generateBook({ title, subtitle, authors, finish: { date }, rating }) {
 
 export default ({ book }) => {
 	const { slug, listed } = book;
-	if (slug && listed) {
+	if (slug && listed !== false) {
 		return <Link to={`/reading/${slug}`}>{generateBook(book)}</Link>;
 	} else {
 		return generateBook(book);

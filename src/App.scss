@@ -3,6 +3,11 @@ $gray-2: #888;
 $gray-3: #ddd;
 $blue-1: #236cba;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 header,
 footer {
 	display: flex;
@@ -11,6 +16,7 @@ footer {
 	align-items: center;
 	padding: 5px 7px;
 	font-family: sans-serif;
+	margin: 8px;
 
 	* {
 		margin: 0 7px;
@@ -49,6 +55,11 @@ main {
 	// make sure footer is on bottom
 	min-height: calc(100vh - 180px);
 
+	> :not(section):not(div) {
+		width: 80%;
+		max-width: 800px;
+	}
+
 	h1,
 	h2,
 	h3,
@@ -58,11 +69,18 @@ main {
 	p,
 	ol,
 	ul {
-		width: 80%;
-		max-width: 800px;
 		margin: 15px auto;
 		font-family: sans-serif;
 		text-align: left;
+	}
+
+	blockquote {
+		width: 70%;
+		max-width: 700px;
+		margin: auto;
+		> * {
+			text-align: justify;
+		}
 	}
 
 	hr {

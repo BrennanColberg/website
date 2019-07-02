@@ -61,7 +61,7 @@ export default () => (
 						: false
 				)
 				.map(({ title, subtitle, slug, listed, finish }, i) =>
-					slug && listed ? (
+					slug && listed !== false ? (
 						<li key={i} id={slug}>
 							<Link to={`/writing/${slug}`}>
 								{finish && finish.date && (

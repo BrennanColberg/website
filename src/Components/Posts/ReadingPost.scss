@@ -1,6 +1,11 @@
 .quote {
 	margin: auto;
-	padding: 10px 0;
+	padding: 5px 0;
+
+	:not(.quote) + &,
+	& + :not(.quote) {
+		margin-top: 25px;
+	}
 
 	.anchor {
 		float: left;

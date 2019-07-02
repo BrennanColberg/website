@@ -126,7 +126,8 @@
 		"authors": ["John Holt"],
 		"title": "How Children Learn",
 		"subtitle": null,
-		"rating": 1.0
+		"rating": 1.0,
+		"slug": "how-children-learn"
 	},
 	{
 		"finishes": [{ "date": "2018-11-15" }],

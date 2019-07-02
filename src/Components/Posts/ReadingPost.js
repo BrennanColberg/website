@@ -11,9 +11,7 @@ const Quote = ({ text, page, anchor }) => (
 		<blockquote>
 			<ReactMarkdown
 				source={
-					text
-						.replace(/\n/g, "\n\n") // prep line breaks for md parsing
-						.replace(/\[/g, "\\[") // escape brackets for md parsing
+					text.replace(/\n/g, "\n\n") // prep line breaks for md parsing
 				}
 			/>
 		</blockquote>

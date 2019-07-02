@@ -16,8 +16,13 @@ import Reading from "./Routes/Reading";
 import Writing from "./Routes/Writing";
 import Error404 from "./Routes/404";
 
-const ScrollToTopWhenNavigating = withRouter(({ location }) => {
-	useEffect(_ => window.scrollTo(0, 0), [location]);
+const ScrollToTopWhenNavigating = withRouter(({ location, history }) => {
+	useEffect(
+		_ => {
+			if (history.action === "PUSH") window.scrollTo(0, 0);
+		},
+		[location]
+	);
 	return null;
 });
 

@@ -1,13 +1,21 @@
 import "./ReadingPost.scss";
 
 import React from "react";
-import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 
-const Quote = ({ text, page }) => (
-	<div className="quote">
+const Quote = ({ text, page, anchor }) => (
+	<div className="quote" id={anchor}>
+		<a href={`#${anchor}`} className="anchor">
+			#{anchor}
+		</a>
 		<blockquote>
-			<ReactMarkdown source={text.replace("\n", "\n\n")} />
+			<ReactMarkdown
+				source={
+					text
+						.replace(/\n/g, "\n\n") // prep line breaks for md parsing
+						.replace(/\[/g, "\\[") // escape brackets for md parsing
+				}
+			/>
 		</blockquote>
 		{page && page.length > 0 && (
 			<h4 className="pages">
@@ -33,8 +41,8 @@ export default ({ type, text, post: { title, subtitle, authors, slug } }) => (
 		</h1>
 		<h2 className="authors">{authors.join(",")}</h2>
 		<ReactMarkdown source={text} />
-		{require(`../../Posts/${type}/${slug}.json`).map(quote => (
-			<Quote {...quote} />
+		{require(`../../Posts/${type}/${slug}.json`).map((quote, i) => (
+			<Quote {...quote} key={i} anchor={i + 1} />
 		))}
 	</>
 );

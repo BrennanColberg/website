@@ -2,6 +2,14 @@
 	margin: auto;
 	padding: 10px 0;
 
+	.anchor {
+		float: left;
+		position: absolute;
+		right: 10px;
+		color: #555;
+		font-family: monospace;
+	}
+
 	.pages {
 		text-align: center;
 	}

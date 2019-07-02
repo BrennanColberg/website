@@ -19,9 +19,17 @@ import Error404 from "./Routes/404";
 const ScrollToTopWhenNavigating = withRouter(({ location, history }) => {
 	useEffect(
 		_ => {
-			if (history.action === "PUSH") window.scrollTo(0, 0);
+			if (window.location.hash)
+				setTimeout(
+					_ =>
+						document
+							.getElementById(window.location.hash.replace("#", ""))
+							.scrollIntoView(),
+					10
+				);
+			else if (history.action === "PUSH") window.scrollTo(0, 0);
 		},
-		[location]
+		[location, history.action]
 	);
 	return null;
 });

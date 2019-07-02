@@ -518,8 +518,7 @@
 		"title": "Einstein",
 		"subtitle": "His Life and Universe",
 		"rating": 0.7,
-		"slug": "einstein",
-		"listed": false
+		"slug": "einstein"
 	},
 	{
 		"finishes": [{ "date": "2019-06-22", "order": 0 }],

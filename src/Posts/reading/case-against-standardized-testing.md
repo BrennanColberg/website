@@ -1,5 +1,3 @@
-The Case Against Standardized Testing (Alfie Kohn)
-
 This book was incredibly dull; although there are good points, they're so diluted and repetitive that this book could have probably been summed up in a single journal article's length. Seems like an author just trying to push a book out; probably was.
 
 Interesting points to be had, as I said, for sure! Kohn has a very interesting perspective that standardized tests should be completely eliminated, or that this should at least serve as a goal. If they continue to exist, he says there should be a few criteria that we seek to meet as often as possible:

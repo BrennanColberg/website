@@ -3,6 +3,15 @@ import { Route } from "react-router-dom";
 
 import WritingPost from "./Posts/WritingPost";
 
+const fetchTextIfExists = async (type, slug) => {
+	try {
+		const source = await fetch(require(`../Posts/${type}/${slug}.md`));
+		return await source.text();
+	} catch {
+		return "";
+	}
+};
+
 export default async (type, postComponent = WritingPost) => {
 	// get list of posts from index file
 	let posts = require(`../Posts/${type}/index.json`);
@@ -11,8 +20,7 @@ export default async (type, postComponent = WritingPost) => {
 		const { slug } = post;
 		if (slug) {
 			// get markdown text from file ({slug}.md)
-			const source = await fetch(require(`../Posts/${type}/${slug}.md`));
-			const text = await source.text();
+			let text = await fetchTextIfExists(type, slug);
 			// create new route based on given slug
 			return (
 				<Route

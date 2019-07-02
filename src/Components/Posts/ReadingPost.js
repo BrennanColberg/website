@@ -1,6 +1,6 @@
 import "./ReadingPost.scss";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 const Quote = ({ text, page, anchor }) => (
@@ -27,20 +27,34 @@ const Quote = ({ text, page, anchor }) => (
 	</div>
 );
 
-export default ({ type, text, post: { title, subtitle, authors, slug } }) => (
-	<>
-		<h1 className="title">
-			{title}
-			{subtitle && (
-				<>
-					: <span className="no-bold">{subtitle}</span>
-				</>
-			)}
-		</h1>
-		<h2 className="authors">{authors.join(",")}</h2>
-		<ReactMarkdown source={text} />
-		{require(`../../Posts/${type}/${slug}.json`).map((quote, i) => (
-			<Quote {...quote} key={i} anchor={i + 1} />
-		))}
-	</>
-);
+export default ({ type, text, post: { title, subtitle, authors, slug } }) => {
+	// load in quotes from json (if they exist)
+	const [quotes, setQuotes] = useState([]);
+	useEffect(
+		_ => {
+			try {
+				const newQuotes = require(`../../Posts/${type}/${slug}.json`).map(
+					(quote, i) => <Quote {...quote} key={i} anchor={i + 1} />
+				);
+				setQuotes(newQuotes);
+			} catch {}
+		},
+		[type, slug]
+	);
+
+	return (
+		<>
+			<h1 className="title">
+				{title}
+				{subtitle && (
+					<>
+						: <span className="no-bold">{subtitle}</span>
+					</>
+				)}
+			</h1>
+			<h2 className="authors">{authors.join(",")}</h2>
+			<ReactMarkdown source={text} />
+			{quotes}
+		</>
+	);
+};

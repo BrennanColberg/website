@@ -17,20 +17,28 @@ import Writing from "./Routes/Writing";
 import Error404 from "./Routes/404";
 
 const ScrollToTopWhenNavigating = withRouter(({ location, history }) => {
+	function scrollToTop() {
+		if (history.action === "PUSH") window.scrollTo(0, 0);
+	}
+
+	function scrollToHash() {
+		try {
+			document
+				.getElementById(window.location.hash.replace("#", ""))
+				.scrollIntoView();
+		} catch {
+			scrollToTop();
+		}
+	}
+
 	useEffect(
 		_ => {
-			if (window.location.hash)
-				setTimeout(
-					_ =>
-						document
-							.getElementById(window.location.hash.replace("#", ""))
-							.scrollIntoView(),
-					10
-				);
-			else if (history.action === "PUSH") window.scrollTo(0, 0);
+			if (window.location.hash) setTimeout(scrollToHash, 10);
+			else scrollToTop();
 		},
 		[location, history.action]
 	);
+
 	return null;
 });
 

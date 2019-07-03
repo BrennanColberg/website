@@ -20,7 +20,7 @@ uniqueBooks.forEach(book =>
 
 export default _ => (
 	<>
-		<h1>My Reading</h1>
+		<h2>My Reading</h2>
 		<p>
 			I read a lot. Since June 2018, I've finished {uniqueBooks.length}{" "}
 			different books–from novels to political analyses, history to educational

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import loadPostRoutes from "../../Components/loadPostRoutes";
-import ReadingPost from "../../Components/Posts/ReadingPost";
+import Post from "./Post";
 import Error404 from "../404";
 import Splash from "./Splash";
 
@@ -11,7 +11,7 @@ export default _ => {
 
 	// render routes for each post, once at creation of component
 	useEffect(_ => {
-		loadPostRoutes("reading", ReadingPost).then(setRoutes);
+		loadPostRoutes("reading", Post).then(setRoutes);
 	}, []);
 
 	return (

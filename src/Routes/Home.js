@@ -6,10 +6,10 @@ import EmailLink from "../Components/EmailLink";
 
 export default _ => (
 	<>
-		<h1>
+		<h2>
 			My name is Brennan Colberg.{" "}
 			<span className="no-bold">I'm an autodidact, among other things.</span>
-		</h1>
+		</h2>
 		<p>
 			Here you'll find a list of <Link to="/reading">the books I've read</Link>{" "}
 			<Paren>and what I think of at least some of them</Paren>, all kinds of{" "}

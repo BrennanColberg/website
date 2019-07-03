@@ -9,7 +9,7 @@ import posts from "../../Posts/writing/index.json";
 
 export default _ => (
 	<>
-		<h1>Why &amp; What I Write</h1>
+		<h2>Why &amp; What I Write</h2>
 		<p>
 			Ideas frustrate me. I don't know if I'm alone, but I constantly have
 			issues with something being <em>just</em> on the tip of my tongue—yet in

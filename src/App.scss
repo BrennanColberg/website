@@ -51,41 +51,32 @@ footer {
 }
 
 main {
-	margin: 50px auto;
+	margin: 30px auto;
+	width: 80%;
+	max-width: 800px;
 	// make sure footer is on bottom
 	min-height: calc(100vh - 180px);
 
-	> :not(section):not(div) {
-		width: 80%;
-		max-width: 800px;
-	}
+	font-family: sans-serif;
+	text-align: justify;
+	font-size: 15pt;
 
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
-	h6,
-	p,
-	ol,
-	ul {
-		margin: 15px auto;
-		font-family: sans-serif;
-		text-align: left;
+	h6 {
+		text-align: center;
 	}
 
-	blockquote {
-		width: 70%;
-		max-width: 700px;
-		margin: auto;
-		> * {
-			text-align: justify;
-		}
+	> *,
+	> a * {
+		margin: 15px auto;
 	}
 
 	hr {
-		width: 50%;
-		max-width: 500px;
+		width: 75%;
 		margin: 30px auto;
 		background-color: $gray-2;
 		border-color: $gray-2;
@@ -94,24 +85,68 @@ main {
 		border-radius: 2px;
 	}
 
-	p {
+	> p,
+	> a > p,
+	> * > li,
+	> a > * > li {
 		font-family: serif;
-		font-size: 15pt;
 
 		span.paren {
 			color: $gray-2;
 		}
-
-		& + *:not(p) {
-			margin-top: 30px;
-		}
 	}
 
-	a {
+	> * a {
 		color: $blue-1;
 		text-decoration: none;
 		span {
 			text-decoration: underline;
+		}
+	}
+
+	// links directly in main are invisible
+	> a {
+		color: inherit;
+		text-decoration: none;
+		display: block;
+		margin: 0;
+	}
+
+	blockquote {
+		width: 80%;
+		margin: 40px auto;
+		padding: 5px 25px;
+		border-radius: 15px;
+		font-size: 13pt;
+
+		& + blockquote {
+			margin-top: -20px;
+		}
+
+		> * {
+			margin: 15px auto;
+			text-align: justify;
+		}
+
+		.anchor {
+			float: left;
+			position: absolute;
+			right: 10px;
+			color: #555;
+			font-family: monospace;
+		}
+
+		.pages {
+			text-align: center;
+			margin-top: -5px;
+			margin-bottom: 10px;
+		}
+
+		&:nth-of-type(2n) {
+			background-color: #eee;
+		}
+		&:nth-of-type(2n-1) {
+			background-color: #ddd;
 		}
 	}
 }

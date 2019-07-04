@@ -105,10 +105,10 @@ main {
 	}
 
 	// links directly in main are invisible
-	> a {
+	a.invisible {
 		color: inherit;
 		text-decoration: none;
-		display: block;
+		display: inherit;
 		margin: 0;
 	}
 
@@ -136,10 +136,10 @@ main {
 			font-family: monospace;
 		}
 
-		.pages {
+		.citation {
 			text-align: center;
-			margin-top: -5px;
-			margin-bottom: 10px;
+			margin-top: -4px;
+			width: 80%;
 		}
 
 		&:nth-of-type(2n) {

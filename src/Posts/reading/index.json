@@ -589,7 +589,8 @@
 		"authors": ["Bill Bryson"],
 		"title": "A Short History of Nearly Everything",
 		"year": 2003,
-		"rating": 0.6
+		"rating": 0.95,
+		"slug": "short-history"
 	},
 	{
 		"finishes": [{ "date": "2019-06-24", "order": 1 }],

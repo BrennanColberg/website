@@ -4,28 +4,26 @@ import ReactMarkdown from "react-markdown";
 
 import { PageNumberCitation } from "./Citation";
 
-const Anchor = ({ number }) => (
-	<a href={`#${number}`} className="anchor hidden">
-		#{number}
+const Anchor = ({ slug }) => (
+	<a href={`#${slug}`} className="anchor hidden">
+		#{slug}
 	</a>
 );
 
-export default ({ book, quote, number, citation = PageNumberCitation }) => {
-	return (
-		<Link
-			to={`/reading/${book.slug}/${number}`}
-			className="invisible"
-			id={number}
-		>
-			<blockquote>
-				<Anchor number={number} />
-				<ReactMarkdown source={quote.text.replace(/\n/g, "\n\n")} />
-				<h5 className="citation">
-					<Link to={`/reading/${book.slug}#${number}`} className="invisible">
-						<ReactMarkdown source={citation({ book, quote })} />
-					</Link>
-				</h5>
-			</blockquote>
-		</Link>
-	);
-};
+export default ({ book, quote, citation = PageNumberCitation }) => (
+	<Link
+		to={`/reading/${book.slug}/${quote.slug}`}
+		className="invisible"
+		id={quote.slug}
+	>
+		<blockquote>
+			<Anchor slug={quote.slug} />
+			<ReactMarkdown source={quote.text.replace(/\n/g, "\n\n")} />
+			<h5 className="citation">
+				<Link to={`/reading/${book.slug}#${quote.slug}`} className="invisible">
+					<ReactMarkdown source={citation({ book, quote })} />
+				</Link>
+			</h5>
+		</blockquote>
+	</Link>
+);

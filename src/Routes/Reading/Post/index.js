@@ -17,17 +17,13 @@ export default ({ text, post }) => {
 			let newQuotes = [];
 			let newQuoteRoutes = [];
 			quoteData.forEach((quoteDatum, i) => {
-				const number = i + 1;
-				newQuotes.push(
-					<Quote key={i} book={post} quote={quoteDatum} number={number} />
-				);
+				if (!quoteDatum.slug) quoteDatum.slug = i + 1;
+				newQuotes.push(<Quote key={i} book={post} quote={quoteDatum} />);
 				newQuoteRoutes.push(
 					<Route
 						key={i}
-						path={`/reading/${slug}/${number}`}
-						component={_ => (
-							<QuotePage book={post} quote={quoteDatum} number={number} />
-						)}
+						path={`/reading/${slug}/${quoteDatum.slug}`}
+						component={_ => <QuotePage book={post} quote={quoteDatum} />}
 					/>
 				);
 				setQuotes(newQuotes);

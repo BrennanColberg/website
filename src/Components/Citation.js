@@ -55,7 +55,9 @@ const APACitation = ({ book, quote }) => {
 	}
 	if (parts.length > 0) {
 		parts.push("");
-		return parts.join(". ");
+		return parts
+			.map(part => (part.slice(-1) !== "." ? part : part.slice(0, -1)))
+			.join(". ");
 	} else return null;
 };
 

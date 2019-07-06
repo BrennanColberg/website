@@ -62,7 +62,6 @@ export default _ => (
 			</main>
 			<footer>
 				<span>&copy; Brennan Colberg {new Date().getFullYear()}.</span>{" "}
-				<span>All rights reserved.</span>
 			</footer>
 			<ScrollToTopWhenNavigating />
 		</>

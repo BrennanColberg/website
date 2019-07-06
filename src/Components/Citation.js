@@ -5,6 +5,9 @@ const citationName = (name, initials = true) => {
 		.join(" ")}`;
 };
 
+const lowerCaseExceptFirst = str =>
+	str[0].toUpperCase() + str.slice(1).toLowerCase();
+
 const PageNumberCitation = ({ quote: { page } }) => {
 	// input validation
 	if (page === undefined || page.length === 0) return null;
@@ -30,8 +33,8 @@ const APACitation = ({ book, quote }) => {
 		parts.push(`(${year})`);
 	}
 	if (title) {
-		let result = title;
-		if (subtitle) result += `: ${subtitle}`;
+		let result = lowerCaseExceptFirst(title);
+		if (subtitle) result += `: ${lowerCaseExceptFirst(subtitle)}`;
 		result = `_${result}_`;
 		if (page) {
 			if (page.length === 1) result += ` (p. ${quote.page[0]})`;

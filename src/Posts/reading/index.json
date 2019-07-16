@@ -613,7 +613,23 @@
 		"title": "Bad Blood",
 		"subtitle": "Secrets and Lies in a Silicon Valley Startup",
 		"year": 2018,
-		"rating": 0.4,
+		"rating": 0.5,
 		"slug": "bad-blood"
+	},
+	{
+		"finishes": [{ "date": "2019-07-06" }],
+		"authors": ["Ashlee Vance"],
+		"title": "Elon Musk",
+		"subtitle": "Tesla, SpaceX, and the Quest for a Fantastic Future",
+		"year": 2017,
+		"rating": 0.8
+	},
+	{
+		"finishes": [{ "date": "2019-07-16" }],
+		"authors": ["David Graeber"],
+		"title": "Bullshit Jobs",
+		"subtitle": "A Theory",
+		"year": 2018,
+		"rating": 1.0
 	}
 ]

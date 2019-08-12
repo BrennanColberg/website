@@ -645,5 +645,19 @@
     "title": "Gulliver's Travels",
     "year": 1726,
     "rating": 0.85
+  },
+  {
+    "finishes": [{ "date": "2019-08-01" }],
+    "authors": ["Benjamin Franklin"],
+    "title": "The Autobiography of Benjamin Franklin",
+    "year": 1791,
+    "rating": 0.5
+  },
+  {
+    "finishes": [{ "date": "2019-08-08" }],
+    "authors": ["John Holt"],
+    "title": "Instead of Education",
+    "year": 1726,
+    "rating": 0.7
   }
 ]

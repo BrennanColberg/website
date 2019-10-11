@@ -771,6 +771,29 @@
 		"title": "Shoe Dog",
 		"subtitle": "A Memoir by the Creator of Nike",
 		"year": 2016,
-		"rating": 1.0
+		"rating": 0.9
+	},
+	{
+		"finishes": [{ "date": "2019-10-03" }],
+		"authors": ["Randall Munroe"],
+		"title": "What If?",
+		"subtitle": "Serious Scientific Annswers to Absurd Hypothetical Questions",
+		"year": 2014,
+		"rating": 0.5
+	},
+	{
+		"finishes": [{ "date": "2019-10-07" }],
+		"authors": ["Amy Holllingsworth"],
+		"title": "The Simple Faith of Mister Rogers",
+		"subtitle": "Spiritual Insights from the World's Most Beloved Neighbor",
+		"year": 2001,
+		"rating": 0.4
+	},
+	{
+		"finishes": [{ "date": "2019-09-30" }],
+		"authors": ["William Strunk Jr.", "E. B. White"],
+		"title": "The Elements of Style",
+		"year": 1999,
+		"rating": 0.7
 	}
 ]

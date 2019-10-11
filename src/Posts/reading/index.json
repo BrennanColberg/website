@@ -697,7 +697,8 @@
 		"title": "Life Is What You Make It",
 		"subtitle": "Find Your Own Path to Fulfillment",
 		"year": 2010,
-		"rating": 0.8
+		"rating": 0.1,
+		"slug": "life-is-what-you-make-it"
 	},
 	{
 		"finishes": [{ "date": "2019-09-09" }],

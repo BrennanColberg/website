@@ -1,0 +1,5 @@
+Life is broad, and should be taken seriously—but not stressfully. That's the overarching lesson I take away from Peter Buffet's advice on how to live, at least. Don't be prejudiced, don't be hurried, don't fetishize money, don't wish without preparation, don't get hung up over mistakes. Think, reflect, be aware of life's intrinsic optionality—_especially_ if you're born into a life of privilege. Live on your own terms, both in action and perception. And never stop striving for what you want and perceive as right.
+
+That contrived theme above took a lot of effort to come up with—because there's no easy way to summarize this book. "Life is what you make it," Buffet opines; all else seems an extension of this thought, a cache of life wisdom that wouldn't feel out of place coming out of a grandparent's mouth in earnest. Good lines are mixed in, here and there; this book is one easily read part by part, stories and advice taken out of the larger context.
+
+It's good advice, to be sure—just not the best for those seeking hearty reading.

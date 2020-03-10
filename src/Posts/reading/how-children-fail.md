@@ -1,5 +1,0 @@
-Most of the quotations below speak for themselves; this book should be read by any and every person involved with school-age children, from teachers to administrators to parents to community members. It expresses in its every word the inner cries I've had but had no voice for; Holt perfectly lays out in words logic that I knew to be true before I read a word of it.
-
-McQueen (my Senior year history teacher) says that Holt's work is "popular among homeschoolers"; however, I see the value of his work most evidently in the actual educational sphere. He gives clear critiques to the system, rather than advocating its abolition or disenfranchisement (at least in this book); I think there is still hope for a freer and more motivational, potential-filling school to arise out of the ashes that the current behemoth will inevitably produce as it writhes into oblivion.
-
-Any successful educational system of the future must be aware of these observations and take them to heart. Fail to do this, and innovations—and the future of education as we know it—will also fail. And, with this, children will be dragged further into their instructional hell.

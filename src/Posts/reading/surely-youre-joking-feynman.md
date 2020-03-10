@@ -1,1 +1,0 @@
-Feynman was quite obsessed with sex, if this book is all to tell. He doesn’t mention his life passion (physics) much, surprisingly; rather, it’s just a recounting of his romps and resulting perspective of society.

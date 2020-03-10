@@ -1,5 +1,0 @@
-I’m filled with mixed emotions: inspiration and helplessness. This book almost perfectly summarizes the key ideas behind Dweck’s “Mindset” and Kohn’s “The Case Against Standardized Testing,” while also referencing Holt’s “How Children Fail”—it’s like no other education book I’ve ever read. But it was written in 1969. 50 years ago.
-
-Why hasn’t anything been done? If we in the educational sphere have known these things for half a century, why are they still issues?! The authors paint a picture of a problematic school model that could be mistaken for a critique from today… it’s heartening to see I’m not the only one seeing this, but also severely depressing. FIFTY YEARS we’ve known this—and nothing has been done. This book was written before my parents were even born! It’s ridiculous. 
-
-But at least I know I’m not too late. If this much detail was given about the problems and their solutions half a century ago, I won’t be beat to a solution by a year or two—at least, won’t be eclipsed. Why hasn’t anyone tried a ground-up entrepreneurial application approach? Has anyone? Did they fail? What can I learn from that? This is absurd. Patently absurd.

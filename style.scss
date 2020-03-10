@@ -1,0 +1,24 @@
+#projects {
+	a.code {
+		&::after {
+			content: "source code";
+		}
+	}
+	a.live {
+		&::after {
+			content: "live website";
+		}
+	}
+}
+
+#writing {
+	a {
+		&::after {
+			content: "read";
+		}
+	}
+}
+
+.hidden {
+	display: none !important;
+}

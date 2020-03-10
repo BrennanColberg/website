@@ -1,14 +1,31 @@
-#projects a.code::after {
-  content: "source code";
+#projects .links {
+	display: flex;
+	flex-flow: column nowrap;
 }
-#projects a.live::after {
-  content: "live website";
+#projects .links .live {
+	order: 0;
+}
+#projects .links .live::after {
+	content: "live website";
+}
+#projects .links .code {
+	order: 1;
+}
+#projects .links .code::after {
+	content: "source code";
+}
+#projects ul {
+	display: flex;
+	flex-flow: column nowrap;
+}
+#projects ul > li {
+	order: 100;
 }
 
 #writing a::after {
-  content: "read";
+	content: "read";
 }
 
 .hidden {
-  display: none !important;
+	display: none !important;
 }

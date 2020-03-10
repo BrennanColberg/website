@@ -1,12 +1,27 @@
 #projects {
-	a.code {
-		&::after {
-			content: "source code";
+	.links {
+		display: flex;
+		flex-flow: column nowrap;
+		.live {
+			order: 0;
+			&::after {
+				content: "live website";
+			}
+		}
+		.code {
+			order: 1;
+			&::after {
+				content: "source code";
+			}
 		}
 	}
-	a.live {
-		&::after {
-			content: "live website";
+
+	ul {
+		display: flex;
+		flex-flow: column nowrap;
+
+		> li {
+			order: 100;
 		}
 	}
 }

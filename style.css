@@ -1,31 +1,105 @@
-#projects .links {
-	display: flex;
-	flex-flow: column nowrap;
+@charset "UTF-8";
+#projects a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10.5pt;
 }
-#projects .links .live {
-	order: 0;
+#projects a.live::after {
+  content: "🔗";
 }
-#projects .links .live::after {
-	content: "live website";
+#projects a.code::after {
+  content: "💾";
 }
-#projects .links .code {
-	order: 1;
+#projects li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  margin: 0;
 }
-#projects .links .code::after {
-	content: "source code";
+#projects li > * {
+  margin: 2px 5px;
 }
-#projects ul {
-	display: flex;
-	flex-flow: column nowrap;
+#projects .links,
+#projects .tags {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
-#projects ul > li {
-	order: 100;
+#projects .tag {
+  --tag-color: black;
+  font-family: monospace;
+  border: 2px solid var(--tag-color);
+  color: var(--tag-color);
+  padding: 1px 3px;
+  border-radius: 2px;
+  margin: 0 2px;
+  font-size: 8pt;
+  display: block;
+}
+#projects .tag.html {
+  --tag-color: red;
+  order: 10;
+}
+#projects .tag.html::after {
+  content: "HTML";
+}
+#projects .tag.css {
+  --tag-color: purple;
+  order: 11;
+}
+#projects .tag.css::after {
+  content: "CSS";
+}
+#projects .tag.vanilla-js, #projects .tag.react, #projects .tag.node-js {
+  --tag-color: rgb(202, 165, 0);
+}
+#projects .tag.vanilla-js {
+  order: 2;
+}
+#projects .tag.vanilla-js::after {
+  content: "Vanilla JS";
+}
+#projects .tag.react {
+  order: 2;
+}
+#projects .tag.react::after {
+  content: "React";
+}
+#projects .tag.node-js {
+  order: 1;
+}
+#projects .tag.node-js::after {
+  content: "Node.js";
+}
+#projects .tag.java {
+  --tag-color: brown;
+}
+#projects .tag.java::after {
+  content: "Java";
+}
+#projects .tag.php {
+  --tag-color: rgb(31, 49, 214);
+}
+#projects .tag.php::after {
+  content: "PHP";
+}
+#projects .tag.frontend, #projects .tag.backend, #projects .tag.full-stack {
+  order: -1;
+}
+#projects .tag.frontend::after {
+  content: "Frontend";
+}
+#projects .tag.full-stack::after {
+  content: "Full Stack";
+}
+#projects p.short {
+  display: none;
 }
 
 #writing a::after {
-	content: "read";
+  content: "read";
 }
 
 .hidden {
-	display: none !important;
+  display: none !important;
 }

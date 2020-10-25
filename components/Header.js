@@ -6,7 +6,7 @@ import Navigation from './Navigation'
 const Header = () => (
   <div className={styles.header}>
     <Link href="/" passHref>
-      <a className="subtle">
+      <a>
         <Logo />
       </a>
     </Link>

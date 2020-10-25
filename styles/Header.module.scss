@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+
+  > :first-child div {
+    font-size: 8pt;
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12pt;
+}
+
+.headshot {
+  background-image: url(https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  border-radius: 25%;
+  height: 3.5em;
+  width: 3.5em;
+  box-shadow: 0 0 10px gray;
+}
+
+.name {
+  margin-left: 0.5em;
+  white-space: nowrap;
+}

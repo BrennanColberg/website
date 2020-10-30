@@ -1,0 +1,13 @@
+.project {
+  --color: none;
+  border: 3px dashed var(--color);
+  margin: 5px 0;
+
+  .link {
+    float: right;
+
+    &.use::before {
+      content: 'use it now →';
+    }
+  }
+}

@@ -9,13 +9,47 @@ const SplashPage = () => (
 
     <main>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur id non ita
-        fit? Et quod est munus, quod opus sapientiae? Fatebuntur Stoici haec
-        omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse.
-        Duo Reges: constructio interrete. Poterat autem inpune; Septem autem
-        illi non suo, sed populorum suffragio omnium nominati sunt. Aliter autem
-        vobis placet. Poterat autem inpune; Videsne, ut haec concinant? Nummus
-        in Croesi divitiis obscuratur, pars est tamen divitiarum.
+        I'm an autodidact with the goal of reinventing high school at scale.
+      </p>
+      <p>
+        Today's schools were built for an authoritarian world, and—even with
+        reform—are simply unable to train the skilled workforce we'll need in
+        2050. They need to be replaced with something new and better; but it's a
+        hard problem, almost solely because of the required administrative
+        scalability. It's one I hope to crack within 3 years. If you want to
+        help me, please reach out!
+      </p>
+      <p>
+        Right now, I'm the software engineer &amp; architect behind{' '}
+        <a
+          href="https://joinweekdays.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WEEKDAYS
+        </a>
+        , the leading US micro-school (3-10 kids, 1 teacher, in 1 home)
+        marketplace.
+      </p>
+      <p>
+        I'm a born{' '}
+        <a
+          href="https://en.wikipedia.org/wiki/Seattle"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Seattle
+        </a>
+        ite, but now live in{' '}
+        <a
+          href="https://en.wikipedia.org/wiki/Corvallis,_Oregon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Corvallis
+        </a>
+        , working and socializing remotely. (If you want to Zoom, please reach
+        out!)
       </p>
     </main>
 

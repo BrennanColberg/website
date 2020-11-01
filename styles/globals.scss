@@ -8,9 +8,10 @@ p {
   font-size: 14pt;
   max-width: 600px;
   a {
+    color: var(--color-brown);
+    font-weight: bold;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: lightgray;
+    text-decoration-thickness: 2.5px;
   }
 }
 

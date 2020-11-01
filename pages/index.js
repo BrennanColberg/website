@@ -3,11 +3,8 @@ import Navigation from '../components/Navigation'
 
 const SplashPage = () => (
   <>
-    <div style={{ gridArea: 'logo' }}>
-      <Logo />
-    </div>
-
     <main>
+      <Logo />
       <p>
         I'm an autodidact with the goal of reinventing high school at scale.
       </p>
@@ -51,11 +48,8 @@ const SplashPage = () => (
         , working and socializing remotely. (If you want to Zoom, please reach
         out!)
       </p>
-    </main>
-
-    <div style={{ gridArea: 'nav' }}>
       <Navigation />
-    </div>
+    </main>
   </>
 )
 

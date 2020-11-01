@@ -11,7 +11,7 @@
     "link": "https://www.reddit.com/user/BrennanColberg",
     "color": "#ff2800",
     "user": "u/BrennanColberg",
-    "active": true
+    "active": false
   },
   {
     "name": "Quora",
@@ -74,7 +74,7 @@
     "link": "https://medium.com/@brennancolberg",
     "color": "#000000",
     "user": "@brennancolberg",
-    "active": true
+    "active": false
   },
   {
     "name": "GitHub",

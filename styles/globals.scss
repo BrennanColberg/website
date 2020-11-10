@@ -4,14 +4,27 @@
   --color-red: #c04d4b;
 }
 
-p {
-  font-size: 14pt;
-  max-width: 600px;
-  a {
-    color: var(--color-brown);
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: 2.5px;
+main {
+  ul,
+  ol,
+  p {
+    font-size: 14pt;
+    max-width: 600px;
+    text-align: justify;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  // part headings in /books/[id]
+  h5 {
+    font-size: 15pt;
+  }
+
+  // chapter headings in /books/[id]
+  h6 {
+    font-size: 14pt;
   }
 }
 

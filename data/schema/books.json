@@ -1,0 +1,7 @@
+{
+  "title": "string",
+  "subtitle": "string",
+  "authors": ["string"],
+  "year": "string (YYYY)",
+  "text": "string (markdown)"
+}

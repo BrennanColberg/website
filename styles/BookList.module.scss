@@ -1,0 +1,12 @@
+.bookList {
+  list-style-type: none;
+  padding: 0;
+
+  a:not(:hover) {
+    text-decoration: none;
+  }
+
+  li {
+    margin-top: 15px;
+  }
+}

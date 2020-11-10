@@ -1,1 +1,4 @@
-[{ "href": "/social-media", "text": "Social Media" }]
+[
+  { "href": "/social-media", "text": "Social Media" },
+  { "href": "/books", "text": "Book Notes" }
+]

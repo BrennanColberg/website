@@ -32,7 +32,7 @@ const BookContent = ({ book }) => {
         <h1>{book.title}</h1>
         {book.subtitle && <h2>{book.subtitle}</h2>}
         {book.authors && book.authors.length && (
-          <h3>by {book.authors.join(', ')}</h3>
+          <h3>by {authorsToText(book.authors)}</h3>
         )}
         <hr />
 

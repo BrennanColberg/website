@@ -7,14 +7,19 @@ const BooksMenu = ({ books }) => (
   <>
     <Header />
     <main>
-      <h1>Here are notes on some of the books I've read</h1>
+      <h1>Here are notes on books I've read</h1>
+      <p>
+        I try to take 2-3 sentences of notes per chapter, which is around the
+        sweet spot between "too vague" and "too long." Would love feedback!
+      </p>
+      <hr />
 
       <ul className={styles.bookList}>
         {books.map((book, i) => (
           <Link key={i} href="/books/[id]" as={`/books/${book.id}`} passHref>
             <a>
               <li>
-                {book.title}
+                <em>{book.title}</em>
                 {book.subtitle && `: ${book.subtitle}`}
               </li>
             </a>

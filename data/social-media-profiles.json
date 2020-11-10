@@ -25,7 +25,7 @@
     "link": "https://instagram.com/brennancolberg",
     "color": "#C13584",
     "user": "@brennancolberg",
-    "active": false
+    "active": true
   },
   {
     "name": "Twitch",
@@ -46,7 +46,7 @@
     "link": "https://linkedin.com/in/BrennanColberg",
     "color": "#3867ad",
     "user": "/in/BrennanColberg",
-    "active": true
+    "active": false
   },
   {
     "name": "Telegram",

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NavLink = ({ href, as, children }) => (
   <Link href={href} as={as} passHref>
@@ -13,7 +14,12 @@ const Header = () => (
     <div className="sm:bg-neutral-500 rounded-lg sm:rounded-lg mb-2 sm:mb-0 sm:pr-1 shadow-xl sm:shadow-none">
       <Link href="/" passHref>
         <a className="flex items-center bg-neutral-200 pr-4 rounded-lg">
-          <img src="/images/profile.png" className="h-10 w-10 rounded-lg" />
+          <Image
+            src="/images/profile.png"
+            width="40px"
+            height="40px"
+            className="h-10 w-10 rounded-lg"
+          />
           <span className="ml-3 text-lg font-bold hover:text-neutral-500">
             Brennan Colberg
           </span>

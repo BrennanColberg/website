@@ -20,7 +20,9 @@ const Tags = ({ tags }) =>
     <span
       key={i}
       // used options (listed for tailwindcss compiler): bg-green-300 bg-red-300 bg-yellow-300 bg-neutral-300
-      className={`inline-block mr-2 mt-1.5 py-0.5 px-1.5 rounded-md font-light text-sm select-none whitespace-nowrap cursor-default shadow-sm bg-${tag.color}-300`}
+      className={`inline-block mr-2 mt-1.5 py-0.5 px-1.5 rounded-md font-light text-sm select-none whitespace-nowrap cursor-default shadow-sm bg-${
+        tag.color || 'neutral'
+      }-300`}
     >
       {tag.text}
     </span>

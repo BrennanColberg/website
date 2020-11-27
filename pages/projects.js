@@ -1,15 +1,38 @@
-import Header from '../components/Header'
-import Project from '../components/Project'
-import projects from '../data/projects.json'
+import { firestoreClient } from '../data/firebase'
+import Card from '../components/Card'
+import Head from 'next/head'
 
-const ProjectsPage = () => (
+export const getStaticProps = async () => ({
+  props: {
+    projects: await firestoreClient
+      .collection('projects')
+      .get()
+      .then((snap) => snap.docs.map((doc) => doc.data()))
+      .then((projects) =>
+        projects.sort((a, b) => b.status.localeCompare(a.status))
+      ),
+  },
+})
+
+const ProjectsPage = ({ projects }) => (
   <>
-    <Header />
-    <main>
-      {projects.map((project) => (
-        <Project project={project} />
-      ))}
-    </main>
+    <Head>
+      <title>Projects | Brennan Colberg</title>
+    </Head>
+    {projects?.map((project, i) => (
+      <Card
+        key={i}
+        title={project.title}
+        text={project.subtitle}
+        color="neutral"
+        links={project.links}
+        // tags={project.technologies.map((tech) => ({
+        //   text: tech,
+        //   color: 'neutral',
+        // }))}
+        status={project.status}
+      />
+    ))}
   </>
 )
 

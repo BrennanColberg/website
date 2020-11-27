@@ -1,14 +1,12 @@
-import '../styles/globals.scss'
-import { useRouter } from 'next/router'
+import '../styles.css'
 import { useEffect } from 'react'
-import { firestoreClient } from '../data/firebase'
+import { analyticsClient } from '../data/firebase'
 import Head from 'next/head'
+import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-
   useEffect(() => {
-    window.firestoreClient = firestoreClient
+    analyticsClient.setAnalyticsCollectionEnabled(true)
   }, [])
 
   return (
@@ -16,11 +14,12 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Brennan Colberg</title>
       </Head>
-      <div
-        id="app"
-        className={router.pathname.slice(1).replace(/\//g, '-') || 'root'}
-      >
-        <Component {...pageProps} />
+
+      <div className="min-h-screen w-screen flex flex-col items-center gradient-background">
+        <Header />
+        <main className="max-w-xl p-4 sm:p-8 bg-white rounded-3xl shadow-2xl m-3 mb-6 sm:mb-10 md:mb-16">
+          <Component {...pageProps} />
+        </main>
       </div>
     </>
   )

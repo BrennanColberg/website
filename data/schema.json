@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "title": "string",
+      "subtitle": "string",
+      "authors": ["string"],
+      "year": "string (YYYY)",
+      "text": "string (markdown)",
+      "review?": "link to YT video or blog post",
+      "summary": [
+        { "title": "this is a chapter", "content": "string" },
+        {
+          "title": "this is a part, which contains chapters",
+          "content": [{ "title": "this is a chapter", "content": "string" }]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "string",
+      "subtitle": "string",
+      "links": [
+        {
+          "href": "string",
+          "text": "string"
+        }
+      ],
+      "year": "string (YYYY)",
+      "technologies": ["string"],
+      "status": "finished | abandoned | in progress"
+    }
+  ]
+}

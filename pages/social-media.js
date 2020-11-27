@@ -1,6 +1,4 @@
-import Header from '../components/Header'
 import { firestoreClient } from '../data/firebase'
-import styles from '../styles/SocialMediaProfiles.module.scss'
 
 const SocialMediaProfile = ({ profile }) => (
   <a
@@ -18,26 +16,15 @@ const SocialMediaProfile = ({ profile }) => (
 
 const ContactPage = ({ socialMediaProfiles }) => (
   <>
-    <Header />
-    <main>
-      <h1>I'm "BrennanColberg" everywhere</h1>
+    <h1>I'm "BrennanColberg" everywhere</h1>
 
-      <div className={styles.socialMediaProfiles}>
-        {socialMediaProfiles
-          .filter(({ active }) => active)
-          .map((profile, i) => (
-            <SocialMediaProfile key={i} profile={profile} />
-          ))}
-      </div>
-      {/* <hr />
-      <div className={styles.socialMediaProfiles}>
-        {socialMediaProfiles
-          .filter(({ active }) => !active)
-          .map((profile, i) => (
-            <SocialMediaProfile key={i} profile={profile} />
-          ))}
-      </div> */}
-    </main>
+    <div>
+      {socialMediaProfiles
+        .filter(({ active }) => active)
+        .map((profile, i) => (
+          <SocialMediaProfile key={i} profile={profile} />
+        ))}
+    </div>
   </>
 )
 

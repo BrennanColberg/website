@@ -1,5 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/analytics'
+import 'firebase/auth'
 import 'firebase/firestore'
 
 if (!firebase.apps.length)
@@ -16,4 +17,5 @@ if (!firebase.apps.length)
 
 export const analyticsClient =
   typeof window === 'undefined' ? null : firebase.analytics()
+export const authClient = firebase.auth()
 export const firestoreClient = firebase.firestore()

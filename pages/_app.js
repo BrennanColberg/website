@@ -1,13 +1,16 @@
 import '../styles.css'
 import { useEffect } from 'react'
-import { analyticsClient, firestoreClient } from '../data/firebase'
+import { analyticsClient, authClient, firestoreClient } from '../data/firebase'
 import Head from 'next/head'
 import Header from '../components/Header'
+import firebase from 'firebase/app'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     analyticsClient.setAnalyticsCollectionEnabled(true)
     window.firestoreClient = firestoreClient
+    window.login = () =>
+      authClient.signInWithPopup(new firebase.auth.GoogleAuthProvider())
   }, [])
 
   return (

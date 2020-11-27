@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
 
       <div className="min-h-screen w-screen flex flex-col items-center gradient-background">
         <Header />
-        <main className="w-11/12 max-w-xl p-5 bg-white rounded-3xl shadow-2xl mt-3 -mb-6 sm:mb-10 md:mb-16">
+        <main className="w-11/12 max-w-xl p-5 bg-white rounded-3xl shadow-2xl mt-3 mb-6 sm:mb-10 md:mb-16">
           <Component {...pageProps} />
         </main>
       </div>

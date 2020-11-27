@@ -1,5 +1,5 @@
-import { firestoreClient } from '../../data/firebase'
-import Card from '../../components/Card'
+import { firestoreClient } from '../data/firebase'
+import Card from '../components/Card'
 import Head from 'next/head'
 
 const TITLE_PREFIXES_REGEX = /^(The )?(.+)$/
@@ -32,7 +32,7 @@ const BooksMenu = ({ books }) => (
         color="neutral"
         links={[
           book.summary?.length && {
-            href: `/books/${book.id}`,
+            href: `/books/${book.id}/notes`,
             text: 'notes',
           },
           book.review && {

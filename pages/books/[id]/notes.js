@@ -1,4 +1,4 @@
-import { firestoreClient } from '../../data/firebase'
+import { firestoreClient } from '../../../data/firebase'
 import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
 
@@ -42,7 +42,7 @@ const ChapterSummary = ({ entry: { title, content } }) => (
 
 const BookContent = ({ book }) => {
   const title = `${book.title} (${authorsToText(book.authors)}; ${book.year})`
-  const url = `https://brennancolberg.com/books/${book.id}`
+  const url = `https://brennancolberg.com/books/${book.id}/notes`
 
   return (
     <div className="prose">

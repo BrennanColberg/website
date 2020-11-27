@@ -1,12 +1,13 @@
 import '../styles.css'
 import { useEffect } from 'react'
-import { analyticsClient } from '../data/firebase'
+import { analyticsClient, firestoreClient } from '../data/firebase'
 import Head from 'next/head'
 import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     analyticsClient.setAnalyticsCollectionEnabled(true)
+    window.firestoreClient = firestoreClient
   }, [])
 
   return (

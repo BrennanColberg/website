@@ -19,12 +19,7 @@ const WritingPage = ({ posts }) => (
         text={post.subtitle}
         color="neutral"
         links={[{ href: `/writing/${post.id}`, text: 'read' }]}
-        tags={[
-          {
-            text: post.date,
-            color: 'neutral',
-          },
-        ]}
+        tags={[{ text: post.date }]}
       />
     ))}
   </>

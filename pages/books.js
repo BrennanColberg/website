@@ -32,8 +32,14 @@ const BooksMenu = ({ books }) => (
         color="neutral"
         links={[
           book.summary?.length && {
-            href: `/books/${book.id}/notes`,
+            href: '/books/[bookId]/notes',
+            as: `/books/${book.id}/notes`,
             text: 'notes',
+          },
+          book.quotes?.length && {
+            href: '/books/[bookId]/quotes',
+            href: `/books/${book.id}/quotes`,
+            text: 'quotes',
           },
           book.review && {
             href: book.review,

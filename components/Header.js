@@ -22,7 +22,7 @@ const Header = () => (
     </div>
     <nav className="bg-white py-2 px-3 sm:px-5 rounded-lg shadow-xl sm:shadow-none">
       <NavLink href="/projects">Projects</NavLink>
-      {/* <NavLink href="/writing">Essays</NavLink> */}
+      <NavLink href="/writing">Writing</NavLink>
       <NavLink href="/books">Book List</NavLink>
     </nav>
   </header>

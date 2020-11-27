@@ -13,7 +13,8 @@
           "title": "this is a part, which contains chapters",
           "content": [{ "title": "this is a chapter", "content": "string" }]
         }
-      ]
+      ],
+      "status": "finished | abandoned | in progress"
     }
   ],
   "projects": [
@@ -29,6 +30,14 @@
       "year": "string (YYYY)",
       "technologies": ["string"],
       "status": "finished | abandoned | in progress"
+    }
+  ],
+  "posts": [
+    {
+      "title": "string",
+      "subtitle": "string",
+      "text": "string (markdown)",
+      "date": "yyyy/mm/dd"
     }
   ]
 }

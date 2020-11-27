@@ -9,29 +9,23 @@ function authorsToText(authors) {
   return authors.join(', ')
 }
 
-export async function getStaticPaths() {
-  const snap = await firestoreClient.collection('books').get()
-  const books = snap.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-
-  return {
-    paths: books.map((book) => ({
-      params: {
-        id: book.id,
-      },
-    })),
-    fallback: false,
-  }
-}
-
-export async function getStaticProps(context) {
-  const snap = await firestoreClient
+export const getStaticPaths = async () => ({
+  paths: await firestoreClient
     .collection('books')
-    .doc(context.params.id)
     .get()
-  return {
-    props: { book: snap.data() },
-  }
-}
+    .then((snap) => snap.docs.map((doc) => ({ params: { bookId: doc.id } }))),
+  fallback: false,
+})
+
+export const getStaticProps = async (context) => ({
+  props: {
+    book: await firestoreClient
+      .collection('books')
+      .doc(context.params.bookId)
+      .get()
+      .then((snap) => snap.data()),
+  },
+})
 
 const ChapterSummary = ({ entry: { title, content } }) => (
   <>
@@ -58,15 +52,15 @@ const BookContent = ({ book }) => {
         <meta property="twitter:title" content={title} />
       </Head>
 
-      <h1>
-        {book.title}
+      <h2>
+        <span classname="font-extrabold">{book.title}</span>
         {book.subtitle && (
           <>
             <br />
-            <span className="font-semibold">{book.subtitle}</span>
+            <span className="font-medium">{book.subtitle}</span>
           </>
         )}
-      </h1>
+      </h2>
 
       {book.authors?.length > 0 && (
         <div className="flex -mt-6">
@@ -77,8 +71,6 @@ const BookContent = ({ book }) => {
           ))}
         </div>
       )}
-
-      {book.text && <ReactMarkdown source={book.text} />}
 
       {book.summary?.map((entry) =>
         typeof entry.content === 'string' ? (

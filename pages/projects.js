@@ -1,17 +1,10 @@
-import { firestoreClient } from '../data/firebase'
 import Card from '../components/Card'
 import Head from 'next/head'
+import { multipleStaticProps } from '../helpers/static-rendering'
 
-export const getStaticProps = async () => ({
-  props: {
-    projects: await firestoreClient
-      .collection('projects')
-      .get()
-      .then((snap) => snap.docs.map((doc) => doc.data()))
-      .then((projects) =>
-        projects.sort((a, b) => b.status.localeCompare(a.status))
-      ),
-  },
+export const getStaticProps = multipleStaticProps({
+  type: 'project',
+  sort: (a, b) => b.status.localeCompare(a.status),
 })
 
 const ProjectsPage = ({ projects }) => (

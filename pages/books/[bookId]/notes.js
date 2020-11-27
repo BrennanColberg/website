@@ -1,6 +1,9 @@
-import { firestoreClient } from '../../../data/firebase'
 import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
+import {
+  singleStaticPaths,
+  singleStaticProps,
+} from '../../../helpers/static-rendering'
 
 function authorsToText(authors) {
   if (authors.length === 0) return null
@@ -9,23 +12,8 @@ function authorsToText(authors) {
   return authors.join(', ')
 }
 
-export const getStaticPaths = async () => ({
-  paths: await firestoreClient
-    .collection('books')
-    .get()
-    .then((snap) => snap.docs.map((doc) => ({ params: { bookId: doc.id } }))),
-  fallback: false,
-})
-
-export const getStaticProps = async (context) => ({
-  props: {
-    book: await firestoreClient
-      .collection('books')
-      .doc(context.params.bookId)
-      .get()
-      .then((snap) => snap.data()),
-  },
-})
+export const getStaticPaths = singleStaticPaths('book')
+export const getStaticProps = singleStaticProps('book')
 
 const ChapterSummary = ({ entry: { title, content } }) => (
   <>

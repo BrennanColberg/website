@@ -1,23 +1,15 @@
-import { firestoreClient } from '../data/firebase'
 import Card from '../components/Card'
 import Head from 'next/head'
+import { multipleStaticProps } from '../helpers/static-rendering'
 
 const TITLE_PREFIXES_REGEX = /^(The )?(.+)$/
 
-export const getStaticProps = async () => ({
-  props: {
-    books: await firestoreClient
-      .collection('books')
-      .get()
-      .then((snap) => snap.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-      .then((books) =>
-        books.sort((a, b) =>
-          a.title
-            .match(TITLE_PREFIXES_REGEX)[2]
-            .localeCompare(b.title.match(TITLE_PREFIXES_REGEX)[2])
-        )
-      ),
-  },
+export const getStaticProps = multipleStaticProps({
+  type: 'book',
+  sort: (a, b) =>
+    a.title
+      .match(TITLE_PREFIXES_REGEX)[2]
+      .localeCompare(b.title.match(TITLE_PREFIXES_REGEX)[2]),
 })
 
 const BooksMenu = ({ books }) => (

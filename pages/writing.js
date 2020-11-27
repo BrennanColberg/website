@@ -1,32 +1,27 @@
-import { firestoreClient } from '../data/firebase'
 import Card from '../components/Card'
 import Head from 'next/head'
+import { multipleStaticProps } from '../helpers/static-rendering'
 
-export const getStaticProps = async () => ({
-  props: {
-    writing: await firestoreClient
-      .collection('posts')
-      .get()
-      .then((snap) => snap.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
-      .then((writing) => writing.sort((a, b) => a.date.localeCompare(b.date))),
-  },
+export const getStaticProps = multipleStaticProps({
+  type: 'post',
+  sort: (a, b) => a.date.localeCompare(b.date),
 })
 
-const WritingPage = ({ writing }) => (
+const WritingPage = ({ posts }) => (
   <>
     <Head>
       <title>Writing | Brennan Colberg</title>
     </Head>
-    {writing?.map(({ title, subtitle, id, date }, i) => (
+    {posts?.map((post, i) => (
       <Card
         key={i}
-        title={title}
-        text={subtitle}
+        title={post.title}
+        text={post.subtitle}
         color="neutral"
-        links={[{ href: `/writing/${id}`, text: 'read' }]}
+        links={[{ href: `/writing/${post.id}`, text: 'read' }]}
         tags={[
           {
-            text: date,
+            text: post.date,
             color: 'neutral',
           },
         ]}

@@ -1,24 +1,12 @@
 import ReactMarkdown from 'react-markdown'
 import MetaTags from '../../../components/MetaTags'
-import { firestoreClient } from '../../../data/firebase'
+import {
+  singleStaticPaths,
+  singleStaticProps,
+} from '../../../helpers/static-rendering'
 
-export const getStaticPaths = async () => ({
-  paths: await firestoreClient
-    .collection('posts')
-    .get()
-    .then((snap) => snap.docs.map((doc) => ({ params: { postId: doc.id } }))),
-  fallback: false,
-})
-
-export const getStaticProps = async (context) => ({
-  props: {
-    post: await firestoreClient
-      .collection('posts')
-      .doc(context.params.postId)
-      .get()
-      .then((snap) => ({ id: snap.id, ...snap.data() })),
-  },
-})
+export const getStaticPaths = singleStaticPaths('post')
+export const getStaticProps = singleStaticProps('post')
 
 const WritingPostPage = ({ post }) => {
   return (

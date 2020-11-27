@@ -4,6 +4,7 @@ import {
   singleStaticPaths,
   singleStaticProps,
 } from '../../../helpers/static-rendering'
+import Tag from '../../../components/Tag'
 
 function authorsToText(authors) {
   if (authors.length === 0) return null
@@ -51,13 +52,14 @@ const BookContent = ({ book }) => {
       </h2>
 
       {book.authors?.length > 0 && (
-        <div className="flex -mt-6">
-          {book.authors.map((author) => (
-            <div className="text-xl bg-primary-100 py-1 px-2 m-2 rounded-md shadow-sm cursor-default">
-              {author}
-            </div>
-          ))}
-        </div>
+        <>
+          <div />
+          <div className="flex -mt-5">
+            {book.authors.map((author, i) => (
+              <Tag text={author} key={i} />
+            ))}
+          </div>
+        </>
       )}
 
       {book.summary?.map((entry) =>

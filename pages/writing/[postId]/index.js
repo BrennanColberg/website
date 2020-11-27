@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import MetaTags from '../../../components/MetaTags'
+import Tag from '../../../components/Tag'
 import {
   singleStaticPaths,
   singleStaticProps,
@@ -26,6 +27,15 @@ const WritingPostPage = ({ post }) => {
           </>
         )}
       </h2>
+
+      {post.date && (
+        <>
+          <div />
+          <div className="flex -mt-5">
+            <Tag text={post.date} />
+          </div>
+        </>
+      )}
 
       {post.text && <ReactMarkdown source={post.text} />}
     </div>

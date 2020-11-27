@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import MetaTags from '../../../components/MetaTags'
+import SubscribeForm from '../../../components/SubscribeForm'
 import Tag from '../../../components/Tag'
 import {
   singleStaticPaths,
@@ -38,6 +39,8 @@ const WritingPostPage = ({ post }) => {
       )}
 
       {post.text && <ReactMarkdown source={post.text} />}
+
+      <SubscribeForm />
     </div>
   )
 }

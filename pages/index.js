@@ -1,8 +1,10 @@
 import Markdown from '../components/Markdown'
+import SubscribeForm from '../components/SubscribeForm'
 
 const SplashPage = () => (
-  <Markdown
-    text={`
+  <>
+    <Markdown
+      text={`
 
 # Welcome to my website!
 
@@ -15,7 +17,9 @@ Right now, I'm building [WEEKDAYS](https://joinweekdays.com), a marketplace for 
 I live in Corvallis, OR (but am extremely connected to Seattle).
 
 `}
-  />
+    />
+    <SubscribeForm className="mt-7" />
+  </>
 )
 
 export default SplashPage

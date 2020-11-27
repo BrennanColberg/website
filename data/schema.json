@@ -39,5 +39,11 @@
       "text": "string (markdown)",
       "date": "yyyy/mm/dd"
     }
+  ],
+  "emails": [
+    {
+      "email": "string",
+      "timeCreated": "ISO 8601"
+    }
   ]
 }

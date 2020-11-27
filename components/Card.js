@@ -19,9 +19,8 @@ const Tags = ({ tags }) =>
   tags.map((tag, i) => (
     <span
       key={i}
-      className={`inline-block mr-2 mt-1.5 py-0.5 px-1.5 rounded-md font-light text-sm select-none whitespace-nowrap cursor-default shadow-sm ${
-        tag.color ? `bg-${tag.color}-300` : 'bg-neutral-300'
-      }`}
+      // used options (listed for tailwindcss compiler): bg-green-300 bg-red-300 bg-yellow-300 bg-neutral-300
+      className={`inline-block mr-2 mt-1.5 py-0.5 px-1.5 rounded-md font-light text-sm select-none whitespace-nowrap cursor-default shadow-sm bg-${tag.color}-300`}
     >
       {tag.text}
     </span>

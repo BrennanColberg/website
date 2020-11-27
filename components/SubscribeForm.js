@@ -7,6 +7,10 @@ const SubscribeForm = ({ className = '' }) => {
   async function triggerSubmit(event) {
     event.preventDefault()
 
+    if (!email) return
+    if (!email.match(/^.+@.+\..+$/))
+      return alert("That doesn't look like an email.")
+
     await firestoreClient.collection('emails').doc().set({
       email,
       timeCreated: new Date().toISOString(),
@@ -28,7 +32,7 @@ const SubscribeForm = ({ className = '' }) => {
           type="email"
           aria-label="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.trim())}
         />
         <button className="bg-secondary-200 h-full py-1.5 px-3 font-semibold hover:bg-secondary-300  rounded-lg transition-colors duration-150">
           Hear about new posts

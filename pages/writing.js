@@ -5,7 +5,7 @@ import SubscribeForm from '../components/SubscribeForm'
 
 export const getStaticProps = multipleStaticProps({
   type: 'post',
-  sort: (a, b) => a.date.localeCompare(b.date),
+  sort: (a, b) => b.date.localeCompare(a.date),
 })
 
 const WritingPage = ({ posts }) => (
@@ -23,7 +23,10 @@ const WritingPage = ({ posts }) => (
         text={post.subtitle}
         color="neutral"
         links={[{ href: `/writing/${post.id}`, text: 'read' }]}
-        tags={[{ text: post.date }]}
+        tags={[
+          { text: post.date },
+          ...(post.tags || []).map((tag) => ({ text: tag })),
+        ]}
       />
     ))}
   </>

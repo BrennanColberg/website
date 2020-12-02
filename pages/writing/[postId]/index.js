@@ -34,6 +34,8 @@ const WritingPostPage = ({ post }) => {
           <div />
           <div className="flex -mt-5">
             <Tag text={post.date} />
+            {post?.tags &&
+              post.tags.map((tag, i) => <Tag key={i} text={tag} />)}
           </div>
         </>
       )}

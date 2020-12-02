@@ -3,14 +3,9 @@ import { firestoreClient } from '../data/firebase'
 const EXISTING_CONTENT_REFRESH_DELAY = 60 // 1 minute
 const NO_CONTENT_REFRESH_DELAY = 1 // 1 second
 
-export const singleStaticPaths = (type) => async () => ({
-  paths: await firestoreClient
-    .collection(type + 's')
-    .get()
-    .then((snap) =>
-      snap.docs.map((doc) => ({ params: { [type + 'Id']: doc.id } }))
-    ),
-  fallback: false,
+export const singleStaticPaths = () => async () => ({
+  paths: [],
+  fallback: 'blocking',
 })
 
 export const singleStaticProps = (type) => async (context) => {

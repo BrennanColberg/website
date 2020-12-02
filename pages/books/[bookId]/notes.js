@@ -13,7 +13,7 @@ function authorsToText(authors) {
   return authors.join(', ')
 }
 
-export const getStaticPaths = singleStaticPaths('book')
+export const getStaticPaths = singleStaticPaths()
 export const getStaticProps = singleStaticProps('book')
 
 const ChapterSummary = ({ entry: { title, content } }) => (

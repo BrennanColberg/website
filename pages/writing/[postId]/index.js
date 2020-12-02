@@ -7,7 +7,7 @@ import {
   singleStaticProps,
 } from '../../../helpers/static-rendering'
 
-export const getStaticPaths = singleStaticPaths('post')
+export const getStaticPaths = singleStaticPaths()
 export const getStaticProps = singleStaticProps('post')
 
 const WritingPostPage = ({ post }) => {
